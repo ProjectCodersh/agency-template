@@ -17,7 +17,7 @@ const Footer2 = () => {
                 <div className="container">
                     <div className="cta-wrapper bg-cover" data-background="/assets/img/cta-bg.jpg">
                         <div className="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <img src="/assets/img/cta-img.png" alt="img" />
+                            <img src="/assets/img/HarshShah.png" alt="img" />
                         </div>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                             Stay Connected With <br /> Cutting Edge IT

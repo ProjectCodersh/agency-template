@@ -9697,11 +9697,12 @@ input.main-search-input::placeholder {
   height: auto;
 }
 
-/* @media (max-width: 575px) {
+@media (max-width: 575px) {
   .agencyLogo {
-    width: 171px !important;
+    max-width: 210px !important;
+    width: 100% !important;
   }
-} */
+}
 
 .brand-logo-li {
   width: 150px;

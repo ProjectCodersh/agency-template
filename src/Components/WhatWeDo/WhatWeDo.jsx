@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 
 const WhatWeDo = () => {
@@ -10,9 +10,26 @@ const WhatWeDo = () => {
     }
 
     const whyContent = [
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'SEO Audit', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
-        { img: '/assets/img/service/location-icon.png', title: 'Local SEO', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
-        { img: '/assets/img/service/tools-icon.png', title: 'On-Site & Technical SEO', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/service/financial-audit-icon.png', title: 'Pixel perfect PSD to wordpress conversion', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        {
+            img: '/assets/img/service/location-icon.png', title: 'Wordpress CMS Setup and Configuration', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
+        },
+        {
+            img: '/assets/img/service/tools-icon.png', title: 'Wordpress plugin development Service', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.'
+        },
+        { img: '/assets/img/service/financial-audit-icon.png', title: 'Wordpress theme development & customization', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        {
+            img: '/assets/img/service/location-icon.png', title: 'Wordpress migration and maintenance services', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
+        },
+        {
+            img: '/assets/img/service/tools-icon.png', title: 'Woocommerce Development Service', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.'
+        },
+        {
+            img: '/assets/img/service/financial-audit-icon.png', title: 'Wordpress Blog Development Service', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.'
+        },
+        {
+            img: '/assets/img/service/location-icon.png', title: 'Wordpress API Integration Service', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
+        }
     ];
 
     return (
@@ -42,15 +59,15 @@ const WhatWeDo = () => {
                 </div>
                 <div className="row">
                     {whyContent.map((item, i) => (
-                        <div key={i} className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div className="service-box-items">
+                        <div key={i} className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div className="service-box-items text-center flex-column">
                                 <div className="icon">
                                     <img src={item.img} alt="img" className="icon-img" />
                                 </div>
                                 <div className="content">
-                                    <h4><Link to="/service/service-details">{item.title}</Link></h4>
-                                    <p>{item.content}</p>
-                                    <Link to="/service/service-details" className="link-btn">Read More <i className="bi bi-arrow-right"></i></Link>
+                                    <h4>{item.title}</h4>
+                                    {/* <p>{item.content}</p> */}
+                                    {/* <Link to="/service/service-details" className="link-btn">Read More <i className="bi bi-arrow-right"></i></Link> */}
                                 </div>
                             </div>
                         </div>

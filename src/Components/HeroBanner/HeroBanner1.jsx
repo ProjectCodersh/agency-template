@@ -88,17 +88,11 @@ const HeroBanner1 = () => {
                     </div>
 
                     <div
-                        className="col-12 wow fadeInUp client-items d-flex justify-content-center align-items-center flex-wrap"
+                        className="col-12 wow fadeInUp img-custom-anim-top client-items d-flex justify-content-center align-items-center flex-wrap"
                         data-wow-delay=".7s"
                     >
-                        <div className="content">
-                            <div className="star" style={{ color: "#F68B21" }}>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                            </div>
+                        <div className="clutchreview" >
+                            <img src="/assets/img/hero/clutchreview-2.png" alt="clutchreview-img" style={{ height: "42px" }} />
                         </div>
 
                         <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-2">

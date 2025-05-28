@@ -39,7 +39,7 @@ export default function Header2({ variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">
-                  <img src="/assets/img/logo/Vector-black.svg" alt="Logo" />
+                  <img src="/assets/img/logo/Vector-black.svg" alt="Logo" className='agencyLogo' />
                 </Link>
               </div>
               <div className="cs_main_header_center">
@@ -60,7 +60,7 @@ export default function Header2({ variant }) {
               <div className="cs_main_header_right">
                 <div className="header-btn d-flex align-items-center">
 
-                  <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
+                  {/* <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a> */}
 
                   <div className="main-button main-btn-area2">
                     <Link to="/contact">
