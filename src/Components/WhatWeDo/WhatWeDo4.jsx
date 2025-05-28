@@ -10,9 +10,18 @@ const WhatWeDo4 = () => {
     }
 
     const whyContent = [
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'SEO Audit', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
-        { img: '/assets/img/service/location-icon.png', title: 'Local SEO', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
-        { img: '/assets/img/service/tools-icon.png', title: 'On-Site & Technical SEO', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/service/financial-audit-icon.png', title: 'Custom Store Project', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/service/location-icon.png', title: 'Shopify Migration', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/service/tools-icon.png', title: 'Headless Shopify', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/service/financial-audit-icon.png', title: 'Shopify Plus', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/service/location-icon.png', title: 'Support & Maintenance', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/service/tools-icon.png', title: 'Shopify CRO Agency', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/service/financial-audit-icon.png', title: 'Internationalization', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/service/location-icon.png', title: 'Subscriptions', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/service/tools-icon.png', title: 'Emain & SMS Marketing', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/service/financial-audit-icon.png', title: 'Shopify App Development', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/service/location-icon.png', title: 'E-Commerce SEO', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/service/tools-icon.png', title: 'Shopify B2B & Wholesale', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
     ];
 
     return (
@@ -42,15 +51,15 @@ const WhatWeDo4 = () => {
                 </div>
                 <div className="row">
                     {whyContent.map((item, i) => (
-                        <div key={i} className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div className="service-box-items">
+                        <div key={i} className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div className="service-box-items d-flex flex-column text-center">
                                 <div className="icon">
                                     <img src={item.img} alt="img" className="icon-img" />
                                 </div>
                                 <div className="content">
                                     <h4><Link to="/service/service-details">{item.title}</Link></h4>
-                                    <p>{item.content}</p>
-                                    <Link to="/service/service-details" className="link-btn">Read More <i className="bi bi-arrow-right"></i></Link>
+                                    {/* <p>{item.content}</p> */}
+                                    {/* <Link to="/service/service-details" className="link-btn">Read More <i className="bi bi-arrow-right"></i></Link> */}
                                 </div>
                             </div>
                         </div>

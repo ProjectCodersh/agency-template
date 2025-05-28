@@ -29,7 +29,7 @@ const Faq2 = ({ addclass }) => {
     }, [firstItemOpen]);
 
     return (
-        <section className={addclass}>
+        <section className={addclass} style={{ backgroundColor: '#f6f3fe' }}>
             <div className="faq-overlay">
                 <img src="/assets/img/faq-overlay.png" alt="img" />
             </div>

@@ -13,9 +13,9 @@ const ContactInfo2 = () => {
                                 <div className="content">
                                     <h3>Our Address</h3>
                                     <p>
-                                        A-307, Empire Business Hub, <br />
-                                        Sola, Science City Road, <br />
-                                        Ahmedabad, GJ - 380060 - INDIA
+                                        A-307, Empire Business Hub,
+                                        <br /> Science City Rd, Sola,
+                                        Ahmedabad
                                     </p>
                                 </div>
                             </div>
@@ -26,7 +26,7 @@ const ContactInfo2 = () => {
                                     <i className="bi bi-envelope-fill"></i>
                                 </div>
                                 <div className="content">
-                                    <h3><a href="mailto:arvind@codersh.com">arvind@codersh.com</a></h3>
+                                    <h3 className="text-lowercase"><a href="mailto:arvind@codersh.com">arvind@codersh.com</a></h3>
                                     <p>
                                         Email us anytime for anykind <br />
                                         ofquety.
@@ -59,7 +59,7 @@ const ContactInfo2 = () => {
                             <div className="col-lg-6">
                                 <div className="map-items">
                                     <div className="googpemap">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" loading="lazy"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.6541294331378!2d72.5106517760089!3d23.073138514437932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e81f21c5da795%3A0x8c70d1b4999d0473!2sCodersh%20Web%20Services!5e0!3m2!1sen!2sin!4v1748325608685!5m2!1sen!2sin" loading="lazy"></iframe>
                                     </div>
                                 </div>
                             </div>

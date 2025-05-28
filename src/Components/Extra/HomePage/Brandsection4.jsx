@@ -4,7 +4,7 @@ import gmailLogo from '../../../../public/assets/img/tools/tool1.png';
 import asanaLogo from '../../../../public/assets/img/tools/tool2.png';
 import loomLogo from '../../../../public/assets/img/tools/tool3.png';
 import zoomLogo from '../../../../public/assets/img/tools/tool4.png';
-import googleMeetLogo from '../../../../public/assets/img/tools/tool5.png';
+// import googleMeetLogo from '../../../../public/assets/img/tools/tool5.png';
 import clickupLogo from '../../../../public/assets/img/tools/tool6.png';
 import trelloLogo from '../../../../public/assets/img/tools/tool7.png';
 import jiraLogo from '../../../../public/assets/img/tools/tool8.png';
@@ -16,7 +16,7 @@ const Brandsection4 = () => {
         { name: 'Asana', logo: asanaLogo },
         { name: 'Loom', logo: loomLogo },
         { name: 'Zoom', logo: zoomLogo },
-        { name: 'Google Meet', logo: googleMeetLogo },
+        // { name: 'Google Meet', logo: googleMeetLogo },
     ];
 
     const compatible = [
@@ -36,7 +36,7 @@ const Brandsection4 = () => {
     }
 
     return (
-        <section className="py-5 px-3 brand-section fix" style={{ backgroundColor: '#f6f3fe' }}>
+        <section className="brand-section fix section-padding" >
             <div className="container ">
                 <div className="section-title-area">
                     <div className="section-title">
@@ -54,7 +54,7 @@ const Brandsection4 = () => {
 
                 <div className="mb-4">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="sub-title wow fadeInUp my-4" >
                             <span>{chooseHeading.plantitle1}</span>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Brandsection4 = () => {
 
                 <div>
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="sub-title wow fadeInUp my-4" >
                             <span>{chooseHeading.plantitle2}</span>
                         </div>
                     </div>

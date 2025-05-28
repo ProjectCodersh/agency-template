@@ -60,14 +60,14 @@ function Tools1() {
     }
 
     return (
-        <section className="feature-secton fix">
+        <section className="feature-secton fix section-padding" style={{ backgroundColor: '#f6f3fe' }}>
             {/* <div className="bg-shape">
                 <img src="/assets/img/bg-shape-2.png" alt="img" />
             </div> */}
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <div className="sub-title wow fadeInUp">
+                        <div className="sub-title wow fadeInUp" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.subtitle}</span>
                         </div>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -80,7 +80,7 @@ function Tools1() {
                 </div>
                 <div className="row">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.plantitle1}</span>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ function Tools1() {
                 </div>
                 <div className="row">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.plantitle2}</span>
                         </div>
                     </div>
@@ -251,7 +251,7 @@ function Tools1() {
                 </div>
                 <div className="row">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.plantitle3}</span>
                         </div>
                     </div>
@@ -326,7 +326,7 @@ function Tools1() {
                 </div>
                 <div className="row">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.plantitle4}</span>
                         </div>
                     </div>
@@ -383,7 +383,7 @@ function Tools1() {
                 </div>
                 <div className="row">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.plantitle5}</span>
                         </div>
                     </div>

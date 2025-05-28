@@ -54,12 +54,12 @@ const Testimonial1 = () => {
     ];
 
     return (
-        <section className="testimonial-section fix">
+        <section className="testimonial-section fix section-padding">
             <div className="container">
                 <div className="testimonial-wrapper">
                     <div className="section-title-area">
                         <div className="section-title">
-                            <div className="sub-title bg-color-2 wow fadeInUp">
+                            <div className="sub-title bg-color-2 wow fadeInUp" style={{ backgroundColor: "#f6f3fe" }}>
                                 <span>TESTIMONIALS</span>
                             </div>
                             <h2 className="wow fadeInUp" data-wow-delay=".3s">

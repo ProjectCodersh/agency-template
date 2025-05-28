@@ -28,7 +28,7 @@ const Brandsection6 = () => {
     }
 
     return (
-        <section className="py-5 px-3 brand-section fix" style={{ backgroundColor: '#f6f3fe' }}>
+        <section className="section-padding brand-section fix" style={{ backgroundColor: '#f6f3fe' }}>
             <div className="container ">
                 <div className="section-title-area">
                     <div className="section-title">

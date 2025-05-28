@@ -91,12 +91,14 @@ const HeroBanner1 = () => {
                         className="col-12 wow fadeInUp client-items d-flex justify-content-center align-items-center flex-wrap"
                         data-wow-delay=".7s"
                     >
-                        <div className="client-logo me-3">
-                            <img
-                                src={heroContent.reviewlogo}
-                                alt="Client review logo"
-                                className="img-fluid"
-                            />
+                        <div className="content">
+                            <div className="star" style={{ color: "#F68B21" }}>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                            </div>
                         </div>
 
                         <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-2">
@@ -126,7 +128,7 @@ const HeroBanner1 = () => {
                         <Slider {...settings}>
                             {brandContent.map((item, i) => (
                                 <div key={i} className="swiper-slide">
-                                    <div className="brand-img center">
+                                    <div className="brand-img center ">
                                         <img src={item.img} alt="img" />
                                     </div>
                                 </div>

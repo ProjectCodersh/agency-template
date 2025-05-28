@@ -37,7 +37,7 @@ const BrandSection2 = () => {
     }
 
     return (
-        <section className="py-5 px-3 brand-section fix">
+        <section className="section-padding brand-section fix" style={{ backgroundColor: '#f6f3fe' }}>
             <div className="container ">
                 <div className="section-title-area">
                     <div className="section-title">
@@ -48,7 +48,7 @@ const BrandSection2 = () => {
                 </div>
                 <div className="mb-4">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
                             <span>{chooseHeading.plantitle1}</span>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const BrandSection2 = () => {
                 </div>
                 <div>
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4" >
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }} >
                             <span>{chooseHeading.plantitle2}</span>
                         </div>
                     </div>

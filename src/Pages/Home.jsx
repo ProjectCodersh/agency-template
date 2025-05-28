@@ -25,13 +25,13 @@ const Home = () => {
             <WhatWeDo></WhatWeDo>
             <About1></About1>
             <Counter4></Counter4>
-            <Testimonial1></Testimonial1>
-            <Faq1 addclass="faq-section section-padding2 pb-0"></Faq1>
             <Tools1></Tools1>
             <Brandsection1></Brandsection1>
             <BrandSection2></BrandSection2>
             <Brandsection3></Brandsection3>
-            <div className="section-padding3"></div>
+            {/* <div className="section-padding3"></div> */}
+            <Faq1 addclass="faq-section section-padding2 pb-0"></Faq1>
+            <Testimonial1></Testimonial1>
             <ContactInfo1></ContactInfo1>
         </div>
     );

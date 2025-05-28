@@ -39,10 +39,21 @@ const HeroBanner4 = () => {
     };
 
     const brandContent = [
-        { img: '/assets/img/brand/01.png' },
-        { img: '/assets/img/brand/02.png' },
-        { img: '/assets/img/brand/03.png' },
-        { img: '/assets/img/brand/04.png' },
+        // { img: '/assets/img/brand/01.png' },
+        // { img: '/assets/img/brand/02.png' },
+        // { img: '/assets/img/brand/03.png' },
+        // { img: '/assets/img/brand/04.png' },
+        { img: '/assets/img/brand/reinventuLOGO2.png' },
+        { img: '/assets/img/brand/500LGO2.png' },
+        { img: '/assets/img/brand/chenchefLOGO2.png' },
+        { img: '/assets/img/brand/bookbagLOG2.png' },
+        { img: '/assets/img/brand/anadian2.png' },
+        // { img: '/assets/img/brand/reinventuLOGO2.png' },
+
+        // { img: '/assets/img/brand/500LGO.webp' },
+        // { img: '/assets/img/brand/chenchefLOGO.webp' },
+        // { img: '/assets/img/brand/anadian.webp' },
+        // { img: '/assets/img/brand/bookbagLOG.webp' },
     ];
 
     const heroContent = {
@@ -91,12 +102,21 @@ const HeroBanner4 = () => {
                         className="col-12 wow fadeInUp client-items d-flex justify-content-center align-items-center flex-wrap"
                         data-wow-delay=".7s"
                     >
-                        <div className="client-logo me-3">
+                        {/* <div className="client-logo me-3">
                             <img
                                 src={heroContent.reviewlogo}
                                 alt="Client review logo"
                                 className="img-fluid"
                             />
+                        </div> */}
+                        <div className="content">
+                            <div className="star" style={{ color: "#F68B21" }}>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                            </div>
                         </div>
 
                         <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-2">
@@ -122,11 +142,11 @@ const HeroBanner4 = () => {
             <div className="brand-wrapper-2">
                 <h4 className="brand-title">1k + Brands Trust Us</h4>
                 <div className="swiper brand-slider">
-                    <div className="swiper-wrapper cs_slider_gap_30">
+                    <div className="swiper-wrapper cs_slider_gap_30 ">
                         <Slider {...settings}>
                             {brandContent.map((item, i) => (
                                 <div key={i} className="swiper-slide">
-                                    <div className="brand-img center">
+                                    <div className="brand-img center d-flex justify-content-center">
                                         <img src={item.img} alt="img" />
                                     </div>
                                 </div>

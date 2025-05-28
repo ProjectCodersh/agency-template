@@ -13,7 +13,7 @@ import WhatWeDo4 from "../Components/WhatWeDo/WhatWeDo4";
 // import WhyChoose1 from "../Components/WhyChoose/WhyChoose1";
 import Tools2 from "../Components/Extra/HomePage/Tools2";
 import Brandsection4 from "../Components/Extra/HomePage/Brandsection4";
-import BrandSection5 from "../Components/Extra/HomePage/BrandSection5";
+// import BrandSection5 from "../Components/Extra/HomePage/BrandSection5";
 import Brandsection6 from "../Components/Extra/HomePage/BrandSection6";
 import Brand2 from "../Components/Brand/Brand2";
 
@@ -25,12 +25,13 @@ const Home4 = () => {
             <WhatWeDo4></WhatWeDo4>
             <About3></About3>
             <Counter6></Counter6>
-            <Testimonial4></Testimonial4>
-            <Faq2 addclass="faq-section section-padding2 pb-0"></Faq2>
             <Tools2></Tools2>
             <Brandsection4></Brandsection4>
-            <BrandSection5></BrandSection5>
+            {/* <BrandSection5></BrandSection5> */}
             <Brandsection6></Brandsection6>
+            {/* <div className="section-padding3"></div> */}
+            <Testimonial4></Testimonial4>
+            <Faq2 addclass="faq-section section-padding2 pb-0"></Faq2>
             <div className="section-padding3"></div>
             <ContactInfo1></ContactInfo1>
         </div>

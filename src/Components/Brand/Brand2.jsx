@@ -35,10 +35,15 @@ const Brand2 = () => {
     };
 
     const brandContent = [
-        { img: '/assets/img/brand/01.png' },
-        { img: '/assets/img/brand/02.png' },
-        { img: '/assets/img/brand/03.png' },
-        { img: '/assets/img/brand/04.png' },
+        // { img: '/assets/img/brand/01.png' },
+        // { img: '/assets/img/brand/02.png' },
+        // { img: '/assets/img/brand/03.png' },
+        // { img: '/assets/img/brand/04.png' },
+        { img: '/assets/img/brand/reinventuLOGO2.png' },
+        { img: '/assets/img/brand/500LGO2.png' },
+        { img: '/assets/img/brand/chenchefLOGO2.png' },
+        { img: '/assets/img/brand/bookbagLOG2.png' },
+        { img: '/assets/img/brand/anadian2.png' },
     ];
 
     return (
@@ -51,7 +56,7 @@ const Brand2 = () => {
                             <Slider {...settings}>
                                 {brandContent.map((item, i) => (
                                     <div key={i} className="swiper-slide">
-                                        <div className="brand-img center">
+                                        <div className="brand-img center d-flex justify-content-center">
                                             <img src={item.img} alt="img" />
                                         </div>
                                     </div>

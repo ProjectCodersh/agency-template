@@ -27,7 +27,7 @@ const About3 = () => {
         list2: 'WordCamp Speakers',
         list3: '100% Success Ratio',
         list4: '25,000+ Tasks Ticked',
-        list5: '90+ WP Development Experts',
+        list5: '90+ Shopify Development Experts',
         list6: 'Long Term Support',
     }
 
