@@ -57,7 +57,7 @@ const BrandSection5 = () => {
                     <div className="row gy-4">
                         {recommended.map((tool, index) => (
                             <div className="col-6 col-sm-4 col-md-4 col-lg-3 text-center d-flex align-items-center justify-content-center flex-column" key={index}>
-                                <img src={tool.logo} alt={tool.name} className="img-fluid mb-2 px-3 px-md-0" style={{ maxHeight: '200px', maxWidth: "200px" }} />
+                                <img src={tool.logo} alt={tool.name} className="img-fluid mb-2 brandsection-brands px-3 px-md-0" style={{ maxHeight: '200px', maxWidth: "200px" }} />
 
                             </div>
                         ))}
@@ -72,7 +72,7 @@ const BrandSection5 = () => {
                     <div className="row gy-4">
                         {compatible.map((tool, index) => (
                             <div className="col-6 col-sm-4 col-md-4 col-lg-3 text-center  d-flex align-items-center justify-content-center flex-column" key={index} >
-                                <img src={tool.logo} alt={tool.name} className="img-fluid mb-2 px-3 px-md-0" style={{ maxHeight: '200px', maxWidth: "200px" }} />
+                                <img src={tool.logo} alt={tool.name} className="img-fluid mb-2 brandsection-brands px-3 px-md-0" style={{ maxHeight: '200px', maxWidth: "200px" }} />
                             </div>
                         ))}
                     </div>

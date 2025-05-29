@@ -50,7 +50,7 @@ const Brand1 = () => {
               <Slider {...settings}>
                 {brandContent.map((item, i) => (
                   <div key={i} className="swiper-slide">
-                    <div className="brand-img center">
+                    <div className="brand-img center brand-img-slider">
                       <img src={item.img} alt="img" />
                     </div>
                   </div>

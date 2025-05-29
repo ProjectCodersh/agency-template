@@ -47,7 +47,7 @@ const Brandsection3 = () => {
                         <div className="row gy-4  d-flex align-items-center justify-content-center  p-md-0">
                             {recommended.map((tool, index) => (
                                 <div className="col-6 col-sm-4 col-md-6 col-lg-3 text-center d-flex align-items-center justify-content-center flex-column mt-4" key={index}>
-                                    <img src={tool.logo} alt={tool.name} className="img-fluid mb-2 px-2 px-md-0" style={{ maxHeight: '120px', maxWidth: "120px" }} />
+                                    <img src={tool.logo} alt={tool.name} className="img-fluid  mb-2 px-2 px-md-0" style={{ maxHeight: '120px', maxWidth: "120px" }} />
 
                                 </div>
                             ))}

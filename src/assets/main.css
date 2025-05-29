@@ -9717,6 +9717,7 @@ input.main-search-input::placeholder {
     max-width: 210px !important;
     width: 100% !important;
   }
+
 }
 
 .brand-logo-li {
@@ -9730,4 +9731,35 @@ input.main-search-input::placeholder {
   width: 150px;
   object-fit: contain;
 
+}
+
+@media (max-width: 768px) {
+
+  .brand-img-slider img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .brand-img-slider img {
+    width: 175px;
+  }
+
+  .brandsection-brands {
+    height: 40px;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .brand-img-slider img {
+    width: 125px;
+  }
+
+  .brandsection-brands {
+    height: 30px;
+    width: fit-content;
+  }
 }
