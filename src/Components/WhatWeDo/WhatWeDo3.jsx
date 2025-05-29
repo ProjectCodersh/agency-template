@@ -20,11 +20,11 @@ function Counter4() {
         { img: '/assets/img/pagebuilder/builder5.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
         { img: '/assets/img/pagebuilder/builder6.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
         { img: '/assets/img/pagebuilder/builder7.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
-        { img: '/assets/img/pagebuilder/builder8.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
-        { img: '/assets/img/pagebuilder/builder9.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
-        { img: '/assets/img/pagebuilder/builder10.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
-        { img: '/assets/img/pagebuilder/builder11.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
-        { img: '/assets/img/pagebuilder/builder12.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
+        //     { img: '/assets/img/pagebuilder/builder8.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
+        //     { img: '/assets/img/pagebuilder/builder9.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
+        //     { img: '/assets/img/pagebuilder/builder10.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
+        //     { img: '/assets/img/pagebuilder/builder11.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
+        //     { img: '/assets/img/pagebuilder/builder12.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
     ];
 
     useEffect(() => {
@@ -53,7 +53,7 @@ function Counter4() {
                 <div className="row">
 
                     {chooseContent.map((item, i) => (
-                        <div key={i} className="col-xl-2 col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div key={i} className="col-xl-3 col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay=".2s">
                             <div className="feature-box-items2">
                                 <div className="icon">
                                     <img src={item.img} alt={item.title} />

@@ -53,7 +53,7 @@ function Counter6() {
                 <div className="row">
 
                     {chooseContent.map((item, i) => (
-                        <div key={i} className="col-xl-2 col-lg-4 col-md-4 col-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div key={i} className="col-xl-3 col-lg-4 col-md-4 col-6 wow fadeInUp" data-wow-delay=".2s">
                             <div className="feature-box-items3">
                                 <div className="icon">
                                     <img src={item.img} alt={item.title} />

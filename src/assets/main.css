@@ -1423,11 +1423,26 @@ span {
   background-color: var(--header);
 }
 
-.contact-wrapper .contact-map {
+.contact-wrapper .contact-map,
+.contact-wrapper-2 .contact-map {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.contact-wrapper .contact-map iframe {
+@media (max-width: 1024px) {
+  .contact-wrapper .contact-map {
+    height: 100%;
+  }
+}
+
+.contact-wrapper .contact-map img {
   width: 100%;
   height: 630px;
   border-radius: 20px;

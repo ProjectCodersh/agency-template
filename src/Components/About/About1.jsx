@@ -13,7 +13,7 @@ const About1 = () => {
 
     const aboutContent = {
         bg: '/assets/img/about/about-bg.png',
-        img: '/assets/img/about/01.png',
+        img: '/assets/img/about/bergbat.png',
         subtitle: "ABOUT COMPANY",
         title: 'Our Story',
         content: 'It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point established fact that',
@@ -40,7 +40,7 @@ const About1 = () => {
                     <div className="row g-4">
                         <div className="col-lg-6">
                             <div className="about-image">
-                                <img src={aboutContent.img} alt="img" className="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
+                                <img src={aboutContent.img} alt="img" className="wow img-custom-anim-left " data-wow-duration="1.5s" data-wow-delay="0.3s" style={{ borderRadius: "20px" }} />
                                 <div className="bg-shape">
                                     <img src="/assets/img/about/bg-shape.png" alt="img" />
                                 </div>

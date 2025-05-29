@@ -10,25 +10,25 @@ const WhatWeDo = () => {
     }
 
     const whyContent = [
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'Pixel perfect PSD to wordpress conversion', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/serviceIcon/psd.png', title: 'Pixel perfect PSD to wordpress conversion', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
         {
-            img: '/assets/img/service/location-icon.png', title: 'Wordpress CMS Setup and Configuration', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
+            img: '/assets/img/serviceIcon/cms.png', title: 'Wordpress CMS Setup and Configuration', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
         },
         {
-            img: '/assets/img/service/tools-icon.png', title: 'Wordpress plugin development Service', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.'
+            img: '/assets/img/serviceIcon/maintenance.png', title: 'Wordpress plugin development Service', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.'
         },
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'Wordpress theme development & customization', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/serviceIcon/layout.png', title: 'Wordpress theme development & customization', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
         {
-            img: '/assets/img/service/location-icon.png', title: 'Wordpress migration and maintenance services', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
-        },
-        {
-            img: '/assets/img/service/tools-icon.png', title: 'Woocommerce Development Service', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.'
+            img: '/assets/img/serviceIcon/migration.png', title: 'Wordpress migration and maintenance services', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
         },
         {
-            img: '/assets/img/service/financial-audit-icon.png', title: 'Wordpress Blog Development Service', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.'
+            img: '/assets/img/serviceIcon/service.png', title: 'Woocommerce Development Service', content: 'Our WordPress SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.'
         },
         {
-            img: '/assets/img/service/location-icon.png', title: 'Wordpress API Integration Service', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
+            img: '/assets/img/serviceIcon/blogging.png', title: 'Wordpress Blog Development Service', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.'
+        },
+        {
+            img: '/assets/img/serviceIcon/integration.png', title: 'Wordpress API Integration Service', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.'
         }
     ];
 

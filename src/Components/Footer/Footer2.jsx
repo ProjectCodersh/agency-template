@@ -194,7 +194,7 @@ const Footer2 = () => {
                                                 <a href="tel:9664617700">+966-461-7700</a>
                                             </li>
                                         </ul>
-                                        <div className="footer-input">
+                                        {/* <div className="footer-input">
                                             <input type="email" id="email2" placeholder="Your email address" />
                                             <button className="newsletter-btn" type="submit">
                                                 <i className="bi bi-arrow-right"></i>
@@ -205,7 +205,8 @@ const Footer2 = () => {
                                             <label className="form-check-label" htmlFor="flexCheckChecked">
                                                 I agree to the <a href="#">Privacy Policy.</a>
                                             </label>
-                                        </div>
+                                        </div> */}
+
                                     </div>
                                 </div>
                             </div>

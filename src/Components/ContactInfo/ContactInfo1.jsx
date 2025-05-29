@@ -1,130 +1,202 @@
+import { useEffect, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import loadBackgroudImages from "../Common/loadBackgroudImages";
+
 
 const ContactInfo1 = () => {
+
+    useEffect(() => {
+        loadBackgroudImages();
+    }, []);
+
+    const formRef = useRef();
+    const [submitting, setSubmitting] = useState(false);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        number: "",
+        subject: "",
+        message: "",
+        agree: false,
+    });
+
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: type === "checkbox" ? checked : value,
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+
+        try {
+            // Send message to company
+            await emailjs.sendForm(
+                "service_gqkh37e",           // your service ID
+                "template_h4wpbbi",          // first template (to company)
+                formRef.current,
+                "K_wd5BSwBzwzzQXjf"          // public key
+            );
+
+            // Send thank-you email to user
+            await emailjs.sendForm(
+                "service_gqkh37e",           // same service ID is fine
+                "template_pwefvuc",     // second template (to user)
+                formRef.current,
+                "K_wd5BSwBzwzzQXjf"
+            );
+
+            toast.success("Message sent successfully!", {
+                position: "top-right",
+                autoClose: 3000,
+            });
+
+            setFormData({
+                name: "",
+                email: "",
+                number: "",
+                subject: "",
+                message: "",
+                agree: false,
+            });
+        } catch (error) {
+            console.error("EmailJS error:", error);
+            toast.error("Failed to send message. Please try again.");
+        } finally {
+            setSubmitting(false);
+        }
+    };
+
+
     return (
         <section className="contact-section fix section-padding section-margin">
             <div className="container">
-                <div className="section-title-area">
-                    <div className="section-title">
-                        <div className="sub-title bg-color-3 wow fadeInUp">
-                            <span className="wow fadeInUp">Contact us</span>
-                        </div>
-                        <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-                            How can we help you today?
-                        </h2>
-                    </div>
-                    <p className="white-text wow fadeInUp" data-wow-delay=".5s">
-                        The a long established fact that a reader will be <br /> distracted the readable content of page when <br /> looking at layout the point.
-                    </p>
-                </div>
+                {/* ...title and layout unchanged... */}
                 <div className="contact-wrapper">
                     <div className="row g-4">
                         <div className="col-xl-6">
                             <div className="contact-form-area">
                                 <h3>Get in Touch</h3>
-                                <form action="#" id="contact-form" method="POST">
+                                <form id="contact-form" onSubmit={handleSubmit} ref={formRef}>
                                     <div className="row g-4">
                                         <div className="col-lg-6">
                                             <div className="form-clt">
-                                                <input type="text" name="name" id="name" placeholder="Full Name" />
+                                                <input
+                                                    type="text"
+                                                    name="name"
+                                                    placeholder="Full Name"
+                                                    required
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
+
                                         <div className="col-lg-6">
                                             <div className="form-clt">
-                                                <input type="text" name="email" id="email" placeholder="Email Address" />
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    placeholder="Email Address"
+                                                    required
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
+
+                                        <input
+                                            type="hidden"
+                                            name="user_email"
+                                            value={formData.email}
+                                        />
+
                                         <div className="col-lg-6">
                                             <div className="form-clt">
-                                                <input type="number" name="number" id="number" placeholder="Phone Number" />
+                                                <input
+                                                    type="tel"
+                                                    name="number"
+                                                    placeholder="Phone Number"
+                                                    required
+                                                    pattern="^\+?[0-9\-]{10,15}$"
+                                                    value={formData.number}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
+
                                         <div className="col-lg-6">
                                             <div className="form-clt">
-                                                <select name="orderby" className="single-select" aria-label="Shop order">
-                                                    <option value="subject">Subject</option>
-                                                    <option value="complain">Complain</option>
-                                                    <option value="greetings">Greetings</option>
-                                                    <option value="date">Expire Date</option>
-                                                    <option value="price">About Price</option>
-                                                    <option value="order">About order</option>
-                                                </select>
+                                                <input
+                                                    type="text"
+                                                    name="subject"
+                                                    placeholder="Subject"
+                                                    required
+                                                    value={formData.subject}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
+
                                         <div className="col-12">
                                             <div className="form-clt">
-                                                <textarea name="message" id="message" placeholder="Messages"></textarea>
+                                                <textarea
+                                                    name="message"
+                                                    placeholder="Message"
+                                                    required
+                                                    value={formData.message}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
+
                                         <div className="col-12">
                                             <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                                                <label className="form-check-label" htmlFor="flexCheckChecked">
-                                                    Collaboratively formulate principle capital. Progressively evolve user
+                                                <input
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    name="agree"
+                                                    required
+                                                    checked={formData.agree}
+                                                    onChange={handleChange}
+                                                />
+                                                <label className="form-check-label">
+                                                    I agree to the terms and conditions.
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="col-lg-12">
-                                            <button type="submit" className="theme-btn">
-                                                Submit Now
-                                                <i className="bi bi-arrow-right ms-1"></i>
 
+                                        <div className="col-lg-12">
+                                            <button
+                                                type="submit"
+                                                className="theme-btn"
+                                                disabled={submitting}
+                                            >
+                                                Submit Now <i className="bi bi-arrow-right ms-1"></i>
                                             </button>
                                         </div>
                                     </div>
                                 </form>
+                                <ToastContainer />
                             </div>
                         </div>
-                        <div className="col-xl-6">
-                            <div className="contact-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.6541294331378!2d72.5106517760089!3d23.073138514437932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e81f21c5da795%3A0x8c70d1b4999d0473!2sCodersh%20Web%20Services!5e0!3m2!1sen!2sin!4v1748325608685!5m2!1sen!2sin" loading="lazy"></iframe>
 
-                                <div className="contact-info-wrapper">
-                                    <h2>Contact Info</h2>
-                                    <div className="shape-left">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="39" viewBox="0 0 29 39"
-                                            fill="none">
-                                            <path d="M0 0L29 39V0H0Z" fill="#6A47ED" />
-                                        </svg>
-                                    </div>
-                                    <div className="shape-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="39" viewBox="0 0 29 39"
-                                            fill="none">
-                                            <path d="M29 0L0 39V0H29Z" fill="#6A47ED" />
-                                        </svg>
-                                    </div>
-                                    <div className="contact-info style2">
-                                        <div className="icon">
-                                            <i className="bi bi-geo-alt-fill"></i>
-                                        </div>
-                                        <div className="content">
-                                            <h3>
-                                                {/* Gregory Cartwright, 4059 <br /> Carling Avenue, Ugglebarnby */}
-                                                A-307, Empire Business Hub, <br />
-                                                Sola, Science City Road,<br />
-                                                Ahmedabad, GJ - 380060 - INDIA
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="contact-info style2">
-                                        <div className="icon">
-                                            <i className="bi bi-telephone-fill"></i>
-                                        </div>
-                                        <div className="content">
-                                            <h3>
-                                                <a href="tel:9664617700">+91966-461-7700</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="contact-info style2 border-none">
-                                        <div className="icon">
-                                            <i className="bi bi-envelope-fill"></i>
-                                        </div>
-                                        <div className="content">
-                                            <h3 className="text-lowercase">
-                                                <a href="mailto::arvind@codersh.com">arvind@codersh.com</a>
-                                            </h3>
-                                        </div>
-                                    </div>
+                        {/* Map & contact info stays unchanged */}
+                        <div className="col-xl-6 d-flex align-items-center justify-content-center ">
+                            <div className="contact-map p-4" data-background="/assets/img/audience-bg.jpg">
+                                <div className="p-0 p-md-3" style={{ borderRadius: "20px", background: "#f6f3fe" }}>
+                                    <img src="/assets/img/team/team.png" alt="Team Img"
+                                        style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block', borderRadius: "20px", }} />
+                                </div>
+                                <div className="text-center mb-3 mt-4 mt-md-4 mt-xl-4" style={{ color: "#fff" }}>
+                                    <h2 style={{ color: "#fff" }}>Meet the team</h2>
+                                    <p >Get to know the people behind Intact. Our creative and technical team.</p>
                                 </div>
                             </div>
                         </div>

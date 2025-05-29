@@ -10,18 +10,18 @@ const WhatWeDo4 = () => {
     }
 
     const whyContent = [
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'Custom Store Project', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
-        { img: '/assets/img/service/location-icon.png', title: 'Shopify Migration', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
-        { img: '/assets/img/service/tools-icon.png', title: 'Headless Shopify', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'Shopify Plus', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
-        { img: '/assets/img/service/location-icon.png', title: 'Support & Maintenance', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
-        { img: '/assets/img/service/tools-icon.png', title: 'Shopify CRO Agency', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'Internationalization', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
-        { img: '/assets/img/service/location-icon.png', title: 'Subscriptions', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
-        { img: '/assets/img/service/tools-icon.png', title: 'Emain & SMS Marketing', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
-        { img: '/assets/img/service/financial-audit-icon.png', title: 'Shopify App Development', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
-        { img: '/assets/img/service/location-icon.png', title: 'E-Commerce SEO', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
-        { img: '/assets/img/service/tools-icon.png', title: 'Shopify B2B & Wholesale', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/serviceIcon/web-programming.png', title: 'Custom Store Project', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/serviceIcon/migration.png', title: 'Shopify Migration', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/serviceIcon/maintenance.png', title: 'Headless Shopify', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/serviceIcon/add-to-cart.png', title: 'Shopify Plus', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/serviceIcon/maintenance-2.png', title: 'Support & Maintenance', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/serviceIcon/recruitment.png', title: 'Shopify CRO Agency', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/serviceIcon/international.png', title: 'Internationalization', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/serviceIcon/clipboard.png', title: 'Subscriptions', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/serviceIcon/seo.png', title: 'Emain & SMS Marketing', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
+        { img: '/assets/img/serviceIcon/mobile-development.png', title: 'Shopify App Development', content: 'Get a detailed SEO audit that covers critical issues affecting your clients’ sites. By fixing these issues, we enhance site performance, leading to higher rankings and increased traffic.' },
+        { img: '/assets/img/serviceIcon/seo-2.png', title: 'E-Commerce SEO', content: 'Increase your clients’ local visibility and attract more customers. Our local SEO services ensure your clients stand out in local searches.' },
+        { img: '/assets/img/serviceIcon/b2b.png', title: 'Shopify B2B & Wholesale', content: 'Our Shopify SEO experts optimize your clients’ content and site structure, internal linking, ensuring top crawlability and rankings. This enhances user experience and boosts search engine performance.' },
     ];
 
     return (
@@ -64,8 +64,6 @@ const WhatWeDo4 = () => {
                             </div>
                         </div>
                     ))}
-
-
                 </div>
             </div>
         </section>
