@@ -65,7 +65,9 @@ export default function Header1({ variant }) {
 
                   <div className="main-button">
                     <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
-                      <span className="theme-btn">Continue</span><span className="arrow-btn"><i className="bi bi-arrow-right"></i></span></a>
+                      <span className="theme-btn">Continue</span>
+                      {/* <span className="arrow-btn"><i className="bi bi-arrow-right"></i></span> */}
+                    </a>
                   </div>
                 </div>
               </div>

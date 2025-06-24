@@ -2485,7 +2485,7 @@ span {
   margin-top: 30px;
   background-color: var(--bg);
   border-radius: 20px;
-  padding: 65.5px 0px;
+  padding: 50px 0px;
   position: relative;
   z-index: 9;
   display: flex;
@@ -2549,7 +2549,7 @@ span {
   margin-top: 30px;
   background-color: var(--bg);
   border-radius: 20px;
-  padding: 43px 0px;
+  padding: 50px 0px !important;
   position: relative;
   z-index: 9;
   display: flex;
@@ -2570,8 +2570,8 @@ span {
 } */
 
 .feature-box-items3 .icon img {
-  width: 125px;
-  height: 125px;
+  width: 90px;
+  height: 90px;
   font-size: 40px;
   object-fit: contain;
 }

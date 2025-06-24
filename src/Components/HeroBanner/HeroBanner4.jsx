@@ -60,7 +60,7 @@ const HeroBanner4 = () => {
         bg: "/assets/img/hero/hero-bg-2.png",
         bg2: "/assets/img/hero/bg-shape.png",
         subtitle: "go for advertising",
-        title: "Grow profits, save time, and scale your agency",
+        title: "Grow profits, save time, and scale your\u00A0agency",
         content:
             "White Label Shopify Development Partner for Digital Agencies at Fixed Cost.",
         content2:
