@@ -1,14 +1,14 @@
 
 import parse from 'html-react-parser';
-import gmailLogo from '../../../../public/assets/img/tools/tool1.png';
-import asanaLogo from '../../../../public/assets/img/tools/tool2.png';
-import loomLogo from '../../../../public/assets/img/tools/tool3.png';
-import zoomLogo from '../../../../public/assets/img/tools/tool4.png';
-// import googleMeetLogo from '../../../../public/assets/img/tools/tool5.png';
-import clickupLogo from '../../../../public/assets/img/tools/tool6.png';
-import trelloLogo from '../../../../public/assets/img/tools/tool7.png';
-import jiraLogo from '../../../../public/assets/img/tools/tool8.png';
-import githubLogo from '../../../../public/assets/img/tools/tool9.png';
+import gmailLogo from '/assets/img/tools/tool1.png';
+import asanaLogo from '/assets/img/tools/tool2.png';
+import loomLogo from '/assets/img/tools/tool3.png';
+import zoomLogo from '/assets/img/tools/tool4.png';
+// import googleMeetLogo from '/assets/img/tools/tool5.png';
+import clickupLogo from '/assets/img/tools/tool6.png';
+import trelloLogo from '/assets/img/tools/tool7.png';
+import jiraLogo from '/assets/img/tools/tool8.png';
+import githubLogo from '/assets/img/tools/tool9.png';
 
 const Brandsection4 = () => {
     const recommended = [

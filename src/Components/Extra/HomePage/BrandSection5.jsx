@@ -1,16 +1,16 @@
 
 
 import parse from 'html-react-parser';
-import goDaddyLogo from '../../../../public/assets/img/tools/tool10.png';
-import flyWheelLogo from '../../../../public/assets/img/tools/tool11.png';
-import HighLevelLogo from '../../../../public/assets/img/tools/tool12.png';
-import HostingerLogo from '../../../../public/assets/img/tools/tool13.png';
-import blueHostLogo from '../../../../public/assets/img/tools/tool14.png';
-import kinstaLogo from '../../../../public/assets/img/tools/tool15.png';
-import namecheapLogo from '../../../../public/assets/img/tools/tool16.png';
-import onetwothreeRegLogo from '../../../../public/assets/img/tools/tool17.png';
-import ionosLogo from '../../../../public/assets/img/tools/tool18.png';
-import hostgatorLogo from '../../../../public/assets/img/tools/tool19.png';
+import goDaddyLogo from '/assets/img/tools/tool10.png';
+import flyWheelLogo from '/assets/img/tools/tool11.png';
+import HighLevelLogo from '/assets/img/tools/tool12.png';
+import HostingerLogo from '/assets/img/tools/tool13.png';
+import blueHostLogo from '/assets/img/tools/tool14.png';
+import kinstaLogo from '/assets/img/tools/tool15.png';
+import namecheapLogo from '/assets/img/tools/tool16.png';
+import onetwothreeRegLogo from '/assets/img/tools/tool17.png';
+import ionosLogo from '/assets/img/tools/tool18.png';
+import hostgatorLogo from '/assets/img/tools/tool19.png';
 
 const BrandSection5 = () => {
     const recommended = [

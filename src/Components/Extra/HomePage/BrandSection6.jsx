@@ -1,10 +1,10 @@
 
 
 import parse from 'html-react-parser';
-import figmalLogo from '../../../../public/assets/img/tools/tool20.png';
-import canvaLogo from '../../../../public/assets/img/tools/tool21.png';
-import photoshopLogo from '../../../../public/assets/img/tools/tool22.png';
-import adobeLogo from '../../../../public/assets/img/tools/tool23.png';
+import figmalLogo from '/assets/img/tools/tool20.png';
+import canvaLogo from '/assets/img/tools/tool21.png';
+import photoshopLogo from '/assets/img/tools/tool22.png';
+import adobeLogo from '/assets/img/tools/tool23.png';
 
 const Brandsection6 = () => {
     const recommended = [
