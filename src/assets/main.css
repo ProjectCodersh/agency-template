@@ -7240,6 +7240,18 @@ input.main-search-input::placeholder {
   position: relative;
   border: 1px solid var(--border);
   border-radius: 20px;
+  /* hover effect animation 25-6-25 */
+  transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s cubic-bezier(.4, 2, .6, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  background: #fff;
+}
+
+/* hover effect animation 25-6-25 */
+.service-box-items:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  z-index: 2;
 }
 
 .service-box-items .content h4 {
