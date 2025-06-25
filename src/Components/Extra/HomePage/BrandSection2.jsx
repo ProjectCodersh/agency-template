@@ -29,7 +29,7 @@ const BrandSection2 = () => {
 
     const chooseHeading = {
         subtitle: "Our Services",
-        title: "Domain/Hosting/SSL & <br/> Email Management Tools",
+        title: "Domain/Hosting/SSL & Email Management Tools",
         content:
             "A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.",
         plantitle1: "We recommend For you ",
@@ -61,7 +61,7 @@ const BrandSection2 = () => {
                     <div className="row gy-4">
                         {recommended.map((tool, index) => (
                             <div
-                                className="col-6 col-sm-4 col-md-4 col-lg-2 text-center d-flex align-items-center justify-content-center flex-column"
+                                className="col-6 col-sm-4 col-md-4 col-lg-3 text-center d-flex align-items-center justify-content-center flex-column"
                                 key={index}
                             >
                                 <img
@@ -86,7 +86,7 @@ const BrandSection2 = () => {
                     <div className="row gy-4">
                         {compatible.map((tool, index) => (
                             <div
-                                className="col-6 col-sm-4 col-md-4 col-lg-2 text-center  d-flex align-items-center justify-content-center flex-column"
+                                className="col-6 col-sm-4 col-md-4 col-lg-3 text-center  d-flex align-items-center justify-content-center flex-column"
                                 key={index}
                             >
                                 <img

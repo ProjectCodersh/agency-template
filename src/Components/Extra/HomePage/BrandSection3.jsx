@@ -32,31 +32,30 @@ const Brandsection3 = () => {
                         </h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-12 col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                <div className="row gy-4">
+                    <div className="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <div className="section-title mb-0">
                             <div className="sub-title wow fadeInUp my-4">
                                 <span>{chooseHeading.plantitle1}</span>
                             </div>
                         </div>
-
-                        <div className="row d-flex align-items-center justify-content-start ms-0 ms-md-5 ms-lg-0 ms-xl-0 p-md-0">
+                        <div className="row gy-4">
                             {recommended.map((tool, index) => (
                                 <div
-                                    className="col-6 col-sm-4 col-md-6 col-lg-3 text-start  flex-column"
+                                    className="col-6 col-sm-4 col-md-4 col-lg-3"
                                     key={index}
                                 >
                                     <img
                                         src={tool.logo}
                                         alt={tool.name}
                                         className="img-fluid mb-2 px-2 px-md-0"
-                                        style={{ maxHeight: "60px", maxWidth: "60px" }}
+                                        style={{ maxHeight: "85px", maxWidth: "85px" }}
                                     />
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <div className="col-12 col-xl-9 col-lg-8 col-md-12 col-sm-12 ">
+                    <div className="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 ">
                         <div className="section-title mb-0">
                             <div className="sub-title wow fadeInUp my-4">
                                 <span>{chooseHeading.plantitle2}</span>
@@ -66,14 +65,14 @@ const Brandsection3 = () => {
                         <div className="row p-md-0">
                             {compatible.map((tool, index) => (
                                 <div
-                                    className="col-4 col-sm-4 col-md-4 col-lg-2 text-center flex-column"
+                                    className="col-4 col-sm-4 col-md-4 col-lg-4 "
                                     key={index}
                                 >
                                     <img
                                         src={tool.logo}
                                         alt={tool.name}
                                         className="img-fluid mb-2 px-2 px-md-0"
-                                        style={{ maxHeight: "60px", maxWidth: "60px" }}
+                                        style={{ maxHeight: "85px", maxWidth: "85px" }}
                                     />
                                 </div>
                             ))}
