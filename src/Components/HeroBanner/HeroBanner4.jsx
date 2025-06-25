@@ -39,21 +39,11 @@ const HeroBanner4 = () => {
     };
 
     const brandContent = [
-        // { img: '/assets/img/brand/01.png' },
-        // { img: '/assets/img/brand/02.png' },
-        // { img: '/assets/img/brand/03.png' },
-        // { img: '/assets/img/brand/04.png' },
-        { img: '/assets/img/brand/reinventuLOGO2.png' },
-        { img: '/assets/img/brand/500LGO2.png' },
-        { img: '/assets/img/brand/chenchefLOGO2.png' },
-        { img: '/assets/img/brand/bookbagLOG2.png' },
-        { img: '/assets/img/brand/anadian2.png' },
-        // { img: '/assets/img/brand/reinventuLOGO2.png' },
-
-        // { img: '/assets/img/brand/500LGO.webp' },
-        // { img: '/assets/img/brand/chenchefLOGO.webp' },
-        // { img: '/assets/img/brand/anadian.webp' },
-        // { img: '/assets/img/brand/bookbagLOG.webp' },
+        { img: '/assets/img/brand/reinventu-logo2.png' },
+        { img: '/assets/img/brand/500-logo.png' },
+        { img: '/assets/img/brand/chenchef-logo.png' },
+        { img: '/assets/img/brand/christianbookbag-logo.png' },
+        { img: '/assets/img/brand/anadian-logo.png' },
     ];
 
     const heroContent = {
