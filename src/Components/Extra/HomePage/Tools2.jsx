@@ -165,6 +165,7 @@ function Tools2() {
                     margin-bottom: 0.75rem;
                     font-size: 1rem;
                     color: #2d2d2d;
+                    font-weight: bold;
                 }
                 .check-icon {
                     color: #6A47ED;

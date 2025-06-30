@@ -1,0 +1,217 @@
+.video-testimonial-slide {
+    position: relative;
+    width: 100%;
+    /* Use aspect ratio for consistent responsive behavior */
+    aspect-ratio: 9/16;
+    /* Portrait video ratio - adjust as needed */
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000;
+    /* Set max-height to prevent videos from being too tall on larger screens */
+    max-height: 550px;
+}
+
+/* @media (max-width: 574px) {
+    .video-testimonial-slide {
+        max-height: 500px;
+    }
+} */
+
+/* Alternative: If you prefer fixed heights with responsive breakpoints */
+/* .video-testimonial-slide-alternative {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: transparent;
+    height: 300px;
+}
+
+@media (min-width: 480px) {
+    .video-testimonial-slide-alternative {
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-testimonial-slide-alternative {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video-testimonial-slide-alternative {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-testimonial-slide-alternative {
+        height: 500px;
+    }
+} */
+
+.video-testimonial-slide video {
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover maintains aspect ratio and fills container */
+    object-fit: cover;
+    /* border-radius: 12px; */
+    /* Ensure video is centered if aspect ratios don't match */
+    object-position: center;
+}
+
+.play-btn-vr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #6a47ed;
+    border: none;
+    border-radius: 50%;
+    /* Responsive button size */
+    width: clamp(40px, 8vw, 60px);
+    height: clamp(40px, 8vw, 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    /* Add shadow for better visibility */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.play-btn-vr:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-btn-vr svg {
+    width: clamp(12px, 3vw, 18px);
+    height: clamp(12px, 3vw, 18px);
+}
+
+.testimonial-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Responsive padding */
+    padding: clamp(12px, 4vw, 20px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+    /* Smooth transition for show/hide */
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-content.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimonial-content .stars {
+    color: #ffc107;
+    font-size: clamp(18px, 3vw, 20px);
+    margin-bottom: 5px;
+}
+
+.testimonial-content h3 {
+    font-size: clamp(16px, 4vw, 18px);
+    color: #fff;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.testimonial-content .role {
+    font-size: clamp(12px, 3vw, 14px);
+    color: #ccc;
+    margin: 0 0 8px 0;
+}
+
+.testimonial-content .desc {
+    font-size: clamp(12px, 3vw, 14px);
+    color: #ccc;
+    line-height: 1.4;
+    margin: 0;
+    /* Limit text to prevent overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Hidden utility class */
+.hidden {
+    display: none !important;
+}
+
+/* Swiper container improvements */
+.video-testimonial-slider-swiper {
+    max-width: 1280px;
+    /* Add some breathing room */
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 640px) {
+    .video-testimonial-slider-swiper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Optional: Add loading state for videos */
+.video-testimonial-slide video:not([src]) {
+    background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+        linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
+        linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+
+    100% {
+        background-position: 20px 20px, 20px 30px, 30px 10px, 10px 20px;
+    }
+}
+
+
+.video-testimonial-swiper-container {
+    margin-top: 24px;
+}
+
+.slick-slide {
+    padding: 0 10px;
+    /* Adjust horizontal spacing */
+    box-sizing: border-box;
+}
+
+.slick-list {
+    margin: 0 -10px;
+    /* Negative margin to offset padding */
+}
+
+.video-testimonial-row {
+    margin: 30px 0 24px 0 !important;
+}
+
+
+@media (max-width: 991px) {
+    .video-testimonial-row {
+        margin: 0px 0 24px 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-testimonial-row {
+        margin: 30px 0 24px 0 !important;
+    }
+}
