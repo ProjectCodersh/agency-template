@@ -1,16 +1,16 @@
 import parse from "html-react-parser";
-import figmaLogo from "/assets/img/tools/figma-logo.png";
-import canvaLogo from "/assets/img/tools/canva-logo.png";
-import photoshopLogo from "/assets/img/tools/photoshop-logo.png";
-import adobeLogo from "/assets/img/tools/adobecloud-logo.png";
+import figmaLogo from "/assets/img/tools/figma-icon.png";
+import canvaLogo from "/assets/img/tools/canva-icon.png";
+import photoshopLogo from "/assets/img/tools/photoshop-icon.png";
+import adobeLogo from "/assets/img/tools/adobecloud-icon.png";
 
 const Brandsection6 = () => {
-    const recommended = [{ name: "Gmail", logo: figmaLogo }];
+    const recommended = [{ name: "figma-icon", logo: figmaLogo }];
 
     const compatible = [
-        { name: "ClickUp", logo: canvaLogo },
-        { name: "Trello", logo: photoshopLogo },
-        { name: "Jira", logo: adobeLogo },
+        { name: "canva-icon", logo: canvaLogo },
+        { name: "photoshop-icon", logo: photoshopLogo },
+        { name: "adobecloud-icon", logo: adobeLogo },
     ];
 
     const chooseHeading = {
@@ -48,8 +48,8 @@ const Brandsection6 = () => {
                                     <img
                                         src={tool.logo}
                                         alt={tool.name}
-                                        className="img-fluid mb-2 px-2 px-md-0"
-                                        style={{ maxHeight: "85px", maxWidth: "85px" }}
+                                        className="img-fluid mb-2 px-2 px-md-0 brandsection-brands-three"
+
                                     />
                                 </div>
                             ))}
@@ -71,8 +71,8 @@ const Brandsection6 = () => {
                                     <img
                                         src={tool.logo}
                                         alt={tool.name}
-                                        className="img-fluid mb-2 px-2 px-md-0"
-                                        style={{ maxHeight: "85px", maxWidth: "85px" }}
+                                        className="img-fluid mb-2 px-2 px-md-0 brandsection-brands-three"
+
                                     />
                                 </div>
                             ))}

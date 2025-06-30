@@ -68,7 +68,7 @@ const Brandsection4 = () => {
                                     src={tool.logo}
                                     alt={tool.name}
                                     className="img-fluid  brandsection-brands mb-2"
-                                    style={{ maxHeight: "150px", maxWidth: "150px" }}
+
                                 />
                                 {/* <p className="small text-muted mb-0">{tool.name}</p> */}
                             </div>
@@ -93,7 +93,7 @@ const Brandsection4 = () => {
                                     src={tool.logo}
                                     alt={tool.name}
                                     className="img-fluid mb-2 brandsection-brands px-2 px-md-0"
-                                    style={{ maxHeight: "150px", maxWidth: "150px" }}
+
                                 />
                                 {/* <p className="small text-muted mb-0">{tool.name}</p> */}
                             </div>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 const HeroBanner1 = () => {
     useEffect(() => {
         loadBackgroudImages();
@@ -39,10 +40,10 @@ const HeroBanner1 = () => {
     };
 
     const brandContent = [
-        { img: '/assets/img/brand/01.png' },
-        { img: '/assets/img/brand/02.png' },
-        { img: '/assets/img/brand/03.png' },
-        { img: '/assets/img/brand/04.png' },
+        { img: '/assets/img/brand/kucrimson-brand.png' },
+        { img: '/assets/img/brand/datadepot-brand.png' },
+        { img: '/assets/img/brand/informadist-brand.png' },
+        { img: '/assets/img/brand/squreit-brand.png' },
     ];
 
     const heroContent = {
@@ -113,6 +114,15 @@ const HeroBanner1 = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1">
+                        <div className="main-button wow fadeInUp" data-wow-delay=".3s">
+                            <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
+                        </div>
+                        <div className="main-button wow fadeInUp" data-wow-delay=".3s">
+                            <Link to="/#"> <span className="hero-theme-btn"> EXPLORE MORE </span></Link>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div className="brand-wrapper-2">
@@ -123,7 +133,7 @@ const HeroBanner1 = () => {
                             {brandContent.map((item, i) => (
                                 <div key={i} className="swiper-slide">
                                     <div className="brand-img center ">
-                                        <img src={item.img} alt="img" />
+                                        <img src={item.img} alt="img" height={60} />
                                     </div>
                                 </div>
                             ))}

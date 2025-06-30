@@ -60,8 +60,8 @@ const BrandSection5 = () => {
                                 <img
                                     src={tool.logo}
                                     alt={tool.name}
-                                    className="img-fluid mb-2 brandsection-brands px-3 px-md-0"
-                                    style={{ maxHeight: "200px", maxWidth: "200px" }}
+                                    className="img-fluid mb-2 brandsection-brands-two px-3 px-md-0"
+
                                 />
                             </div>
                         ))}
@@ -82,8 +82,8 @@ const BrandSection5 = () => {
                                 <img
                                     src={tool.logo}
                                     alt={tool.name}
-                                    className="img-fluid mb-2 brandsection-brands px-3 px-md-0"
-                                    style={{ maxHeight: "200px", maxWidth: "200px" }}
+                                    className="img-fluid mb-2 brandsection-brands-two px-3 px-md-0"
+
                                 />
                             </div>
                         ))}

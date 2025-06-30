@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 const HeroBanner4 = () => {
     useEffect(() => {
         loadBackgroudImages();
@@ -119,6 +120,15 @@ const HeroBanner4 = () => {
                                 </div>
                                 <span className="d-block mt-1">{heroContent.review}</span>
                             </div>
+                        </div>
+
+                    </div>
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1">
+                        <div className="main-button wow fadeInUp" data-wow-delay=".3s">
+                            <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
+                        </div>
+                        <div className="main-button wow fadeInUp" data-wow-delay=".3s">
+                            <Link to="/#"> <span className="hero-theme-btn"> EXPLORE MORE </span></Link>
                         </div>
                     </div>
                 </div>

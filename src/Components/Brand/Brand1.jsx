@@ -34,10 +34,10 @@ const Brand1 = () => {
   };
 
   const brandContent = [
-    { img: '/assets/img/brand/01.png' },
-    { img: '/assets/img/brand/02.png' },
-    { img: '/assets/img/brand/03.png' },
-    { img: '/assets/img/brand/04.png' },
+    { img: '/assets/img/brand/kucrimson-brand.png' },
+    { img: '/assets/img/brand/datadepot-brand.png' },
+    { img: '/assets/img/brand/informadist-brand.png' },
+    { img: '/assets/img/brand/squreit-brand.png' },
   ];
 
   return (
@@ -51,7 +51,7 @@ const Brand1 = () => {
                 {brandContent.map((item, i) => (
                   <div key={i} className="swiper-slide">
                     <div className="brand-img center brand-img-slider">
-                      <img src={item.img} alt="img" />
+                      <img src={item.img} alt="img" height={60} />
                     </div>
                   </div>
                 ))}

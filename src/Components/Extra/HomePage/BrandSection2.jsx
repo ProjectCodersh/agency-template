@@ -67,8 +67,8 @@ const BrandSection2 = () => {
                                 <img
                                     src={tool.logo}
                                     alt={tool.name}
-                                    className="img-fluid mb-2 brandsection-brands px-3 px-md-0"
-                                    style={{ maxHeight: "180px", maxWidth: "180px" }}
+                                    className="img-fluid mb-2 brandsection-brands-two px-3 px-md-0"
+
                                 />
                             </div>
                         ))}
@@ -92,8 +92,8 @@ const BrandSection2 = () => {
                                 <img
                                     src={tool.logo}
                                     alt={tool.name}
-                                    className="img-fluid mb-2 brandsection-brands px-3 px-md-0"
-                                    style={{ maxHeight: "180px", maxWidth: "180px" }}
+                                    className="img-fluid mb-2 brandsection-brands-two px-3 px-md-0"
+
                                 />
                             </div>
                         ))}

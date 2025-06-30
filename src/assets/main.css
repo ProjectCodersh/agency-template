@@ -9193,7 +9193,7 @@ input.main-search-input::placeholder {
   .cs_nav .cs_nav_list {
     position: absolute;
     width: 100vw;
-    left: -15px;
+    left: -25px;
     background-color: #181818;
     padding: 10px 0;
     display: none;
@@ -9683,7 +9683,10 @@ input.main-search-input::placeholder {
   }
 }
 
+/* =============================== */
 /* Custom Css added */
+/* =============================== */
+
 .hero-rows {
   color: #fff;
 }
@@ -9745,6 +9748,21 @@ input.main-search-input::placeholder {
 
 }
 
+.brandsection-brands {
+  width: 150px;
+  height: auto;
+}
+
+.brandsection-brands-two {
+  width: 175px;
+  height: auto;
+}
+
+.brandsection-brands-three {
+  width: 75px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
 
   .brand-img-slider img {
@@ -9756,22 +9774,62 @@ input.main-search-input::placeholder {
 
   .brand-img-slider img {
     width: 175px;
+    height: auto;
   }
 
   .brandsection-brands {
-    height: 40px;
-    width: fit-content;
+    width: 125px;
+    height: auto;
+  }
+
+  .brandsection-brands-two {
+    width: 175px;
+    height: auto;
+  }
+
+  .brandsection-brands-three {
+    width: 75px;
+    height: auto;
   }
 }
 
 @media (max-width: 375px) {
 
   .brand-img-slider img {
-    width: 125px;
+    width: 150px;
+    height: auto;
   }
+}
 
-  .brandsection-brands {
-    height: 30px;
-    width: fit-content;
+/* =============================== */
+/* hero section two button css */
+/* =============================== */
+
+.hero-theme-btn {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fff;
+  color: #17012C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 19.5px 35px;
+  border-radius: 30px;
+
+}
+
+@media (max-width: 575px) {
+  .hero-theme-btn {
+    padding: 18px 30px;
+    font-size: 14px;
   }
+}
+
+.main-button:hover .hero-theme-btn {
+  background-color: var(--header);
+  color: #fff;
 }
