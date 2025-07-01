@@ -40,7 +40,7 @@ const ServiceHero = () => {
     }, []);
 
     return (
-        <section className="hero-section hero-2 mb-0" style={{ background: "#6a47ed" }} data-background={bgImage}>
+        <section className="hero-section hero-4 mb-0" style={{ background: "#6a47ed" }} data-background={bgImage}>
             <div className="glowup-bg w-100 h-100" data-background={overlayImage}
                 style={{
                     position: "absolute",

@@ -9802,9 +9802,7 @@ input.main-search-input::placeholder {
   }
 }
 
-/* =============================== */
 /* hero section two button css */
-/* =============================== */
 
 .hero-theme-btn {
   position: relative;
@@ -9833,4 +9831,40 @@ input.main-search-input::placeholder {
 .main-button:hover .hero-theme-btn {
   background-color: var(--header);
   color: #fff;
+}
+
+/* new hero section css */
+
+.hero-4 {
+  padding: 0px;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 90px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1899px) {
+  .hero-4 {
+    margin-bottom: 0;
+    background-position: center;
+    background-image: none !important;
+    background-color: var(--theme);
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-4 {
+    padding: 100px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-4 {
+    padding: 150px 0 0;
+  }
 }
