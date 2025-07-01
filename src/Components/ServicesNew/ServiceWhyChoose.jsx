@@ -60,8 +60,11 @@ const WhyChoose = () => {
                                         <div className="col-sm-6">
                                             <ul>
                                                 {firstCol.map((item, index) => (
-                                                    <li key={`col1-${index}`}>
-                                                        <Icon /> {item}
+                                                    <li key={`col1-${index}`} className="d-flex align-items-start gap-2 mb-2">
+                                                        <span className="pt-1">
+                                                            <Icon />
+                                                        </span>
+                                                        <span>{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -69,8 +72,11 @@ const WhyChoose = () => {
                                         <div className="col-sm-6">
                                             <ul>
                                                 {secondCol.map((item, index) => (
-                                                    <li key={`col2-${index}`}>
-                                                        <Icon /> {item}
+                                                    <li key={`col2-${index}`} className="d-flex align-items-start gap-2 mb-2">
+                                                        <span className="pt-1">
+                                                            <Icon />
+                                                        </span>
+                                                        <span>{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
