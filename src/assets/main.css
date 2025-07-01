@@ -2250,7 +2250,8 @@ span {
 
 .faq-wrapper .accordion-item .accordion-header .accordion-button {
   font-weight: 600;
-  color: var(--theme);
+  /* color: var(--theme); */
+  color: #17012C;
   letter-spacing: -0.2px;
   border: 0;
   border-radius: 0;
@@ -2280,7 +2281,7 @@ span {
 }
 
 .faq-wrapper .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  content: "\f322";
+  content: "\f27e";
   font-family: "Font Awesome 6 Pro";
   background: transparent;
   font-weight: 500;

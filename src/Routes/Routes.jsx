@@ -8,6 +8,7 @@ import ContactPage from "../Pages/ContactPage";
 import ServicesPage from "../Pages/ServicesPage";
 import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
 import Home4 from "../Pages/Home4";
+import ServicesNewPage from "../Pages/ServicesNewPage";
 // import AboutPage from "../Pages/AboutPage";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
@@ -59,6 +60,7 @@ export const router = createBrowserRouter([
         path: "/service/service-details",
         element: <ServiceDetailsPage></ServiceDetailsPage>,
       },
+
       // {
       //   path: "/project",
       //   element: <CaseStudyPage></CaseStudyPage>,
@@ -88,6 +90,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home></Home>,
+      },
+      {
+        path: "/service-new",
+        element: <ServicesNewPage></ServicesNewPage>,
       },
     ],
   },
