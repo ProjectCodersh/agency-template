@@ -4305,7 +4305,7 @@ span {
 
 @media (max-width: 991px) {
   .hero-2 {
-    padding: 150px 0 0;
+    padding: 0px;
   }
 }
 
@@ -9900,6 +9900,7 @@ input.main-search-input::placeholder {
 /* new hero section css */
 
 .hero-4 {
+  padding: 150px 0 200px;
   padding: 0px;
   background-position: bottom;
   background-size: cover;
@@ -9923,13 +9924,13 @@ input.main-search-input::placeholder {
 
 @media (max-width: 991px) {
   .hero-4 {
-    padding: 100px 0 0;
+    padding: 0px;
   }
 }
 
 @media (max-width: 375px) {
   .hero-4 {
-    padding: 150px 0 0;
+    padding: 0px;
   }
 }
 

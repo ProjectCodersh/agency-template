@@ -1,0 +1,231 @@
+{
+    "ServicePage": [
+      {
+        "heroSection": {
+          "bg2": "/public/assets/img/servicescards/service-card.png",
+          "title": "Transform Your Figma Designs into Pixel Perfect Shopify Stores",
+          "content": "Got a stunning design in Figma but struggling to bring it to life on Shopify? <br /> We specialize in pixel-perfect Figma to Shopify conversions that don't just look amazing – they sell like crazy."
+        }
+      },
+      {
+        "processSection": {
+          "steps": [
+            {
+              "iconclass": "bi bi-easel",
+              "title": "Design Analysis & Planning",
+              "content": "We dive deep into your Figma files, understanding every element, interaction, and user flow you've envisioned."
+            },
+            {
+              "iconclass": "bi bi-code-slash",
+              "title": "Custom Code Development",
+              "content": "Our developers hand-code every section using clean HTML, CSS, and JavaScript – no bloated page builders that slow down your site."
+            },
+            {
+              "iconclass": "bi bi-phone",
+              "title": "Responsive Optimization",
+              "content": "Your design looks perfect on desktop, tablet, and mobile. We ensure every breakpoint is flawless."
+            },
+            {
+              "iconclass": "bi bi-cart-check",
+              "title": "Shopify Integration",
+              "content": "We seamlessly integrate all Shopify functionalities – cart, checkout, product pages, collections, and more"
+            },
+            {
+              "iconclass": "bi bi-speedometer2",
+              "title": "Speed & SEO Optimization",
+              "content": "Your store loads in under 3 seconds and is optimized for search engines from day one."
+            },
+            {
+              "iconclass": "bi bi-patch-check",
+              "title": "Quality Testing",
+              "content": "Rigorous testing across browsers and devices ensures everything works perfectly before launch."
+            }
+          ]
+        }
+      },
+      {
+        "whyChoose": {
+          "subtitle": "Why Choose Us Section",
+          "title": "The Numbers Don't Lie",
+          "content": "Get the ultimate team and learn how to grow your audience and build an online business.",
+          "img": "/assets/img/team/01.png",
+          "list1": " 150+ Successful Figma to Shopify Conversions We've perfected our process across dozens of industries and design styles.",
+          "list2": " Average 35% Increase in Conversion Rates Custom designs optimized for sales consistently outperform generic themes.",
+          "list3": "2-Week Average Delivery Time Fast turnaround without compromising on quality.",
+          "list4": "99.8% Client Satisfaction Rate Our clients love the results, and many come back for additional projects."
+        }
+      },
+      {
+        "faqSection": {
+          "faq": {
+            "faqtitle": "Technical Excellence Section",
+            "faqsubtitle": "Built Right, Built to Last"
+          },
+          "faqlist": [
+            {
+              "title": "Clean, Maintainable Code",
+              "content": "W3C validated HTML & CSS <br /> Well-commented code for future developers <br /> Follows Shopify's best practices and coding standards"
+            },
+            {
+              "title": "SEO-Optimized Structure",
+              "content": "Semantic HTML markup for better search rankings <br /> Optimized meta tags and schema markup <br /> Fast loading speeds that Google loves"
+            },
+            {
+              "title": "Cross-Browser Compatibility",
+              "content": "Works perfectly on Chrome, Firefox, Safari, and Edge <br />Tested on both Windows and Mac systems <br /> Mobile browser optimization included"
+            },
+            {
+              "title": "Future-Proof Development",
+              "content": "Compatible with Shopify's latest features and updates <br /> Scalable architecture that grows with your business <br /> Easy to add new sections and functionality later"
+            }
+          ]
+        }
+      },
+      {
+        "KeyFeatures": {
+          "chooseHeading": {
+            "subtitle": "Key Features & Benefits Section",
+            "title": "Use SEO to Drive Growth <br/> at Your Business",
+            "content": "The a long established fact that a reader will be <br/> distracted the readable content of page when <br/> looking at layout the point.",
+            "img": "/assets/img/feature-img.png"
+          },
+          "chooseContent": [
+            {
+              "iconclass": "bi bi-lightning-charge-fill",
+              "title": "Faster Load Times",
+              "content": "Most sites see 40–70% speed improvement after our optimization."
+            },
+            {
+              "iconclass": "bi bi-graph-up-arrow",
+              "title": "Higher SEO Rankings",
+              "content": "Speed is a known ranking factor—better speed = better visibility."
+            },
+            {
+              "iconclass": "bi bi-arrow-down-left-circle",
+              "title": "Reduced Bounce Rate",
+              "content": "Users stay longer and convert better when your site loads fast."
+            },
+            {
+              "iconclass": "bi bi-phone",
+              "title": "Better Mobile Experience",
+              "content": "Improved performance across all devices."
+            },
+            {
+              "iconclass": "bi bi-palette-fill",
+              "title": "No Design Compromise",
+              "content": "Your UI and branding stay untouched—we only optimize under the hood."
+            }
+          ]
+        }
+      },
+      {
+        "realworldApp": {
+          "heading": {
+            "title": "Real-World Applications Section",
+            "subtitle": "Sites That Need This Service",
+            "img": "/assets/img/team/01.png"
+          },
+          "appContent": [
+            {
+              "apptitle": "eCommerce Stores with Large Catalogs",
+              "appContent": " We optimized a Shopify Plus store with 6,000+ products and reduced load time from 9s to under 3s."
+            },
+            {
+              "apptitle": "Sluggish WordPress Sites",
+              "appContent": "Replaced bloated page builders and trimmed plugins for a 50% performance boost."
+            },
+            {
+              "apptitle": "Agencies with Client Sites",
+              "appContent": "We’ve helped agencies improve client site speed scores before launch."
+            }
+          ]
+        }
+      },
+      {
+        "OurServicesCard": [
+          {
+            "id": "1",
+            "headertag": "For Your Shopify & Shopify Plus Secure Store",
+            "img": "/assets/img/OurServices/shopify.png",
+            "servicetitle": "Hire Shopify Dev Team",
+            "servicedescription": "Build your brand with a professional email address that matches your domain - like you@yourdomain.com.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "2",
+            "headertag": "For Your Shopify & Shopify Plus Secure Store",
+            "img": "/assets/img/OurServices/wordpress.png",
+            "servicetitle": "Hire Wordpress Dev Team",
+            "servicedescription": "Host anything from a simple portfolio to a high-traffic website. Get fast and secure hosting that grows with your needs.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "3",
+            "headertag": "For Your Shopify & Shopify Plus Secure Store",
+            "img": "/assets/img/OurServices/elementor.png",
+            "servicetitle": "stabilize site With elementor",
+            "servicedescription": "Host anything from a simple portfolio to a high-traffic website. Get fast and secure hosting that grows with your needs.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "4",
+            "headertag": "For Your Shopify & Shopify Plus Secure Store",
+            "img": "/assets/img/OurServices/unlimitedwp.png",
+            "servicetitle": "Hire Team For Unlimited Wp Work",
+            "servicedescription": "Host anything from a simple portfolio to a high-traffic website. Get fast and secure hosting that grows with your needs.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "5",
+            "headertag": "For Your Shopify & Shopify Plus Secure Store",
+            "img": "/assets/img/OurServices/va.png",
+            "servicetitle": "Hire Dedicated VA",
+            "servicedescription": "Host anything from a simple portfolio to a high-traffic website. Get fast and secure hosting that grows with your needs.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "6",
+            "headertag": "Save 87%",
+            "img": "/assets/img/OurServices/hacker.png",
+            "servicetitle": "Restore Hacked Website",
+            "servicedescription": "Build your brand with a professional email address that matches your domain - like you@yourdomain.com.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "7",
+            "headertag": "For Your Shopify & Shopify Plus Secure Store",
+            "img": "/assets/img/OurServices/speed.png",
+            "servicetitle": "Optimize speed Of your Site",
+            "servicedescription": "Host anything from a simple portfolio to a high-traffic website. Get fast and secure hosting that grows with your needs.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "8",
+            "headertag": "Save 87%",
+            "img": "/assets/img/OurServices/migration.png",
+            "servicetitle": "Wordpress To Shopify Migration",
+            "servicedescription": "Build your brand with a proffessional email address that matches your domain - like you@yourdomain.com.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          },
+          {
+            "id": "9",
+            "headertag": "Save 87%",
+            "img": "/assets/img/OurServices/malware.png",
+            "servicetitle": "Remove Malware From The WP Site",
+            "servicedescription": "Build your brand with a professional email address that matches your domain - like you@yourdomain.com.",
+            "servicebtn": "Explore offers",
+            "link": "#"
+          }
+        ]
+      }
+    ]
+  }
+  

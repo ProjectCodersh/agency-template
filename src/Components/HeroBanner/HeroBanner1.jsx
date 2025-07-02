@@ -115,7 +115,8 @@ const HeroBanner1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-sm-1 gap-md-3 gap-lg-4">
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 gap-sm-1 gap-md-4 gap-lg-5 gap-xl-5
+4">
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>

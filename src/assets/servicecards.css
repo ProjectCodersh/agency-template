@@ -1,0 +1,104 @@
+.svc-card {
+    width: 100% !important;
+    max-width: 430px !important;
+    background: white;
+    border-radius: 20px !important;
+    padding: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    overflow: visible !important;
+    position: relative;
+    border: 1px solid #daceff !important;
+}
+
+.svc-header-tag {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6a47ed;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.svc-img {
+    padding: 80px 40px 0 !important;
+    background-color: #f1ecff !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.svc-img img {
+    width: 100% !important;
+}
+
+.svc-content {
+    padding: 23px !important;
+}
+
+.svc-title {
+    color: #1d1e20 !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+    line-height: 1.3 !important;
+}
+
+.svc-description {
+    color: #6b7081 !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    text-align: start !important;
+    line-height: 1.6 !important;
+    margin-bottom: 25px !important;
+}
+
+.svc-btn {
+    z-index: 2;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--theme);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 19.5px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.svc-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.svc-btn:hover {
+    /* transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3); */
+    background: #17012c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .svc-img {
+        padding: 60px 20px 0 !important;
+    }
+
+    .svc-card {
+        margin: 5px !important;
+    }
+
+    .svc-title {
+        font-size: 20px;
+    }
+}
