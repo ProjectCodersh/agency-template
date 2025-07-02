@@ -123,12 +123,12 @@ const HeroBanner4 = () => {
                         </div>
 
                     </div>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1">
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-sm-1 gap-md-3 gap-lg-4">
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/#"> <span className="hero-theme-btn"> EXPLORE MORE </span></Link>
+                            <Link to="/#"> <span className="hero-theme-btn-second"> EXPLORE MORE </span></Link>
                         </div>
                     </div>
                 </div>

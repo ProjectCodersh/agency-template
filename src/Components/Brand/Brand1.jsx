@@ -5,13 +5,14 @@ const Brand1 = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 5000,                // Very high speed
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 0,           // No delay between transitions
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1399,
@@ -51,7 +52,7 @@ const Brand1 = () => {
                 {brandContent.map((item, i) => (
                   <div key={i} className="swiper-slide">
                     <div className="brand-img center brand-img-slider">
-                      <img src={item.img} alt="img" height={60} />
+                      <img src={item.img} alt="img" className="brand-trust-img" />
                     </div>
                   </div>
                 ))}

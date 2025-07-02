@@ -10,7 +10,7 @@ const ServiceFaq = () => {
 
     const fetchingData = async () => {
         try {
-            const response = await axios.get("/assets/data/NewservicesData.json");
+            const response = await axios.get("/assets/data/FigmaToShopify.json");
             const serviceData = response.data?.ServicePageData;
             const faqSection = serviceData.find(section => section.faqSection);
 
@@ -41,7 +41,7 @@ const ServiceFaq = () => {
             <div className="faq-shape"></div>
             <div className="container">
 
-                <div className="section-title-area">
+                <div className="section-title-area text-center justify-content-center mb-4 mb-sm-4 mb-md-0 mb-lg-4">
                     <div className="section-title">
                         <div className="sub-title wow fadeInUp">
                             <span>{faqData.faq?.faqtitle}</span>
@@ -49,7 +49,7 @@ const ServiceFaq = () => {
                         <h2 className="wow fadeInUp" data-wow-delay=".3s" dangerouslySetInnerHTML={{ __html: faqData.faq?.faqsubtitle }} />
                     </div>
                 </div>
-                <div className="faq-wrapper">
+                <div className="faq-wrapper newservice-faq-wrapper">
                     <div className="row g-4 justify-content-between">
 
 

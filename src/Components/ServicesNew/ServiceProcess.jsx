@@ -6,7 +6,7 @@ const Process = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("/assets/data/NewservicesData.json");
+            const response = await axios.get("/assets/data/FigmaToShopify.json");
             const processSection = response.data.ServicePageData[1]?.processSection;
             setProcessData(processSection);
         } catch (error) {
@@ -57,7 +57,7 @@ const Process = () => {
                             >
                                 <div className="service-box-items text-center flex-column">
                                     <div className="d-flex justify-content-center justify-content-md-start service-box-items-icon">
-                                        <div className="icon" style={{ fontSize: "40px" }}>
+                                        <div className="icon" style={{ fontSize: "40px", color: "#6a47ed" }} >
                                             <i className={item.iconclass}></i>
                                         </div>
                                     </div>

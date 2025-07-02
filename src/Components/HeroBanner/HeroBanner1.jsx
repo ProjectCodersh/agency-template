@@ -11,13 +11,14 @@ const HeroBanner1 = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 5000,                // Very high speed // speed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 0,           // No delay between transitions  // autoplaySpeed: 4000,
+        cssEase: 'linear',          //css effect
         responsive: [
             {
                 breakpoint: 1399,
@@ -114,12 +115,12 @@ const HeroBanner1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1">
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-sm-1 gap-md-3 gap-lg-4">
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/service-new"> <span className="hero-theme-btn"> EXPLORE MORE </span></Link>
+                            <Link to="/service-new"> <span className="hero-theme-btn-second"> EXPLORE MORE </span></Link>
                         </div>
                     </div>
 
@@ -133,7 +134,7 @@ const HeroBanner1 = () => {
                             {brandContent.map((item, i) => (
                                 <div key={i} className="swiper-slide">
                                     <div className="brand-img center ">
-                                        <img src={item.img} alt="img" height={60} />
+                                        <img src={item.img} alt="img" className="brand-trust-img" />
                                     </div>
                                 </div>
                             ))}

@@ -18,7 +18,7 @@ const ServiceHero = () => {
 
     const fetchingContent = async () => {
         try {
-            const response = await axios.get("/assets/data/NewservicesData.json");
+            const response = await axios.get("/assets/data/FigmaToShopify.json");
 
             const hero = response?.data?.ServicePageData?.[0]?.heroSection;
 
@@ -80,15 +80,18 @@ const ServiceHero = () => {
                         </div>
                     </div>
 
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1">
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1 gap-md-3 gap-lg-4">
                         {heroContent.buttons?.map((btn, idx) => (
                             <div key={idx} className="main-button wow fadeInUp" data-wow-delay=".3s">
                                 <Link to={btn.link}>
-                                    <span className="hero-theme-btn">{btn.label}</span>
+                                    <span className={idx === 1 ? "hero-theme-btn-second" : "hero-theme-btn"}>
+                                        {btn.label}
+                                    </span>
                                 </Link>
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
         </section>

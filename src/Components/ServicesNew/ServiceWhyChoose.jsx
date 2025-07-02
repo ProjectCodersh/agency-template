@@ -6,7 +6,7 @@ const WhyChoose = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("/assets/data/NewservicesData.json");
+            const response = await axios.get("/assets/data/FigmaToShopify.json");
             setWhyChooseData(response.data.ServicePageData[2]?.whyChoose);
         } catch (error) {
             console.error("Error fetching Why Choose Us data:", error);

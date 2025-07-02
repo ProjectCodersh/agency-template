@@ -9,7 +9,7 @@ const ServiceKeyFeatures = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("/assets/data/NewservicesData.json");
+            const response = await axios.get("/assets/data/FigmaToShopify.json");
             const serviceData = response.data.ServicePageData;
 
             const keyFeaturesSection = serviceData.find(section => section.KeyFeatures);
@@ -64,7 +64,7 @@ const ServiceKeyFeatures = () => {
                             className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
                             data-wow-delay=".2s"
                         >
-                            <div className="feature-box-items">
+                            <div className="feature-box-items card-hover-effect">
                                 <div className="icon">
                                     <i className={item.iconclass}></i>
                                 </div>
