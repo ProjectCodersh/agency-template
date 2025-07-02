@@ -6,7 +6,7 @@ const Process = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("/assets/data/FigmaToShopify.json");
+            const response = await axios.get("/assets/data/WebsiteRedesign.json");
             const processSection = response.data.ServicePageData[1]?.processSection;
             setProcessData(processSection);
         } catch (error) {

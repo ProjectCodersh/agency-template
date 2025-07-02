@@ -18,7 +18,7 @@ const ServiceHero = () => {
 
     const fetchingContent = async () => {
         try {
-            const response = await axios.get("/assets/data/FigmaToShopify.json");
+            const response = await axios.get("/assets/data/WebsiteRedesign.json");
 
             const hero = response?.data?.ServicePageData?.[0]?.heroSection;
 

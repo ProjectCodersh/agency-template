@@ -9,7 +9,7 @@ const ServiceKeyFeatures = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("/assets/data/FigmaToShopify.json");
+            const response = await axios.get("/assets/data/WebsiteRedesign.json");
             const serviceData = response.data.ServicePageData;
 
             const keyFeaturesSection = serviceData.find(section => section.KeyFeatures);

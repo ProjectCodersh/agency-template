@@ -5,6 +5,7 @@ import ServiceWhyChoose from "../Components/ServicesNew/ServiceWhyChoose";
 import ServiceKeyFeatures from "../Components/ServicesNew/ServiceKeyFetures";
 import ServiceRealworldApp from "../Components/ServicesNew/ServiceRealWorld";
 import ServiceTechExcellence from "../Components/ServicesNew/ServiceTechExcellence";
+import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimonialTwo";
 
 function ServicesNewPage() {
     return (
@@ -15,6 +16,8 @@ function ServicesNewPage() {
             <ServiceKeyFeatures />
             <ServiceRealworldApp />
             <ServiceTechExcellence />
+            <VideoTestimonialSlickSecond></VideoTestimonialSlickSecond>
+
         </>
     )
 }

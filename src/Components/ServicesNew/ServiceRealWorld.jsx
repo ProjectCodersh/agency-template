@@ -6,7 +6,7 @@ const RealworldApp = () => {
 
     const fetchingData = async () => {
         try {
-            const response = await axios.get("/assets/data/FigmaToShopify.json");
+            const response = await axios.get("/assets/data/WebsiteRedesign.json");
             const serviceData = response.data?.ServicePageData;
 
             const realworldAppSection = serviceData.find(

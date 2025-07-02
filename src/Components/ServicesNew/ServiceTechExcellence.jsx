@@ -10,7 +10,7 @@ const ServiceFaq = () => {
 
     const fetchingData = async () => {
         try {
-            const response = await axios.get("/assets/data/FigmaToShopify.json");
+            const response = await axios.get("/assets/data/WebsiteRedesign.json");
             const serviceData = response.data?.ServicePageData;
             const faqSection = serviceData.find(section => section.faqSection);
 
