@@ -187,6 +187,53 @@ export default function Nav({ setMobileToggle }) {
           </ul>
         </DropDown>
       </li>
+      <li className="menu-item-has-children">
+        <Link >Case Studies</Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link to="/case-studies/reinventu" onClick={() => setMobileToggle(false)}>
+                ReinventU
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/chez-omar" onClick={() => setMobileToggle(false)}>
+                Chez Omar
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/madame-f" onClick={() => setMobileToggle(false)}>
+                Madame F
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/liberation-cocktails" onClick={() => setMobileToggle(false)}>
+                Libration Coctail
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/avn-hunks" onClick={() => setMobileToggle(false)}>
+                Van Hunks
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/pa-mi-gente" onClick={() => setMobileToggle(false)}>
+                Pa Mi Gente
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/stellar-credit" onClick={() => setMobileToggle(false)}>
+                Stellar Credit
+              </Link>
+            </li>
+            <li>
+              <Link to="/case-studies/bergbate" onClick={() => setMobileToggle(false)}>
+                Bergbat
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+      </li>
       <li>
         <Link to="/contact" onClick={() => setMobileToggle(false)}>
           Contact

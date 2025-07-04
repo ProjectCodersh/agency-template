@@ -3,14 +3,15 @@ import Home from "../Pages/Home";
 import Layout2 from "../Layout/Layout2";
 import Main from "../Layout/Main";
 import ContactPage from "../Pages/ContactPage";
-import ServicesPage from "../Pages/ServicesPage";
-import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
 import Home4 from "../Pages/Home4";
 import ServicesNewPage from "../Pages/ServicesNewPage";
 import ServicesNewCards from "../Pages/ServicesNewCardsPage";
-// import Solutions from "../Pages/Solutions";
-import Casestudies from "../Pages/Casestudies";
 import SolutionsPage from "../Pages/SolutionsPage";
+import CaseStudyPageNew from "../Pages/CaseStudyPageNew";
+// import Casestudies from "../Pages/CaseStudyPageNew";
+// import Solutions from "../Pages/Solutions";
+// import ServicesPage from "../Pages/ServicesPage";
+// import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
 // import AboutPage from "../Pages/AboutPage";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
@@ -49,34 +50,15 @@ export const router = createBrowserRouter([
       //   path: "/faq",
       //   element: <FaqPage></FaqPage>,
       // },
-      {
-        path: "/contact",
-        element: <ContactPage></ContactPage>,
-      },
-      {
-        path: "/service",
-        element: <ServicesPage></ServicesPage>,
-      },
-      {
-        path: "/service/service-details",
-        element: <ServiceDetailsPage></ServiceDetailsPage>,
-      },
-      {
-        path: "/services-cards",
-        element: <ServicesNewCards></ServicesNewCards>,
-      },
+
       // {
-      //   path: "/credit-repair",
-      //   element: <Solutions></Solutions>,
+      //   path: "/service",
+      //   element: <ServicesPage></ServicesPage>,
       // },
-      {
-        path: "/case-studies",
-        element: <Casestudies></Casestudies>,
-      },
-      {
-        path: "/solutions/:slug",
-        element: <SolutionsPage></SolutionsPage>,
-      },
+      // {
+      //   path: "/service/service-details",
+      //   element: <ServiceDetailsPage></ServiceDetailsPage>,
+      // },
       // {
       //   path: "/project",
       //   element: <CaseStudyPage></CaseStudyPage>,
@@ -97,6 +79,24 @@ export const router = createBrowserRouter([
       //   path: "/blog/blog-details",
       //   element: <BlogDetailsPage></BlogDetailsPage>,
       // },
+      {
+        path: "/contact",
+        element: <ContactPage></ContactPage>,
+      },
+      {
+        path: "/services-cards",
+        element: <ServicesNewCards></ServicesNewCards>,
+      },
+
+      {
+        path: "/case-studies/:slug",
+        element: <CaseStudyPageNew></CaseStudyPageNew>,
+      },
+      {
+        path: "/solutions/:slug",
+        element: <SolutionsPage></SolutionsPage>,
+      },
+
     ],
   },
   {
