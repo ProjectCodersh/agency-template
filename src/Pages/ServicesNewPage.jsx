@@ -21,7 +21,7 @@ export default function ServicePage() {
         const file = serviceSlugMap[slug];
         if (!file) return;
 
-        fetch(`/assets/data/${file}`)
+        fetch(`/assets/data/services/${file}`)
             .then((res) => res.json())
             .then((json) => setData(json.ServicePageData))
             .catch((err) => console.error("Failed to load service data", err));

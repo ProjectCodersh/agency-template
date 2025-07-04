@@ -1,4 +1,4 @@
-// import DropDown from './DropDown';
+import DropDown from './DropDown';
 import { Link } from 'react-router-dom';
 
 export default function Nav({ setMobileToggle }) {
@@ -131,7 +131,9 @@ export default function Nav({ setMobileToggle }) {
           </ul>
         </DropDown>
       </li> */}
-      <li>
+
+
+      {/* <li>
         <Link to="/" onClick={() => setMobileToggle(false)}>
           Unlimited Wp
         </Link>
@@ -140,6 +142,50 @@ export default function Nav({ setMobileToggle }) {
         <Link to="/home2" onClick={() => setMobileToggle(false)}>
           Unlimited Shopify
         </Link>
+      </li> */}
+      <li className="menu-item-has-children">
+        <Link to="/">Home</Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link to="/" onClick={() => setMobileToggle(false)}>
+                Unlimited Wp
+              </Link>
+            </li>
+            <li>
+              <Link to="/home2" onClick={() => setMobileToggle(false)}>
+                Unlimited Shopify
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+      </li>
+      <li className="menu-item-has-children">
+        <Link >Solutions</Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link to="/solutions/business-directory" onClick={() => setMobileToggle(false)}>
+                Business Directory
+              </Link>
+            </li>
+            <li>
+              <Link to="/solutions/it-digital-agency" onClick={() => setMobileToggle(false)}>
+                It Digital Agency
+              </Link>
+            </li>
+            <li>
+              <Link to="/solutions/credit-repair" onClick={() => setMobileToggle(false)}>
+                Credit Repair
+              </Link>
+            </li>
+            <li>
+              <Link to="/solutions/wine-store" onClick={() => setMobileToggle(false)}>
+                Wine Store
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
       </li>
       <li>
         <Link to="/contact" onClick={() => setMobileToggle(false)}>

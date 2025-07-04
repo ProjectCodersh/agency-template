@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 // import parse from "html-react-parser";
 import overlayImage from "/assets/img/hero/bg-shape.png";
-import bgImage from "/assets/img/hero/hero-bg-2.png"; 
+import bgImage from "/assets/img/hero/hero-bg-2.png";
 
-const SolutionHero= () => {
+const SolutionHero = () => {
     useEffect(() => {
         loadBackgroudImages();
     }, []);

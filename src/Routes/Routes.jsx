@@ -8,8 +8,9 @@ import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
 import Home4 from "../Pages/Home4";
 import ServicesNewPage from "../Pages/ServicesNewPage";
 import ServicesNewCards from "../Pages/ServicesNewCardsPage";
-import Solutions from "../Pages/Solutions";
+// import Solutions from "../Pages/Solutions";
 import Casestudies from "../Pages/Casestudies";
+import SolutionsPage from "../Pages/SolutionsPage";
 // import AboutPage from "../Pages/AboutPage";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
@@ -64,13 +65,17 @@ export const router = createBrowserRouter([
         path: "/services-cards",
         element: <ServicesNewCards></ServicesNewCards>,
       },
-      {
-        path: "/credit-repair",
-        element: <Solutions></Solutions>,
-      },
+      // {
+      //   path: "/credit-repair",
+      //   element: <Solutions></Solutions>,
+      // },
       {
         path: "/case-studies",
         element: <Casestudies></Casestudies>,
+      },
+      {
+        path: "/solutions/:slug",
+        element: <SolutionsPage></SolutionsPage>,
       },
       // {
       //   path: "/project",

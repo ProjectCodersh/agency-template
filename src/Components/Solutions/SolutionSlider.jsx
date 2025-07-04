@@ -32,7 +32,7 @@ const SolutionSlider = ({ data = [] }) => {
 
   return (
     <section className="section-padding">
-      <div className="container-fluid px-5">
+      <div className="container-fluid px-3 px-sm-3 px-md-4 px-lg-4">
         <Slider {...sliderSettings} className="custom-slider">
           {data.map((image, index) => (
             <div className="slide-item" key={index}>

@@ -8,7 +8,7 @@ const ServicesCards = memo(function ServicesCards() {
     useEffect(() => {
         const fetchingData = async () => {
             try {
-                const response = await axios.get("/assets/data/ServiceCardData.json");
+                const response = await axios.get("/assets/data/services/ServiceCardData.json");
                 const servicesData = response.data.ServicePage.find(
                     (section) => section.OurServicesCard
                 );
