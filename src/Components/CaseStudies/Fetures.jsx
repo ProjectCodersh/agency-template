@@ -1,45 +1,37 @@
-// ServiceKeyFetures.jsx
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import parse from "html-react-parser";
 
-const ServiceKeyFeatures = ({ data }) => {
+const Features = ({ data }) => {
   useEffect(() => {
     loadBackgroudImages();
   }, []);
 
   if (!data) return null;
 
-  const { chooseHeading, chooseContent } = data;
+  const { subtitle, title, content = [] } = data;
 
   return (
     <section className="feature-secton section-padding fix">
-      <div className="bg-shape">
-        {/* <img src="/assets/img/bg-shape-2.png" alt="img" /> */}
-      </div>
+      <div className="bg-shape"></div>
       <div className="container">
         <div className="section-title-area">
           <div className="section-title">
-            {chooseHeading?.subtitle && (
+            {subtitle && (
               <div className="sub-title wow fadeInUp">
-                <span>{chooseHeading.subtitle}</span>
+                <span>{subtitle}</span>
               </div>
             )}
-            {chooseHeading?.title && (
+            {title && (
               <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                {parse(chooseHeading.title)}
+                {parse(title)}
               </h2>
             )}
           </div>
-          {chooseHeading?.content && (
-            <p className="wow fadeInUp" data-wow-delay=".5s">
-              {parse(chooseHeading.content)}
-            </p>
-          )}
         </div>
 
         <div className="row justify-content-center">
-          {chooseContent?.map((item, i) => (
+          {content.map((item, i) => (
             <div
               key={i}
               className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
@@ -62,4 +54,4 @@ const ServiceKeyFeatures = ({ data }) => {
   );
 };
 
-export default ServiceKeyFeatures;
+export default Features;

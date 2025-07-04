@@ -1,6 +1,4 @@
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home";
 import Layout2 from "../Layout/Layout2";
 import Main from "../Layout/Main";
@@ -10,6 +8,8 @@ import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
 import Home4 from "../Pages/Home4";
 import ServicesNewPage from "../Pages/ServicesNewPage";
 import ServicesNewCards from "../Pages/ServicesNewCardsPage";
+import Solutions from "../Pages/Solutions";
+import Casestudies from "../Pages/Casestudies";
 // import AboutPage from "../Pages/AboutPage";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
@@ -23,7 +23,6 @@ import ServicesNewCards from "../Pages/ServicesNewCardsPage";
 // import BlogPage from "../Pages/BlogPage";
 // import BlogDetailsPage from "../Pages/BlogDetailsPage";
 
-
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -32,23 +31,23 @@ export const router = createBrowserRouter([
       // {
       //     path: "/about",
       //     element: <AboutPage></AboutPage>,
-      // },  
+      // },
       // {
       //   path: "/team",
       //   element: <TeamPage></TeamPage>,
-      // },   
+      // },
       // {
       //   path: "/team/team-details",
       //   element: <TeamDetailsPage></TeamDetailsPage>,
-      // },   
+      // },
       // {
       //   path: "/pricing",
       //   element: <PricingPage></PricingPage>,
-      // }, 
+      // },
       // {
       //   path: "/faq",
       //   element: <FaqPage></FaqPage>,
-      // },  
+      // },
       {
         path: "/contact",
         element: <ContactPage></ContactPage>,
@@ -64,32 +63,39 @@ export const router = createBrowserRouter([
       {
         path: "/services-cards",
         element: <ServicesNewCards></ServicesNewCards>,
-      }
-
+      },
+      {
+        path: "/credit-repair",
+        element: <Solutions></Solutions>,
+      },
+      {
+        path: "/case-studies",
+        element: <Casestudies></Casestudies>,
+      },
       // {
       //   path: "/project",
       //   element: <CaseStudyPage></CaseStudyPage>,
-      // }, 
+      // },
       // {
       //   path: "/project/project-details",
       //   element: <CaseStudyDetailsPage></CaseStudyDetailsPage>,
-      // },   
+      // },
       // {
       //   path: "/blog-sidebar",
       //   element: <BlogRightSidebar></BlogRightSidebar>,
-      // },      
+      // },
       // {
       //   path: "/blog",
       //   element: <BlogPage></BlogPage>,
-      // }, 
+      // },
       // {
       //   path: "/blog/blog-details",
       //   element: <BlogDetailsPage></BlogDetailsPage>,
-      // },                                                                             
+      // },
     ],
   },
   {
-    path: '/',
+    path: "/",
     element: <Main></Main>,
     children: [
       {
@@ -97,14 +103,13 @@ export const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/service-new",
+        path: "/service-new/:slug",
         element: <ServicesNewPage></ServicesNewPage>,
       },
-
     ],
   },
   {
-    path: 'home2',
+    path: "home2",
     element: <Main></Main>,
     children: [
       {
@@ -120,8 +125,7 @@ export const router = createBrowserRouter([
   //     {
   //       index: true,
   //       element: <Home3></Home3>,
-  //     },                           
+  //     },
   //   ],
-  // },    
-
+  // },
 ]);

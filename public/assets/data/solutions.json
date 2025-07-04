@@ -1,0 +1,11 @@
+{
+  "sliderData": [
+    { "src": "/assets/img/solution/slider1.png", "alt": "Website Preview 1" },
+    { "src": "/assets/img/solution/slider2.png", "alt": "Website Preview 2" },
+    { "src": "/assets/img/solution/slider3.png", "alt": "Website Preview 3" },
+    { "src": "/assets/img/solution/slider4.png", "alt": "Website Preview 4" },
+    { "src": "/assets/img/solution/slider5.png", "alt": "Website Preview 5" },
+    { "src": "/assets/img/solution/slider6.png", "alt": "Website Preview 6" },
+    { "src": "/assets/img/solution/slider7.png", "alt": "Website Preview 7" }
+  ]
+}

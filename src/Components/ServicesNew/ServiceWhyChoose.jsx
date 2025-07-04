@@ -1,25 +1,8 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+// ServiceWhyChoose.jsx
+const WhyChoose = ({ data }) => {
+    if (!data) return null;
 
-const WhyChoose = () => {
-    const [whyChooseData, setWhyChooseData] = useState(null);
-
-    const fetchData = async () => {
-        try {
-            const response = await axios.get("/assets/data/WebsiteRedesign.json");
-            setWhyChooseData(response.data.ServicePageData[2]?.whyChoose);
-        } catch (error) {
-            console.error("Error fetching Why Choose Us data:", error);
-        }
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    if (!whyChooseData) return null;
-
-    const listItems = whyChooseData.listItems || [];
+    const listItems = data.listItems || [];
     const midpoint = Math.ceil(listItems.length / 2);
     const firstCol = listItems.slice(0, midpoint);
     const secondCol = listItems.slice(midpoint);
@@ -32,7 +15,7 @@ const WhyChoose = () => {
                         <div className="col-lg-6">
                             <div className="team-image">
                                 <img
-                                    src={whyChooseData.img}
+                                    src={data.img}
                                     alt="Why Choose Us"
                                     className="wow img-custom-anim-left"
                                     data-wow-duration="1.5s"
@@ -43,18 +26,21 @@ const WhyChoose = () => {
                         <div className="col-lg-6">
                             <div className="team-content">
                                 <div className="section-title" id="section-title">
-                                    <div className="sub-title wow fadeInUp" id="sub-title" style={{ backgroundColor: "#384bff1a" }}>
-                                        <span>{whyChooseData.subtitle}</span>
+                                    <div
+                                        className="sub-title wow fadeInUp"
+                                        id="sub-title"
+                                        style={{ backgroundColor: "#384bff1a" }}
+                                    >
+                                        <span>{data.subtitle}</span>
                                     </div>
                                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                                        {whyChooseData.title}
+                                        {data.title}
                                     </h2>
                                 </div>
                                 <p className="wow fadeInUp" data-wow-delay=".3s">
-                                    {whyChooseData.content}
+                                    {data.content}
                                 </p>
 
-                                {/* Two-column list */}
                                 <div className="list-items wow fadeInUp" data-wow-delay=".3s">
                                     <div className="row">
                                         <div className="col-sm-6">
@@ -93,7 +79,7 @@ const WhyChoose = () => {
     );
 };
 
-// Extracted icon for reuse
+// Reusable SVG Icon
 const Icon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"

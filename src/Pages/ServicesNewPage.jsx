@@ -1,51 +1,43 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 
-import NewServiceHero from "../Components/ServicesNew/ServiceHero";
-import ServiceProcess from "../Components/ServicesNew/ServiceProcess";
-import ServiceWhyChoose from "../Components/ServicesNew/ServiceWhyChoose";
-import ServiceKeyFeatures from "../Components/ServicesNew/ServiceKeyFetures";
-import ServiceRealworldApp from "../Components/ServicesNew/ServiceRealWorld";
-import ServiceTechExcellence from "../Components/ServicesNew/ServiceTechExcellence";
-import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimonialTwo";
+// src/pages/ServicePage.jsx
+import { useParams } from "react-router-dom";
+import { useEffect, useState, Suspense } from "react";
+import { serviceSlugMap } from "../Components/ServicesNew/ServicesIndex";
+import React from "react";
 
-function ServicesNewPage({ serviceDataFile = "WebsiteRedesign.json" }) {
-    const [serviceData, setServiceData] = useState(null);
+const ServiceHero = React.lazy(() => import("../Components/ServicesNew/ServiceHero"));
+const ServiceProcess = React.lazy(() => import("../Components/ServicesNew/ServiceProcess"));
+const ServiceWhyChoose = React.lazy(() => import("../Components/ServicesNew/ServiceWhyChoose"));
+const ServiceKeyFeatures = React.lazy(() => import("../Components/ServicesNew/ServiceKeyFetures"));
+const ServiceRealWorld = React.lazy(() => import("../Components/ServicesNew/ServiceRealWorld"));
+const ServiceTechExcellence = React.lazy(() => import("../Components/ServicesNew/ServiceTechExcellence"));
+const VideoTestimonialSlickSecond = React.lazy(() => import("../Components/Testimonial/VideoTestimonialTwo"));
+
+export default function ServicePage() {
+    const { slug } = useParams();
+    const [data, setData] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get(`/assets/data/${serviceDataFile}`);
-                setServiceData(response.data.ServicePageData);
-            } catch (error) {
-                console.error("Error fetching service data:", error);
-            }
-        };
+        const file = serviceSlugMap[slug];
+        if (!file) return;
 
-        fetchData();
-    }, [serviceDataFile]);
+        fetch(`/assets/data/${file}`)
+            .then((res) => res.json())
+            .then((json) => setData(json.ServicePageData))
+            .catch((err) => console.error("Failed to load service data", err));
+    }, [slug]);
 
-    if (!serviceData) return <div>Loading...</div>;
-
-    // Destructure each section from serviceData array
-    const heroSection = serviceData[0]?.heroSection;
-    const processSection = serviceData[1]?.processSection;
-    const whyChoose = serviceData[2]?.whyChoose;
-    const keyFeatures = serviceData[3]?.KeyFeatures;
-    const realworldApp = serviceData[4]?.realworldApp;
-    const faqSection = serviceData[5]?.faqSection;
+    if (!data) return <p>Loading...</p>;
 
     return (
-        <>
-            <NewServiceHero data={heroSection} />
-            <ServiceProcess data={processSection} />
-            <ServiceWhyChoose data={whyChoose} />
-            <ServiceKeyFeatures data={keyFeatures} />
-            <ServiceRealworldApp data={realworldApp} />
-            <ServiceTechExcellence data={faqSection} />
-            <VideoTestimonialSlickSecond />
-        </>
+        <Suspense fallback={<div>Loading sections...</div>}>
+            <ServiceHero data={data[0]?.heroSection} />
+            <ServiceProcess data={data[1]?.processSection} />
+            <ServiceWhyChoose data={data[2]?.whyChoose} />
+            <ServiceKeyFeatures data={data.find((d) => d.KeyFeatures)?.KeyFeatures} />
+            <ServiceRealWorld data={data.find((d) => d.realworldApp)?.realworldApp} />
+            <ServiceTechExcellence data={data.find((d) => d.faqSection)?.faqSection} />
+            <VideoTestimonialSlickSecond></VideoTestimonialSlickSecond>
+        </Suspense>
     );
 }
-
-export default ServicesNewPage;

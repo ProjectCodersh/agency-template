@@ -1,8 +1,9 @@
-// import React from 'react'
-import ServicesCards from '../Components/ServicesNewCards/ServicesCards'
-import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimonialTwo'
-import BreadCumb from '../Components/Common/BreadCumb'
-import "../assets/servicecards.css"
+import { lazy, Suspense } from 'react';
+import ServicesCards from '../Components/ServicesNewCards/ServicesCards';
+import BreadCumb from '../Components/Common/BreadCumb';
+import "../assets/servicecards.css";
+
+const VideoTestimonialSlickSecond = lazy(() => import('../Components/Testimonial/VideoTestimonialTwo'));
 
 function ServicesNewCardsPage() {
     return (
@@ -10,11 +11,13 @@ function ServicesNewCardsPage() {
             <BreadCumb
                 bgimg="/assets/img/breadcrumb.jpg"
                 Title="Services"
-            ></BreadCumb>
-            <ServicesCards></ServicesCards>
-            <VideoTestimonialSlickSecond></VideoTestimonialSlickSecond>
+            />
+            <ServicesCards />
+            <Suspense fallback={<div>Loading testimonials...</div>}>
+                <VideoTestimonialSlickSecond />
+            </Suspense>
         </div>
-    )
+    );
 }
 
-export default ServicesNewCardsPage
+export default ServicesNewCardsPage;

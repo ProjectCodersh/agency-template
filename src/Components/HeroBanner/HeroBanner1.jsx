@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Slider from "react-slick";
+import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 const HeroBanner1 = () => {
     useEffect(() => {
@@ -51,7 +52,8 @@ const HeroBanner1 = () => {
         bg: "/assets/img/hero/hero-bg-2.png",
         bg2: "/assets/img/hero/bg-shape.png",
         subtitle: "go for advertising",
-        title: "Grow profits, save time, and scale your\u00A0agency",
+        // title: "Grow profits, save time, and scale your\u00A0agency",
+        title: "Grow profits, save time, <br/> and scale your agency",
         content:
             "White Label WordPress Development Partner for Digital Agencies at Fixed Cost.",
         content2:
@@ -79,7 +81,7 @@ const HeroBanner1 = () => {
                             data-wow-duration="1.5s"
                             data-wow-delay="0.2s"
                         >
-                            {heroContent.title}
+                            {parse(heroContent.title)}
                         </h1>
                         <p
                             className="wow fadeInUp img-custom-anim-right hero-section-peragraph"
@@ -121,7 +123,7 @@ const HeroBanner1 = () => {
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/service-new"> <span className="hero-theme-btn-second"> EXPLORE MORE </span></Link>
+                            <Link to="/service-new/website-redesign"> <span className="hero-theme-btn-second"> EXPLORE MORE WR </span></Link>
                         </div>
                     </div>
 

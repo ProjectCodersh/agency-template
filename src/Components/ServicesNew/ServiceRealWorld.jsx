@@ -1,33 +1,8 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+// ServiceRealWorld.jsx
+const RealWorldApp = ({ data }) => {
+    if (!data) return null;
 
-const RealworldApp = () => {
-    const [realworld, setRealworld] = useState(null);
-
-    const fetchingData = async () => {
-        try {
-            const response = await axios.get("/assets/data/WebsiteRedesign.json");
-            const serviceData = response.data?.ServicePageData;
-
-            const realworldAppSection = serviceData.find(
-                (section) => section.realworldApp
-            );
-
-            if (realworldAppSection?.realworldApp) {
-                setRealworld(realworldAppSection.realworldApp);
-            }
-        } catch (error) {
-            console.error("Error fetching realworldApp:", error);
-        }
-    };
-
-    useEffect(() => {
-        fetchingData();
-    }, []);
-
-    if (!realworld) return null;
-
-    const { heading, appContent } = realworld;
+    const { heading, appContent } = data;
 
     return (
         <section
@@ -37,16 +12,22 @@ const RealworldApp = () => {
             <div className="container">
                 <div className="team-wrapper">
                     <div className="row g-4">
-                        <div className="col-lg-6 order-2 order-lg-1"> {/* Text Column */}
+                        {/* Text Column */}
+                        <div className="col-lg-6 order-2 order-lg-1">
                             <div className="team-content">
                                 <div className="section-title" id="section-title">
-                                    <div className="sub-title wow fadeInUp" id="sub-title" style={{ backgroundColor: "#384bff1a" }} >
+                                    <div
+                                        className="sub-title wow fadeInUp"
+                                        id="sub-title"
+                                        style={{ backgroundColor: "#384bff1a" }}
+                                    >
                                         <span>{heading.title}</span>
                                     </div>
                                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
                                         {heading.subtitle}
                                     </h2>
                                 </div>
+
                                 <div className="list-items wow fadeInUp" data-wow-delay=".3s">
                                     <ul>
                                         {appContent.map((item, index) => (
@@ -69,19 +50,20 @@ const RealworldApp = () => {
                                                         />
                                                     </svg>
                                                 </span>
-
                                                 <span>
-                                                    <strong className="realworld-app-txt1 me-1">{item.apptitle}:</strong>{" "}
+                                                    <strong className="realworld-app-txt1 me-1">
+                                                        {item.apptitle}:
+                                                    </strong>{" "}
                                                     <span className="fw-normal">{item.appContent}</span>
                                                 </span>
                                             </li>
                                         ))}
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
 
+                        {/* Image Column */}
                         {heading.img && (
                             <div className="col-lg-6 order-1 order-lg-2">
                                 <div className="team-image">
@@ -98,8 +80,8 @@ const RealworldApp = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     );
 };
 
-export default RealworldApp;
+export default RealWorldApp;

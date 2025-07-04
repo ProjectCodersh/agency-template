@@ -1,55 +1,38 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-
-const Process = () => {
-    const [processData, setProcessData] = useState(null);
-
-    const fetchData = async () => {
-        try {
-            const response = await axios.get("/assets/data/WebsiteRedesign.json");
-            const processSection = response.data.ServicePageData[1]?.processSection;
-            setProcessData(processSection);
-        } catch (error) {
-            console.error("Error fetching process data:", error);
-        }
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    if (!processData) return null;
+// ServiceProcess.jsx
+const ServiceProcess = ({ data }) => {
+    if (!data) return null;
 
     return (
         <section className="service-section fix section-padding">
-            {/* {processData.leftShape && (
-                <div className="left-shape float-bob-y">
-                    <img src={processData.leftShape} alt="left-shape" />
-                </div>
-            )}
-            {processData.rightShape && (
-                <div className="right-shape">
-                    <img src={processData.rightShape} alt="right-shape" />
-                </div>
-            )}
-            {processData.bgShape && (
-                <div className="bg-shape">
-                    <img src={processData.bgShape} alt="bg-shape" />
-                </div>
-            )} */}
+            {/* Background shapes if needed
+        {data.leftShape && (
+          <div className="left-shape float-bob-y">
+            <img src={data.leftShape} alt="left-shape" />
+          </div>
+        )}
+        {data.rightShape && (
+          <div className="right-shape">
+            <img src={data.rightShape} alt="right-shape" />
+          </div>
+        )}
+        {data.bgShape && (
+          <div className="bg-shape">
+            <img src={data.bgShape} alt="bg-shape" />
+          </div>
+        )} */}
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
                         <div className="sub-title wow fadeInUp">
-                            <span>{processData.subtitle}</span>
+                            <span>{data.subtitle}</span>
                         </div>
-                        <h2 className="wow fadeInUp" data-wow-delay=".3s" dangerouslySetInnerHTML={{ __html: processData.title }} />
+                        <h2 className="wow fadeInUp" data-wow-delay=".3s" dangerouslySetInnerHTML={{ __html: data.title }} />
                     </div>
                 </div>
 
                 <div className="row">
-                    {Array.isArray(processData.steps) &&
-                        processData.steps.map((item, i) => (
+                    {Array.isArray(data.steps) &&
+                        data.steps.map((item, i) => (
                             <div
                                 key={i}
                                 className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
@@ -74,4 +57,4 @@ const Process = () => {
     );
 };
 
-export default Process;
+export default ServiceProcess;

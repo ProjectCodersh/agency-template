@@ -12,6 +12,11 @@ const Faq1 = ({ addclass }) => {
     const accordionContentRef = useRef(null);
     const [openItemIndex, setOpenItemIndex] = useState(-1);
     const [firstItemOpen, setFirstItemOpen] = useState(true);
+const contentRefs = useRef([]);
+
+  const setContentRef = (el, index) => {
+    contentRefs.current[index] = el;
+  };
 
     const handleItemClick = index => {
         if (index === openItemIndex) {
@@ -70,20 +75,42 @@ const Faq1 = ({ addclass }) => {
                             <div className="faq-accordion-items">
                                 <div className="faq-accordion">
                                     <div className="accordion" id="accordion">
-                                        {faqContent.map((item, index) => (
-                                            <div key={index} className={`accordion-item mb-3 ${index === openItemIndex ? "active" : ""}`} data-wow-delay=".3s">
-                                                <h5 onClick={() => handleItemClick(index)} className="accordion-header">
-                                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                                        {item.title}
-                                                    </button>
-                                                </h5>
-                                                <div ref={accordionContentRef} id="faq1" className="accordion-collapse collapse" data-bs-parent="#accordion">
-                                                    <div className="accordion-body">
-                                                        {item.content}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
+                                      {faqContent.map((item, index) => {
+                      const isOpen = index === openItemIndex;
+
+                      return (
+                        <div
+                          key={index}
+                          className={`accordion-item mb-3 ${
+                            isOpen ? "active" : ""
+                          }`}
+                          data-wow-delay=".3s"
+                        >
+                          <h5
+                            onClick={() => handleItemClick(index)}
+                            className="accordion-header"
+                          >
+                            <button
+                              className="accordion-button collapsed"
+                              type="button"
+                            >
+                              {item.title}
+                            </button>
+                          </h5>
+                          <div
+                            ref={(el) => setContentRef(el, index)}
+                            className="accordion-collapse"
+                            style={{
+                              height: isOpen
+                                ? `${contentRefs.current[index]?.scrollHeight}px`
+                                : "0px",
+                            }}
+                          >
+                            <div className="accordion-body">{item.content}</div>
+                          </div>
+                        </div>
+                      );
+                    })}
                                     </div>
                                 </div>
                             </div>
