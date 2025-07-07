@@ -212,7 +212,7 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>
             <li>
-              <Link to="/case-studies/avn-hunks" onClick={() => setMobileToggle(false)}>
+              <Link to="/case-studies/van-hunks" onClick={() => setMobileToggle(false)}>
                 Van Hunks
               </Link>
             </li>
@@ -227,7 +227,7 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>
             <li>
-              <Link to="/case-studies/bergbate" onClick={() => setMobileToggle(false)}>
+              <Link to="/case-studies/bergbat" onClick={() => setMobileToggle(false)}>
                 Bergbat
               </Link>
             </li>

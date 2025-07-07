@@ -9354,7 +9354,10 @@ input.main-search-input::placeholder {
   }
 
   .cs-gescout_sticky {
-    background-color: #000;
+    /* background-color: #000; */
+    background-color: hsl(0deg 0% 100% / 50%);
+    backdrop-filter: blur(10px);
+
   }
 
   .header_sticky_style2 .cs-munu_toggle span,
