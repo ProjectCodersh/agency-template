@@ -16,10 +16,10 @@ export const serviceSlugMap = {
     "onebuilder-site-stabilization": "OneBuilderStabilization.json",
     "website-speed-optimization": "WebsiteSpeedOptimization.json",
     "malware-&-virus-removal": "MalwareRemoval.json",
-    "custom-webdevelopment": "CustomWebDev.json",
+    "custom-web-development": "CustomWebDev.json",
     "website-redesign": "WebsiteRedesign.json",
-    "shift4shop-toshopify-migration": "S4sToShopify.json",
-    "gohighlevel-development": "GoHighlevelDev.json",
+    "shift4shop-to-shopify-migration": "S4sToShopify.json",
+    "go-highlevel-development": "GoHighlevelDev.json",
     "dedicated-resources-for-agencies": "DedicatedResources.json",
     // Add more...
 };

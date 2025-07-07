@@ -5,7 +5,7 @@ import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimon
 
 // Lazy load detail component
 const CaseStudyDetails = lazy(() =>
-  import("../components/CaseStudyDetailsNew/CaseStudyDetailesNew")
+  import("../Components/CaseStudyDetailsNew/CaseStudyDetailsNew")
 );
 
 function CaseStudyDetailsPage() {

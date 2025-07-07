@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function CaseStudyDetailesNew({ data }) {
+function CaseStudyDetailsNew({ data }) {
   if (!data) return null;
 
   const {
@@ -135,4 +135,4 @@ function CaseStudyDetailesNew({ data }) {
   );
 }
 
-export default React.memo(CaseStudyDetailesNew);
+export default React.memo(CaseStudyDetailsNew);
