@@ -46,7 +46,8 @@ function CaseStudyDetailsPage() {
     <>
       <BreadCumb
         bgimg="/assets/img/breadcrumb.jpg"
-        Title={caseStudyData.title}
+        // Title={caseStudyData.title}
+        Title='Case Study Details'
       />
       <Suspense fallback={<div>Loading details...</div>}>
         <CaseStudyDetails data={caseStudyData} />

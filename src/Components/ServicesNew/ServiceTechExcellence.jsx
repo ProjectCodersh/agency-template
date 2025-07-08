@@ -41,6 +41,7 @@ const ServiceTechExcellence = ({ data }) => {
                         <div
                           key={index}
                           className={`accordion-item mb-3 ${isOpen ? "active" : ""}`}
+                          data-wow-delay=".3s"
                         >
                           <h5
                             onClick={() =>

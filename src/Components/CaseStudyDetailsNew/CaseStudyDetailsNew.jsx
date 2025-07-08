@@ -48,7 +48,7 @@ function CaseStudyDetailsNew({ data }) {
 
             {bulletLists.length > 0 && (
               <>
-                <h3 className="mt-5">Goals of The Project</h3>
+                <h3 className="mt-5">Defined Goals</h3>
                 <div className="row g-5">
                   {bulletLists.map((list, listIndex) => (
                     <div key={listIndex} className="col-lg-6">
@@ -67,7 +67,7 @@ function CaseStudyDetailsNew({ data }) {
 
             {detailColumns.length > 0 && (
               <>
-                <h3 className="mt-5">Process Of The Project</h3>
+                <h3 className="mt-5">Project Workflow</h3>
                 <div className="row g-5">
                   {detailColumns.map((col, colIndex) => (
                     <div key={colIndex} className="col-lg-6">
@@ -82,7 +82,7 @@ function CaseStudyDetailsNew({ data }) {
 
             {resultData.length > 0 && (
               <>
-                <h3 className="mt-5">Result Of The Project</h3>
+                <h3 className="mt-5">Project Outcomes</h3>
                 <div className="row g-5">
                   {resultData.map((col, colIndex) => (
                     <div key={colIndex} className="col-lg-12">

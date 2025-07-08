@@ -15,11 +15,12 @@ import CaseStudyPageNew from "../Pages/CaseStudyPageNew";
 // import AboutPage from "../Pages/AboutPage";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
-// import TeamPage from "../Pages/TeamPage";
+import TeamPage from "../Pages/TeamPage";
 // import TeamDetailsPage from "../Pages/TeamDetailsPage";
 // import PricingPage from "../Pages/PricingPage";
 // import FaqPage from "../Pages/FaqPage";
-// import CaseStudyPage from "../Pages/CaseStudyPage";
+import CaseStudyPage from "../Pages/CaseStudyPage";
+import Testimonials from "../Pages/Testimonials";
 // import CaseStudyDetailsPage from "../Pages/CaseStudyDetailsPage";
 // import BlogRightSidebar from "../Pages/BlogRightSidebar";
 // import BlogPage from "../Pages/BlogPage";
@@ -33,10 +34,6 @@ export const router = createBrowserRouter([
       // {
       //     path: "/about",
       //     element: <AboutPage></AboutPage>,
-      // },
-      // {
-      //   path: "/team",
-      //   element: <TeamPage></TeamPage>,
       // },
       // {
       //   path: "/team/team-details",
@@ -60,10 +57,6 @@ export const router = createBrowserRouter([
       //   element: <ServiceDetailsPage></ServiceDetailsPage>,
       // },
       // {
-      //   path: "/project",
-      //   element: <CaseStudyPage></CaseStudyPage>,
-      // },
-      // {
       //   path: "/project/project-details",
       //   element: <CaseStudyDetailsPage></CaseStudyDetailsPage>,
       // },
@@ -80,17 +73,28 @@ export const router = createBrowserRouter([
       //   element: <BlogDetailsPage></BlogDetailsPage>,
       // },
       {
+        path: "/our-team",
+        element: <TeamPage></TeamPage>,
+      },
+      {
         path: "/contact",
         element: <ContactPage></ContactPage>,
       },
       {
-        path: "/services-cards",
-        element: <ServicesNewCards></ServicesNewCards>,
+        path: "/client-testimonial",
+        element: <Testimonials></Testimonials>,
       },
-
+      {
+        path: "/case-study",
+        element: <CaseStudyPage></CaseStudyPage>,
+      },
       {
         path: "/case-studies/:slug",
         element: <CaseStudyPageNew></CaseStudyPageNew>,
+      },
+      {
+        path: "/services-cards",
+        element: <ServicesNewCards></ServicesNewCards>,
       },
       {
         path: "/solutions/:slug",

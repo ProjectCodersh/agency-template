@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Slider from "react-slick";
+import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 const HeroBanner4 = () => {
     useEffect(() => {
@@ -51,7 +52,7 @@ const HeroBanner4 = () => {
         bg: "/assets/img/hero/hero-bg-2.png",
         bg2: "/assets/img/hero/bg-shape.png",
         subtitle: "go for advertising",
-        title: "Grow profits, save time, and scale your\u00A0agency",
+        title: "Grow profits, save time, <br/> and scale your agency",
         content:
             "White Label Shopify Development Partner for Digital Agencies at Fixed Cost.",
         content2:
@@ -79,7 +80,7 @@ const HeroBanner4 = () => {
                             data-wow-duration="1.5s"
                             data-wow-delay="0.2s"
                         >
-                            {heroContent.title}
+                            {parse(heroContent.title)}
                         </h1>
                         <p
                             className="wow fadeInUp img-custom-anim-right hero-section-peragraph"
