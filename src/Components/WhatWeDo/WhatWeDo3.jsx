@@ -60,30 +60,7 @@ function Counter4() {
             content:
                 "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
         },
-        // {
-        //   img: "/assets/img/pagebuilder/builder9.png",
-        //   title: "Better Output",
-        //   content:
-        //     "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
-        // },
-        // {
-        //   img: "/assets/img/pagebuilder/builder10.png",
-        //   title: "Better Output",
-        //   content:
-        //     "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
-        // },
-        // {
-        //   img: "/assets/img/pagebuilder/builder11.png",
-        //   title: "Better Output",
-        //   content:
-        //     "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
-        // },
-        // {
-        //   img: "/assets/img/pagebuilder/builder12.png",
-        //   title: "Better Output",
-        //   content:
-        //     "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
-        // },
+
     ];
 
     useEffect(() => {
@@ -113,7 +90,7 @@ function Counter4() {
                     {chooseContent.map((item, i) => (
                         <div
                             key={i}
-                            className="col-6 col-xl-2 col-lg-3 col-md-4 col-4 col-sm-6 wow fadeInUp"
+                            className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp"
                             data-wow-delay=".2s"
                         >
                             <div className="feature-box-items2">

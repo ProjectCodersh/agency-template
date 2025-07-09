@@ -8,19 +8,19 @@ import ServicesNewPage from "../Pages/ServicesNewPage";
 import ServicesNewCards from "../Pages/ServicesNewCardsPage";
 import SolutionsPage from "../Pages/SolutionsPage";
 import CaseStudyPageNew from "../Pages/CaseStudyPageNew";
+import AboutPage from "../Pages/AboutPage";
+import TeamPage from "../Pages/TeamPage";
+import CaseStudyPage from "../Pages/CaseStudyPage";
+import Testimonials from "../Pages/Testimonials";
 // import Casestudies from "../Pages/CaseStudyPageNew";
+// import FaqPage from "../Pages/FaqPage";
 // import Solutions from "../Pages/Solutions";
 // import ServicesPage from "../Pages/ServicesPage";
 // import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
-// import AboutPage from "../Pages/AboutPage";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
-import TeamPage from "../Pages/TeamPage";
 // import TeamDetailsPage from "../Pages/TeamDetailsPage";
 // import PricingPage from "../Pages/PricingPage";
-// import FaqPage from "../Pages/FaqPage";
-import CaseStudyPage from "../Pages/CaseStudyPage";
-import Testimonials from "../Pages/Testimonials";
 // import CaseStudyDetailsPage from "../Pages/CaseStudyDetailsPage";
 // import BlogRightSidebar from "../Pages/BlogRightSidebar";
 // import BlogPage from "../Pages/BlogPage";
@@ -31,10 +31,10 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Layout2></Layout2>,
     children: [
-      // {
-      //     path: "/about",
-      //     element: <AboutPage></AboutPage>,
-      // },
+      {
+        path: "/about",
+        element: <AboutPage></AboutPage>,
+      },
       // {
       //   path: "/team/team-details",
       //   element: <TeamDetailsPage></TeamDetailsPage>,

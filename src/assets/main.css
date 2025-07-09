@@ -653,11 +653,12 @@ span {
 }
 
 .about-wrapper-2 .about-content .icon-items-area {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  /* justify-content: space-between; */
+  column-gap: 7rem;
+  /* margin-bottom: 40px; */
 }
 
 @media (max-width: 1199px) {
@@ -1628,7 +1629,14 @@ span {
   text-align: center;
   border-radius: 10px;
   background: #FAF8FF;
+  transition: all .3s ease;
+  box-shadow: 0 4 25;
 }
+
+/* .contact-info-items:hover {
+  background: #F3F6FE;
+  transform: translateY(-10px);
+} */
 
 .contact-info-items .icon {
   font-size: 80px;
@@ -2489,10 +2497,11 @@ span {
   position: relative;
   z-index: 9;
   width: fit-content; */
+  /* padding: 50px 0px; */
   margin-top: 30px;
-  background-color: var(--bg);
+  background-color: #FAF8FF;
   border-radius: 20px;
-  padding: 50px 0px;
+  min-height: 175px;
   position: relative;
   z-index: 9;
   display: flex;
@@ -2541,7 +2550,8 @@ span {
 
 @media (max-width: 575px) {
   .feature-box-items2 {
-    padding: 28px 0px;
+    padding: 0px;
+    min-height: 150px;
   }
 }
 
@@ -2554,9 +2564,9 @@ span {
   z-index: 9;
   width: fit-content; */
   margin-top: 30px;
-  background-color: var(--bg);
+  background-color: #F6F3FE;
   border-radius: 20px;
-  padding: 50px 0px !important;
+  min-height: 175px;
   position: relative;
   z-index: 9;
   display: flex;
@@ -2577,8 +2587,8 @@ span {
 } */
 
 .feature-box-items3 .icon img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   font-size: 40px;
   object-fit: contain;
 }
@@ -2605,7 +2615,7 @@ span {
 
 @media (max-width: 575px) {
   .feature-box-items3 {
-    padding: 5.5px 0px;
+    padding: 0px;
   }
 }
 
@@ -2786,7 +2796,8 @@ span {
   font-size: 20px;
 }
 
-.footer-widgets-wrapper .single-footer-widget .footer-content .contact-info li a {
+.footer-widgets-wrapper .single-footer-widget .footer-content .contact-info li a,
+.footer-widgets-wrapper .single-footer-widget .footer-content .contact-info li strong {
   color: var(--white);
 }
 

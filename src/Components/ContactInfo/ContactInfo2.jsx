@@ -97,7 +97,7 @@ const ContactInfo2 = () => {
                                 </div>
                                 <div className="content">
                                     <h3>
-                                        Hot: <a href="tel:+9664617700">+91-966-461-7700</a>
+                                        Call: <a href="tel:+9664617700">+91-966-461-7700</a>
                                     </h3>
                                     <p>Call us for any kind of support, <br />we will wait for it.</p>
                                 </div>

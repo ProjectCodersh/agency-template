@@ -24,7 +24,6 @@ function Counter6() {
             content:
                 "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
         },
-        // { img: '/assets/img/pagebuilder/builder15.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
         {
             img: "/assets/img/pagebuilder/builder16.png",
             title: "Better Output",
@@ -61,7 +60,6 @@ function Counter6() {
             content:
                 "Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.",
         },
-        // { img: '/assets/img/pagebuilder/builder22.png', title: 'Better Output', content: 'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.' },
         {
             img: "/assets/img/pagebuilder/builder23.png",
             title: "Better Output",
@@ -103,19 +101,13 @@ function Counter6() {
                     {chooseContent.map((item, i) => (
                         <div
                             key={i}
-                            className="col-6 col-xl-2 col-lg-3 col-md-4 col-4 col-sm-6  wow fadeInUp"
+                            className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp"
                             data-wow-delay=".2s"
                         >
                             <div className="feature-box-items3">
                                 <div className="icon">
                                     <img src={item.img} alt={item.title} />
                                 </div>
-                                {/* <div className="content">
-                                    <h3>{item.title}</h3>
-                                    <p>
-                                        {item.content}
-                                    </p>
-                                </div> */}
                             </div>
                         </div>
                     ))}

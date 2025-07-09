@@ -196,7 +196,42 @@ const Footer1 = () => {
                                                 <i className="fa-solid fa-phone-volume"></i>
                                                 <a href="tel:9664617700">+966-461-7700</a>
                                             </li>
+
+                                            {/* India Address */}
+                                            <li style={{ display: "flex", alignItems: "flex-start" }}>
+                                                <img
+                                                    src="/assets/img/india.svg"
+                                                    alt="India Flag"
+                                                    style={{ width: "20px", height: "14px", marginRight: "8px", marginTop: "4px" }}
+                                                />
+                                                <div>
+                                                    <strong >INDIA:</strong>
+                                                    <div style={{ color: "white" }}>
+
+                                                        A-307, Empire Business Hub,<br />
+                                                        Science City Rd, Sola, Ahmedabad
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            {/* USA Address */}
+                                            <li style={{ display: "flex", alignItems: "flex-start", marginTop: "8px" }}>
+                                                <img
+                                                    src="/assets/img/united-states.svg"
+                                                    alt="USA Flag"
+                                                    style={{ width: "20px", height: "14px", marginRight: "8px", marginTop: "4px" }}
+                                                />
+                                                <div>
+                                                    <strong>USA:</strong>
+                                                    <div style={{ color: "white" }}>
+
+                                                        400 Boren Ave N, Apt 426,<br />
+                                                        Seattle WA – 98109 – USA
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
+
                                         {/* <div className="footer-input">
                                             <input type="email" id="email2" placeholder="Your email address" />
                                             <button className="newsletter-btn" type="submit">
