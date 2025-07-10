@@ -123,7 +123,7 @@ const HeroBanner1 = () => {
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/service-new/website-redesign"> <span className="hero-theme-btn-second"> EXPLORE MORE WR </span></Link>
+                            <Link to="/services/website-redesign"> <span className="hero-theme-btn-second"> EXPLORE MORE WR </span></Link>
                         </div>
                     </div>
 

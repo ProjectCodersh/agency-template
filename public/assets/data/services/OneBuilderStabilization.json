@@ -75,7 +75,7 @@
           "subtitle": "Why Choose Us",
           "title": "Your Site’s Health, Restored",
           "content": "We don’t just patch up your site — we future-proof it for stability, speed, and scalability. With deep technical expertise and a focus on long-term results, your OneBuilder site will run smoother than ever.",
-          "img": "/assets/img/team/01.png",
+          "img": "/assets/img/service/service-mockup-3.webp",
           "listItems": [
               "24/7 Emergency Fix Support",
               "48-Hour Average Bug Resolution Time",
@@ -125,7 +125,7 @@
           "heading": {
             "title": "Real-World Applications",
             "subtitle": "Real-World Fixes, Real Results",
-            "img": "/assets/img/team/01.png"
+            "img": "/assets/img/service/service-mockup-8.webp"
           },
           "appContent": [
             {

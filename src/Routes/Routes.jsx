@@ -31,10 +31,7 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Layout2></Layout2>,
     children: [
-      {
-        path: "/about",
-        element: <AboutPage></AboutPage>,
-      },
+
       // {
       //   path: "/team/team-details",
       //   element: <TeamDetailsPage></TeamDetailsPage>,
@@ -73,11 +70,15 @@ export const router = createBrowserRouter([
       //   element: <BlogDetailsPage></BlogDetailsPage>,
       // },
       {
+        path: "/about",
+        element: <AboutPage></AboutPage>,
+      },
+      {
         path: "/our-team",
         element: <TeamPage></TeamPage>,
       },
       {
-        path: "/contact",
+        path: "/contact-us",
         element: <ContactPage></ContactPage>,
       },
       {
@@ -112,7 +113,7 @@ export const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/service-new/:slug",
+        path: "/services/:slug",
         element: <ServicesNewPage></ServicesNewPage>,
       },
     ],

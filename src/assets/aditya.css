@@ -295,3 +295,11 @@
   background-color: #7b61ff !important;
   border-radius: 20px !important;
 }
+
+/************************************
+css for about section numeric content
+************************************/
+
+.about-content-h2 {
+  color: #6a47ed !important;
+}

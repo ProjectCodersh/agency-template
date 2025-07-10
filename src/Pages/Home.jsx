@@ -5,7 +5,7 @@
 // import SuccessStories from "../Components/SuccessStories/SuccessStories";
 // import Testimonial1 from "../Components/Testimonial/Testimonial1";
 // import WhyChoose1 from "../Components/WhyChoose/WhyChoose1";
-import About1 from "../Components/About/About1";
+// import About1 from "../Components/About/About1";
 import ContactInfo1 from "../Components/ContactInfo/ContactInfo1";
 import Counter4 from "../Components/WhatWeDo/WhatWeDo3";
 import Faq1 from "../Components/Faq/Faq1";
@@ -17,6 +17,7 @@ import BrandSection2 from "../Components/Extra/HomePage/BrandSection2";
 import Brandsection3 from "../Components/Extra/HomePage/BrandSection3";
 import Brand1 from "../Components/Brand/Brand1";
 import VideoTestimonialSlick from "../Components/Testimonial/VideoTestimonial";
+import About4 from "../Components/About/About4";
 
 
 const Home = () => {
@@ -25,7 +26,8 @@ const Home = () => {
             <HeroBanner1></HeroBanner1>
             <Brand1></Brand1>
             <WhatWeDo></WhatWeDo>
-            <About1></About1>
+            <About4 addclass="about-section-2 fix section-padding"></About4>
+            {/* <About1></About1> */}
             <Counter4></Counter4>
             <Tools1></Tools1>
             <Brandsection1></Brandsection1>

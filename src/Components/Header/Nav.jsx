@@ -149,7 +149,7 @@ export default function Nav({ setMobileToggle }) {
           <ul>
             <li>
               <Link to="/" onClick={() => setMobileToggle(false)}>
-                Unlimited Wp
+                Unlimited Wordpress
               </Link>
             </li>
             <li>
@@ -166,19 +166,76 @@ export default function Nav({ setMobileToggle }) {
           <ul>
             <li>
               <Link to="/our-team" onClick={() => setMobileToggle(false)}>
-                Teams Page
+                Team
               </Link>
             </li>
             <li>
               <Link to="/client-testimonial" onClick={() => setMobileToggle(false)}>
-                Client Testimonial
+                Testimonials
               </Link>
             </li>
           </ul>
         </DropDown>
       </li>
       <li className="menu-item-has-children">
-        <Link >Solutions</Link>
+        <Link >Services</Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link to="/services/figma-to-shopify-migration" onClick={() => setMobileToggle(false)}>
+                Figma To Shopify Development
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/wordpress-to-shopify-migration" onClick={() => setMobileToggle(false)}>
+                Wordpress To Shopify Migration
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/onebuilder-site-stabilization" onClick={() => setMobileToggle(false)}>
+                One-Builder Site Stabilization
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/website-speed-optimization" onClick={() => setMobileToggle(false)}>
+                Website Speed Optmization
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/malware-&-virus-removal" onClick={() => setMobileToggle(false)}>
+                Malware & Virus Removal
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/custom-web-development" onClick={() => setMobileToggle(false)}>
+                Custom Web Development
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/website-redesign" onClick={() => setMobileToggle(false)}>
+                Website Redesign
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/shift4shop-to-shopify-migration" onClick={() => setMobileToggle(false)}>
+                Shift4Shop To Shopify Migration
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/go-highlevel-development" onClick={() => setMobileToggle(false)}>
+                GoHighLevel Development
+              </Link>
+            </li>
+            <li>
+              <Link to="/services/dedicated-resources-for-agencies" onClick={() => setMobileToggle(false)}>
+                Dedicated Resources For Agencies
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+      </li>
+      <li className="menu-item-has-children">
+        <Link to="/" >Solutions</Link>
         <DropDown>
           <ul>
             <li>
@@ -210,7 +267,7 @@ export default function Nav({ setMobileToggle }) {
         </Link>
       </li>
       <li>
-        <Link to="/contact" onClick={() => setMobileToggle(false)}>
+        <Link to="/contact-us" onClick={() => setMobileToggle(false)}>
           Contact
         </Link>
       </li>

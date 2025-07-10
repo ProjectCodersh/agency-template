@@ -126,10 +126,9 @@ const ContactInfo2 = () => {
 
                             <div className="col-lg-6">
                                 <div className="contact-content">
-                                    <h2>Ready to Get Started?</h2>
+                                    <h2>Let&#39;s Talk About Your Next Project</h2>
                                     <p>
-                                        Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor
-                                        ultrices,
+                                        Got an idea, a challenge, or a project you’re ready to launch? We’d love to hear about it. Whether it’s a website, mobile app, or full digital transformation - we’re here to help.
                                     </p>
                                     <form id="contact-form" className="contact-form-items" ref={formRef} onSubmit={handleSubmit}>
                                         <div className="row g-4">

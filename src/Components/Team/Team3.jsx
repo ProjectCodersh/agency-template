@@ -10,7 +10,7 @@ const Team3 = () => {
         { img: '/assets/img/team/team5.webp', name: 'Neer Lashkari', content: 'Wordpress Developer', instagram: '#', facebook: '#', twitter: '#', linkedin: '#' },
         { img: '/assets/img/team/team4.webp', name: 'Maitri Gandhi', content: 'Frontend Developer', instagram: '#', facebook: '#', twitter: '#', linkedin: '#' },
         { img: '/assets/img/team/team6.webp', name: 'Bhavik Hadiyel', content: 'Frontend Developer', instagram: '#', facebook: '#', twitter: '#', linkedin: '#' },
-        { img: '/assets/img/team/01.jpg', name: 'Aditya Mistry', content: 'FullStack Developer', instagram: '#', facebook: '#', twitter: '#', linkedin: '#' },
+        // { img: '/assets/img/team/01.jpg', name: 'Aditya Mistry', content: 'FullStack Developer', instagram: '#', facebook: '#', twitter: '#', linkedin: '#' },
     ];
 
     return (

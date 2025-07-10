@@ -75,7 +75,7 @@
           "subtitle": "Why Choose Us",
           "title": "The Numbers Don't Lie",
           "content": "We specialize in transforming static Figma designs into lightning-fast, fully-responsive, and scalable Shopify storefronts. Our process ensures your brand’s vision is never compromised.",
-          "img": "/assets/img/team/01.png",
+          "img": "/assets/img/service/service-mockup-1.webp",
           "listItems": [
             "99.8% Client Satisfaction Rate",
             "150+ Successful Figma to Shopify Conversions",
@@ -125,7 +125,7 @@
           "heading": {
             "title": "Real-World Applications",
             "subtitle": "Perfect For These Types of Businesses",
-            "img": "/assets/img/team/01.png"
+            "img": "/assets/img/service/service-mockup-4.webp"
           },
           "appContent": [
             {

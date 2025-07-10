@@ -156,7 +156,7 @@ const ContactInfo1 = () => {
                                             </div>
                                         </div>
 
-                                        <div className="col-12">
+                                        {/* <div className="col-12">
                                             <div className="form-check">
                                                 <input
                                                     className="form-check-input"
@@ -170,7 +170,7 @@ const ContactInfo1 = () => {
                                                     I agree to the terms and conditions.
                                                 </label>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div className="col-lg-12">
                                             <button

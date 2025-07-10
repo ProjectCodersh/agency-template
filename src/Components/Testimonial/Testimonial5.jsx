@@ -4,26 +4,32 @@ const Testimonial5 = () => {
         {
             img: '/assets/img/testimonial/02.png',
             subtitle: "Seattle, Washington",
-            title: "Milano Joe",
-            content: "Made an amazing website for our org. We have him our vision and everything came out even better than imagined. Use him for all website needs you will be pleased! Use him for all website needs you will be pleased!"
+            title: "Claire Olson",
+            content: "Great to work with! Made an amazing website for our org. We have him our vision and everything came out even better than imagined. Use him for all website needs you will be pleased!"
         },
         {
             img: '/assets/img/testimonial/01.png',
             subtitle: 'San Antonio, Texas',
-            title: 'Danial Mark',
-            content: "His work went beyond what I was expecting and I would love to continue working with him. His work went beyond what I was expecting and I would love to continue working with him continue working with him."
+            title: 'Luke Jacobs',
+            content: "Arvind was an excellent developer with great communication skills. His work went beyond what I was expecting and I would love to continue working with him."
         },
         {
             img: '/assets/img/testimonial/02.png',
             subtitle: "Detroit, Michigan",
             title: "Phillip Hunt",
-            content: "Working with Shah was a game-changer for our brand. Their exceptional creativity & vision breathed new life into our visual. The logo they perfectly captures our essence & has become instantly recognizable. We couldn't be happier the results!"
+            content: "Our 3DCart website design and migrations project was completed successfully from start to finish. It took a lot longer than anticipated but that was due to delays on our end. We had a few technical challenges on the way, and Arvind was very efficient at resolving them."
         },
         {
             img: '/assets/img/testimonial/01.png',
             subtitle: 'Portland, Oregon',
             title: 'Amber Page',
-            content: "The Biggest thing was he got the design from the beginning mockup and didn't waste any time and everything ran on schedule with making lots of minor didn't waste any time and everything ran on schedule with making adjustments to a level of amazing quality!"
+            content: "Absolutely Fantastic. The biggest thing was he got the design from the beginning mockup and didn't waste any time and everything ran on schedule with making lots of minor adjustments to a level of amazing quality!"
+        },
+        {
+            img: '/assets/img/testimonial/01.png',
+            subtitle: 'Texas',
+            title: 'Cole Haring',
+            content: "Work was great! I Will definitely use in the future. Arvind delivered good work on this project and I enjoyed working with him. His communication was top-notch, he met all deadlines, and his skills were reasonably strong."
         },
         // Add more testimonials as needed
     ];
