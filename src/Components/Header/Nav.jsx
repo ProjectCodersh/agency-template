@@ -267,13 +267,18 @@ export default function Nav({ setMobileToggle }) {
         </Link>
       </li>
       <li>
-        <Link to="/home2" onClick={() => setMobileToggle(false)}>
+        <Link to="/unlimited-shopify" onClick={() => setMobileToggle(false)}>
           Unlimited Shopify
         </Link>
       </li>
       <li>
         <Link to="/case-study" onClick={() => setMobileToggle(false)}>
           Case Study
+        </Link>
+      </li>
+      <li>
+        <Link to="/pricing" onClick={() => setMobileToggle(false)}>
+          Pricing
         </Link>
       </li>
       <li>

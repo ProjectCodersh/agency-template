@@ -17,7 +17,7 @@ const SolutionKeyFeatures = ({ data }) => {
             <div className="bg-shape">
                 {/* <img src="/assets/img/bg-shape-2.png" alt="img" /> */}
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         {chooseHeading?.subtitle && (

@@ -24,7 +24,7 @@ const About2 = ({ addclass }) => {
     return (
         <section className={addclass}>
 
-            <div className="container">
+            <div className="container px-3">
                 <div className="about-wrapper-2">
                     <div className="row g-4">
                         <div className="col-lg-6">

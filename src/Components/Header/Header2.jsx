@@ -35,7 +35,7 @@ export default function Header2({ variant }) {
           } ${isSticky ? isSticky : ''}`}
       >
         <div className="cs_main_header">
-          <div className="container">
+          <div className="container px-3">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">

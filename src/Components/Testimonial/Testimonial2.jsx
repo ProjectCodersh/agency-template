@@ -56,7 +56,7 @@ const Testimonial2 = () => {
 
     return (
         <section className="testimonial-section fix section-padding pt-0 bg-cover" data-background="/assets/img/testimonial/testimonial-bg.jpg">
-            <div className="container">
+            <div className="container px-3">
                 <div className="testimonial-wrapper-2">
                     <div className="row g-4 align-items-center">
                         <div className="col-lg-6">

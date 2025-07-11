@@ -37,7 +37,7 @@ const BrandSection5 = () => {
 
     return (
         <section className="py-5 px-3 brand-section fix">
-            <div className="container ">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         <h2 className="wow fadeInUp text-break" data-wow-delay=".3s">

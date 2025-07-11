@@ -55,7 +55,7 @@ const Testimonial1 = () => {
 
     return (
         <section className="testimonial-section fix section-padding">
-            <div className="container">
+            <div className="container px-3">
                 <div className="testimonial-wrapper">
                     <div className="section-title-area">
                         <div className="section-title">

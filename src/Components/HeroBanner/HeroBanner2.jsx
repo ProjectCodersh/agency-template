@@ -67,7 +67,7 @@ const HeroBanner2 = () => {
                     backgroundSize: "contain",
                     backgroundPosition: "center"
                 }}></div>
-            <div className="container" style={{ zIndex: "9" }}>
+            <div className="container px-3" style={{ zIndex: "9" }}>
                 <div className="row g-4 align-items-center text-center hero-rows">
                     <div className="col-12">
                         <h1

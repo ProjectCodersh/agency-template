@@ -9,7 +9,7 @@ const RealWorldApp = ({ data }) => {
             className="team-section fix section-padding"
             style={{ background: "#F6F3FE" }}
         >
-            <div className="container">
+            <div className="container px-3">
                 <div className="team-wrapper">
                     <div className="row g-4">
                         {/* Text Column */}

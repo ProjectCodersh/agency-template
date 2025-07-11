@@ -60,7 +60,7 @@ const ContactInfo2 = () => {
     return (
         <div>
             <section className="contact-info-section fix section-padding">
-                <div className="container">
+                <div className="container px-3">
                     <div className="row g-4">
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="contact-info-items text-center active">
@@ -116,8 +116,8 @@ const ContactInfo2 = () => {
                 </div>
             </section>
 
-            <section className="contact-section-33 fix section-padding pt-0">
-                <div className="container">
+            <section className="contact-section-33 fix">
+                <div className="container px-3">
                     <div className="contact-wrapper-2">
                         <div className="row g-4 align-items-center">
                             <div className="col-lg-6 d-flex align-items-center justify-content-center " >

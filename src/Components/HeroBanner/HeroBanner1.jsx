@@ -73,7 +73,7 @@ const HeroBanner1 = () => {
                     backgroundSize: "contain",
                     backgroundPosition: "center"
                 }}></div>
-            <div className="container" style={{ zIndex: "9" }}>
+            <div className="container px-3" style={{ zIndex: "9" }}>
                 <div className="row g-4 align-items-center text-center hero-rows">
                     <div className="col-12">
                         <h1
@@ -125,11 +125,11 @@ const HeroBanner1 = () => {
                     <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1 gap-md-4 gap-lg-5 gap-xl-5
 4">
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
+                            <Link to="/#"> <span className="hero-theme-btn" style={{ minWidth: "209px" }} > GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
                             <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
-                                <span className="hero-theme-btn-second">Let&#39;s Collaborate</span>
+                                <span className="hero-theme-btn-second" style={{ minWidth: "209px" }}>Let&#39;s Collaborate</span>
 
                             </a>
                         </div>
@@ -153,7 +153,7 @@ const HeroBanner1 = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

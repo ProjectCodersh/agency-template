@@ -26,7 +26,7 @@ const About4 = ({ addclass }) => {
     return (
         <section className={addclass} style={{ backgroundColor: "#f6f3fe" }}>
 
-            <div className="container">
+            <div className="container px-3">
                 <div className="about-wrapper-2">
                     <div className="row g-4">
                         <div className="col-lg-6">

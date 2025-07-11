@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const BlogDetails = () => {
     return (
         <section className="news-details-section section-padding">
-            <div className="container">
+            <div className="container px-3">
                 <div className="news-details-wrapper">
                     <div className="row g-4">
                         <div className="col-12 col-lg-8">
@@ -65,8 +65,8 @@ const BlogDetails = () => {
                                 </div>
                                 <div className="row tag-share-wrap mt-4 mb-5">
                                     <div className="col-lg-8 col-12">
-                                        <div className="tagcloud"> 
-                                            <span>Tags:</span>                                  
+                                        <div className="tagcloud">
+                                            <span>Tags:</span>
                                             <a href="news-details.html">Security</a>
                                             <a href="news-details.html">UI/UX Desing</a>
                                             <a href="news-details.html">Digital</a>
@@ -76,9 +76,9 @@ const BlogDetails = () => {
                                         <div className="social-share">
                                             <span className="me-3">Share:</span>
                                             <a href="#"><i className="bi bi-facebook"></i></a>
-                                        <a href="#"><i className="bi bi-twitter"></i></a>
-                                        <a href="#"><i className="bi bi-youtube"></i></a>
-                                        <a href="#"><i className="bi bi-linkedin"></i></a>                                 
+                                            <a href="#"><i className="bi bi-twitter"></i></a>
+                                            <a href="#"><i className="bi bi-youtube"></i></a>
+                                            <a href="#"><i className="bi bi-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,11 +172,11 @@ const BlogDetails = () => {
                                     </div>
                                     <div className="news-widget-categories">
                                         <ul>
-                                        <li><Link to="/blog/blog-details">Digital Agency</Link> <span>(7)</span></li>
-                                        <li><Link to="/blog/blog-details">Business</Link> <span>(4)</span></li>
-                                        <li className="active"><Link to="/blog/blog-details">Digital Product</Link> <span>(5)</span></li>
-                                        <li><Link to="/blog/blog-details">Social Marketing</Link> <span>(3)</span></li>
-                                        <li><Link to="/blog/blog-details">System</Link> <span>(6)</span></li>
+                                            <li><Link to="/blog/blog-details">Digital Agency</Link> <span>(7)</span></li>
+                                            <li><Link to="/blog/blog-details">Business</Link> <span>(4)</span></li>
+                                            <li className="active"><Link to="/blog/blog-details">Digital Product</Link> <span>(5)</span></li>
+                                            <li><Link to="/blog/blog-details">Social Marketing</Link> <span>(3)</span></li>
+                                            <li><Link to="/blog/blog-details">System</Link> <span>(6)</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@ const BlogDetails = () => {
                                                 </ul>
                                                 <h6>
                                                     <Link to="/blog/blog-details">
-                                                        Which Yoga Hybrid is Right <br/> for Your?
+                                                        Which Yoga Hybrid is Right <br /> for Your?
                                                     </Link>
                                                 </h6>
                                             </div>
@@ -210,14 +210,14 @@ const BlogDetails = () => {
                                             <div className="recent-content">
                                                 <ul>
                                                     <li>
-                                                    <i className="bi bi-calendar"></i>
+                                                        <i className="bi bi-calendar"></i>
                                                         12 Mar, 2024
                                                     </li>
                                                 </ul>
                                                 <h6>
-                                                <Link to="/blog/blog-details">
-                                                        Keep Your Business Safe <br/> Ensure High Availability
-                                                        </Link>
+                                                    <Link to="/blog/blog-details">
+                                                        Keep Your Business Safe <br /> Ensure High Availability
+                                                    </Link>
                                                 </h6>
                                             </div>
                                         </div>
@@ -228,14 +228,14 @@ const BlogDetails = () => {
                                             <div className="recent-content">
                                                 <ul>
                                                     <li>
-                                                    <i className="bi bi-calendar"></i>
+                                                        <i className="bi bi-calendar"></i>
                                                         23 Feb, 2024
                                                     </li>
                                                 </ul>
                                                 <h6>
-                                                <Link to="/blog/blog-details">
-                                                        Tackling the Changes of <br/> Retell Industry
-                                                        </Link>
+                                                    <Link to="/blog/blog-details">
+                                                        Tackling the Changes of <br /> Retell Industry
+                                                    </Link>
                                                 </h6>
                                             </div>
                                         </div>

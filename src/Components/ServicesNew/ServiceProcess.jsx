@@ -20,7 +20,7 @@ const ServiceProcess = ({ data }) => {
             <img src={data.bgShape} alt="bg-shape" />
           </div>
         )} */}
-            <div className="container">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         <div className="sub-title wow fadeInUp">

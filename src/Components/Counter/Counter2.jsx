@@ -8,21 +8,21 @@ const Counter2 = () => {
         loadBackgroudImages();
     }, []);
 
-       const [iframeSrc, setIframeSrc] = useState('about:blank');
-      const [toggle, setToggle] = useState(false);
-    
-      const handelClick = () => {
+    const [iframeSrc, setIframeSrc] = useState('about:blank');
+    const [toggle, setToggle] = useState(false);
+
+    const handelClick = () => {
         setIframeSrc("https://www.youtube.com/embed/rRid6GCJtgc");
         setToggle(!toggle);
-      };
-      const handelClose = () => {
+    };
+    const handelClose = () => {
         setIframeSrc('about:blank');
         setToggle(!toggle);
-      };   
+    };
 
     return (
         <section className="cta-counter-section-2 section-padding bg-cover" data-background="/assets/img/cta-counter-bg.jpg">
-            <div className="container">
+            <div className="container px-3">
                 <div className="cta-counter-wrapper-2">
                     <div className="section-title-area">
                         <div className="section-title">
@@ -30,7 +30,7 @@ const Counter2 = () => {
                                 <span>Counter</span>
                             </div>
                             <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-                                Make your marketing <br/> more effective
+                                Make your marketing <br /> more effective
                             </h2>
                         </div>
                         <div className="counter-box-area">
@@ -63,10 +63,10 @@ const Counter2 = () => {
                 </div>
             </div>
             <VideoModal
-            isTrue={toggle}
-            iframeSrc={iframeSrc}
-            handelClose={handelClose}        
-        ></VideoModal>             
+                isTrue={toggle}
+                iframeSrc={iframeSrc}
+                handelClose={handelClose}
+            ></VideoModal>
         </section>
     );
 };

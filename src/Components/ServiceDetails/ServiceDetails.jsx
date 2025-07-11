@@ -3,34 +3,34 @@ import { Link } from "react-router-dom";
 
 const ServiceDetails = () => {
 
-     const faqContent = [
-            {title:'Why Is SEO Important For Small Business?', content:'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus'},
-            {title:'How do I choose the best SEO Agency?', content:'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus'},
-            {title:'Better Security And Faster Server?', content:'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus'},
-            {title:'Deployment Within Few Minutes', content:'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus'},
-          ]; 
-    
-          const accordionContentRef = useRef(null);
-          const [openItemIndex, setOpenItemIndex] = useState(-1);
-          const [firstItemOpen, setFirstItemOpen] = useState(true);
-        
-          const handleItemClick = index => {
-            if (index === openItemIndex) {
-              setOpenItemIndex(-1);
-            } else {
-              setOpenItemIndex(index);
-            }
-          };
-          useEffect(() => {
-            if (firstItemOpen) {
-              setOpenItemIndex(0);
-              setFirstItemOpen(false);
-            }
-          }, [firstItemOpen]);
+    const faqContent = [
+        { title: 'Why Is SEO Important For Small Business?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
+        { title: 'How do I choose the best SEO Agency?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
+        { title: 'Better Security And Faster Server?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
+        { title: 'Deployment Within Few Minutes', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
+    ];
+
+    const accordionContentRef = useRef(null);
+    const [openItemIndex, setOpenItemIndex] = useState(-1);
+    const [firstItemOpen, setFirstItemOpen] = useState(true);
+
+    const handleItemClick = index => {
+        if (index === openItemIndex) {
+            setOpenItemIndex(-1);
+        } else {
+            setOpenItemIndex(index);
+        }
+    };
+    useEffect(() => {
+        if (firstItemOpen) {
+            setOpenItemIndex(0);
+            setFirstItemOpen(false);
+        }
+    }, [firstItemOpen]);
 
     return (
         <section className="service-details-section section-padding">
-            <div className="container">
+            <div className="container px-3">
                 <div className="service-details-wrapper">
                     <div className="row">
                         <div className="col-lg-12">
@@ -100,19 +100,19 @@ const ServiceDetails = () => {
                                     <div className="faq-accordion">
                                         <div className="accordion" id="accordion">
 
-                                        {faqContent.map((item, index) => (
-                                            <div key={index} className={`accordion-item mb-3 ${index === openItemIndex ? "active" : "" }`}   data-wow-delay=".3s">
-                                                <h5 onClick={() => handleItemClick(index)} className="accordion-header">
-                                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                                    {item.title}
-                                                    </button>
-                                                </h5>
-                                                <div ref={accordionContentRef} id="faq1" className="accordion-collapse collapse" data-bs-parent="#accordion">
-                                                    <div className="accordion-body">
-                                                    {item.content}
+                                            {faqContent.map((item, index) => (
+                                                <div key={index} className={`accordion-item mb-3 ${index === openItemIndex ? "active" : ""}`} data-wow-delay=".3s">
+                                                    <h5 onClick={() => handleItemClick(index)} className="accordion-header">
+                                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                                            {item.title}
+                                                        </button>
+                                                    </h5>
+                                                    <div ref={accordionContentRef} id="faq1" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                        <div className="accordion-body">
+                                                            {item.content}
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                             ))}
 
                                         </div>

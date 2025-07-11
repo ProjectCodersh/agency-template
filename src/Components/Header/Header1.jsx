@@ -36,7 +36,7 @@ export default function Header1({ variant }) {
         style={{ backdropFilter: "blur(15px)" }}
       >
         <div className="cs_main_header">
-          <div className="container">
+          <div className="container px-3">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">

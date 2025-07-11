@@ -36,7 +36,7 @@ const Brandsection1 = () => {
 
     return (
         <section className="section-padding brand-section fix" style={{ backgroundColor: "#f6f3fe" }}>
-            <div className="container ">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         {/* <div className="sub-title wow fadeInUp" style={{ backgroundColor: '#384bff1a' }}>

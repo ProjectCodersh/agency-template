@@ -16,7 +16,7 @@ const WhyChoose4 = () => {
             <div className="shape-img-2 float-bob-y">
                 {/* <img src="/assets/img/service/right-shape-2.png" alt="img" /> */}
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="team-wrapper style-4">
                     <div className="row g-4 align-items-center">
                         <div className="col-xl-6">

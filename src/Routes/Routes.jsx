@@ -12,6 +12,7 @@ import AboutPage from "../Pages/AboutPage";
 import TeamPage from "../Pages/TeamPage";
 import CaseStudyPage from "../Pages/CaseStudyPage";
 import Testimonials from "../Pages/Testimonials";
+import PricingPage from "../Pages/PricingPage";
 // import Casestudies from "../Pages/CaseStudyPageNew";
 // import FaqPage from "../Pages/FaqPage";
 // import Solutions from "../Pages/Solutions";
@@ -20,7 +21,6 @@ import Testimonials from "../Pages/Testimonials";
 // import Home2 from "../Pages/Home2";
 // import Home3 from "../Pages/Home3";
 // import TeamDetailsPage from "../Pages/TeamDetailsPage";
-// import PricingPage from "../Pages/PricingPage";
 // import CaseStudyDetailsPage from "../Pages/CaseStudyDetailsPage";
 // import BlogRightSidebar from "../Pages/BlogRightSidebar";
 // import BlogPage from "../Pages/BlogPage";
@@ -36,10 +36,10 @@ export const router = createBrowserRouter([
       //   path: "/team/team-details",
       //   element: <TeamDetailsPage></TeamDetailsPage>,
       // },
-      // {
-      //   path: "/pricing",
-      //   element: <PricingPage></PricingPage>,
-      // },
+      {
+        path: "/pricing",
+        element: <PricingPage></PricingPage>,
+      },
       // {
       //   path: "/faq",
       //   element: <FaqPage></FaqPage>,
@@ -119,7 +119,7 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "home2",
+    path: "unlimited-shopify",
     element: <Main></Main>,
     children: [
       {

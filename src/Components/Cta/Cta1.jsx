@@ -5,7 +5,7 @@ const Cta1 = () => {
             <div className="shape-img float-bob-y">
                 {/* <img src="/assets/img/service/rocket-shape.png" alt="img" /> */}
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="cta-marketing-wrapper">
                     <div className="content">
                         <div className="section-title">

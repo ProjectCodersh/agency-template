@@ -1699,6 +1699,12 @@ span {
   }
 }
 
+@media (max-width: 576px) {
+  .cta-wrapper h2 {
+    font-size: 26px;
+  }
+}
+
 .cta-wrapper .cta-img {
   position: absolute;
   bottom: 0;
@@ -3891,7 +3897,7 @@ span {
 }
 
 .array-button .array-prev:hover {
-  background-color: var(--theme);
+  background-color: var(--black);
   color: var(--white);
 }
 
@@ -6117,6 +6123,8 @@ input.main-search-input::placeholder {
   border: 1px solid #D4DCFF;
   background: var(--white);
   padding: 30px;
+  height: 100%;
+  /* min-height: 573px; */
 }
 
 .pricing-box-items .pricing-header {
@@ -9971,4 +9979,41 @@ input.main-search-input::placeholder {
   transform: translateY(-8px) scale(1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   z-index: 2;
+}
+
+
+/*****************************
+pricing page collaboration link
+******************************/
+.collaborate-link {
+  display: inline-block;
+  margin-top: 20px;
+  /* spacing above */
+  margin-bottom: 20px;
+  /* spacing below */
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--theme);
+  /* use your theme color or adjust */
+  text-decoration: underline;
+  /* classic underline */
+  text-underline-offset: 4px;
+  /* nicer spacing between text and underline */
+  transition: color 0.3s ease;
+}
+
+.collaborate-link:hover {
+  color: var(--header);
+  /* change color on hover */
+  text-decoration-color: var(--header);
+}
+
+.third-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.third-card .price-button {
+  margin-top: auto;
+  /* pushes it to the bottom */
 }

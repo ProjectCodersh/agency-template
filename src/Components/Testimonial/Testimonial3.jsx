@@ -11,32 +11,32 @@ const Testimonial3 = () => {
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 4000,        
+        autoplaySpeed: 4000,
         responsive: [
-          {
-            breakpoint: 1399,
-            settings: {
-              slidesToShow: 1,
+            {
+                breakpoint: 1399,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }, {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
             }
-          },
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 1,
-            }
-          },{
-            breakpoint: 575,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
         ]
-      };  
+    };
 
     const testimonialContent = [
-        {img:'/assets/img/testimonial/05.png', subtitle:'Trader, USA', title:'Esther Howard', content:' Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.'},
-        {img:'/assets/img/testimonial/05.png', subtitle:'Trader, USA', title:'Esther Howard', content:' Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.'},
-      ]; 
+        { img: '/assets/img/testimonial/05.png', subtitle: 'Trader, USA', title: 'Esther Howard', content: ' Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.' },
+        { img: '/assets/img/testimonial/05.png', subtitle: 'Trader, USA', title: 'Esther Howard', content: ' Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.' },
+    ];
 
     return (
         <section className="testimonial-section-3 section-padding pt-0">
@@ -52,7 +52,7 @@ const Testimonial3 = () => {
             <div className="right-shape">
                 <img src="/assets/img/testimonial/right-shape.png" alt="img" />
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="testimonial-wrapper-3">
                     <div className="client-1">
                         <img src="/assets/img/testimonial/06.png" alt="img" />
@@ -68,29 +68,29 @@ const Testimonial3 = () => {
                     </div>
                     <div className="swiper testimonial-slider-2">
                         <div className="swiper-wrapper">
-                            
-                        <Slider {...settings}>
-                        {testimonialContent.map((item, i) => (                            
-                            <div key={i} className="swiper-slide">
-                                <div className="testimonial-content">
-                                    <div className="icon">
-                                        <img src="/assets/img/testimonial/quote.png" alt="img" />
-                                    </div>
-                                    <p>
-                                    {item.content}
-                                    </p>
-                                    <div className="client-info">
-                                        <div className="client-img">
-                                            <img src={item.img} alt="img" />
+
+                            <Slider {...settings}>
+                                {testimonialContent.map((item, i) => (
+                                    <div key={i} className="swiper-slide">
+                                        <div className="testimonial-content">
+                                            <div className="icon">
+                                                <img src="/assets/img/testimonial/quote.png" alt="img" />
+                                            </div>
+                                            <p>
+                                                {item.content}
+                                            </p>
+                                            <div className="client-info">
+                                                <div className="client-img">
+                                                    <img src={item.img} alt="img" />
+                                                </div>
+                                                <div className="content">
+                                                    <h6>{item.title}</h6>
+                                                    <span>{item.subtitle}</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="content">
-                                            <h6>{item.title}</h6>
-                                            <span>{item.subtitle}</span>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            ))}
+                                ))}
                             </Slider>
 
 

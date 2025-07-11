@@ -41,7 +41,7 @@ const BrandSection2 = () => {
             className="section-padding brand-section fix"
 
         >
-            <div className="container ">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         <h2 className="wow fadeInUp text-break" data-wow-delay=".3s">

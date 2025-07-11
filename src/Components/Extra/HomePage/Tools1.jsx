@@ -96,7 +96,7 @@ function Tools1() {
 
     return (
         <section className="feature-secton fix section-padding" >
-            <div className="container">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         <div className="sub-title wow fadeInUp" >

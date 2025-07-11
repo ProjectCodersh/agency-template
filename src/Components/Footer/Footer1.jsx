@@ -14,7 +14,7 @@ const Footer1 = () => {
                 <div className="rokect-shape float-bob-y">
                     {/* <img src="/assets/img/rokect.png" alt="img" /> */}
                 </div>
-                <div className="container">
+                <div className="container px-3">
                     <div className="cta-wrapper bg-cover mt-1 mt-xl-0" data-background="/assets/img/cta-bg.jpg">
                         <div className="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <img src="/assets/img/HarshShah.png" alt="img" />
@@ -32,10 +32,10 @@ const Footer1 = () => {
             </section>
 
             <section className="footer-section footer-bg fix">
-                <div className="container">
+                <div className="container px-3">
                     <div className="footer-widgets-wrapper">
                         <div className="row">
-                            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
                                         <a href="index.html">
@@ -58,84 +58,46 @@ const Footer1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                            <div className="col-xl-4 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
                                         <h3>Quick Links</h3>
                                     </div>
                                     <ul className="list-area">
                                         <li>
-                                            <Link to="/about">
+                                            <Link to="/">
                                                 <i className="bi bi-arrow-right"></i>
-                                                Codersh About
+                                                Unlimited Wordpress
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/service">
+                                            <Link to="/unlimited-shopify">
                                                 <i className="bi bi-arrow-right"></i>
-                                                Our Services
+                                                Unlimited Shopify
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/blog">
+                                            <Link to="/case-study">
                                                 <i className="bi bi-arrow-right"></i>
-                                                Our Blogs
+                                                Case Study
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/faq">
+                                            <Link to="/pricing">
                                                 <i className="bi bi-arrow-right"></i>
-                                                FAQ’S
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/contact">
-                                                <i className="bi bi-arrow-right"></i>
-                                                Contact Us
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".6s">
-                                <div className="single-footer-widget">
-                                    <div className="widget-head">
-                                        <h3>Quick Links</h3>
-                                    </div>
-                                    <ul className="list-area">
-                                        <li>
-                                            <Link to="/about">
-                                                <i className="bi bi-arrow-right"></i>
-                                                Codersh About
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service">
-                                                <i className="bi bi-arrow-right"></i>
-                                                Our Services
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/blog">
-                                                <i className="bi bi-arrow-right"></i>
-                                                Our Blogs
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/faq">
-                                                <i className="bi bi-arrow-right"></i>
-                                                FAQ’S
+                                                Pricing
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="/contact">
                                                 <i className="bi bi-arrow-right"></i>
-                                                Contact Us
+                                                Contact
                                             </Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
                             {/* <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
@@ -183,7 +145,7 @@ const Footer1 = () => {
                                     </div>
                                 </div>
                             </div> */}
-                            <div className="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
+                            <div className="col-xl-4 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
                                         <h3>Contact Us</h3>
@@ -265,8 +227,8 @@ const Footer1 = () => {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <div className="container">
-                        <div className="footer-wrapper d-flex align-items-center justify-content-between">
+                    <div className="container px-3">
+                        <div className="footer-wrapper d-flex align-items-center justify-content-center">
                             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
 
                                 © 2014 – 2025. All Rights Reserved. <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>Codersh Web Services</Link>.

@@ -23,7 +23,7 @@ const CaseStudy1 = () => {
             <div className="right-shape float-bob-x">
                 {/* <img src="/assets/img/case-studies/right-shaape.png" alt="img" /> */}
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         <div className="sub-title wow fadeInUp">

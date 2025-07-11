@@ -35,7 +35,7 @@ const About1 = () => {
             <div className="left-shape float-bob-y">
                 {/* <img src="/assets/img/about/left-shape.png" alt="img" /> */}
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="about-wrapper mt-0">
                     <div className="row g-4">
                         <div className="col-lg-6">

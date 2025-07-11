@@ -24,7 +24,7 @@ const Brandsection3 = () => {
 
     return (
         <section className="section-padding brand-section fix" style={{ backgroundColor: "#f6f3fe" }}>
-            <div className="container ">
+            <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">

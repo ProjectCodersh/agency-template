@@ -4,13 +4,13 @@ const CaseStudy4 = () => {
 
     const chooseContent = [
         { subtitle: 'E-Commerce', title: 'ReinventU', img: '/assets/img/case-studies/02.jpg', slug: 'reinventu' },
-        { subtitle: 'Restaurant & Hospitality', title: 'Chez Omar', img: '/assets/img/case-studies/03.jpg', slug: 'chez-omar' },
-        { subtitle: 'Wine Brand (LGBTQ+ Focused)', title: 'Madame F', img: '/assets/img/case-studies/04.jpg', slug: 'madame-f' },
-        { subtitle: 'Food & Beverage', title: 'Liberation Cocktails', img: '/assets/img/case-studies/06.jpg', slug: 'liberation-cocktails' },
-        { subtitle: 'Food & Beverage', title: 'Van Hunks ', img: '/assets/img/case-studies/07.jpg', slug: 'van-hunks' },
-        { subtitle: 'E-Commerce & Financial Services', title: 'Pa Mi Gente', img: '/assets/img/case-studies/08.jpg', slug: 'pa-mi-gente' },
-        { subtitle: 'Financial Services', title: 'Stellar Credit', img: '/assets/img/case-studies/02.jpg', slug: 'stellar-credit' },
-        { subtitle: 'E-Commerce', title: 'Bergbat', img: '/assets/img/case-studies/03.jpg', slug: 'bergbat' },
+        { subtitle: 'wordpress E-Commerce', title: 'Chez Omar', img: '/assets/img/case-studies/03.jpg', slug: 'chez-omar' },
+        { subtitle: 'Wine Brand (LGBTQ+ Focused)', title: 'Madame F', img: '/assets/img/casestudy/madame-f-casestudy.png', slug: 'madame-f' },
+        { subtitle: 'E-Commerce (cocktail store)', title: 'Liberation Cocktails', img: '/assets/img/casestudy/liberation-casestudy.png', slug: 'liberation-cocktails' },
+        { subtitle: ' E-Commerce (wine store) ', title: 'Van Hunks ', img: '/assets/img/casestudy/van-hunks-casestudy.png', slug: 'van-hunks' },
+        { subtitle: 'Wordpress', title: 'Pa Mi Gente', img: '/assets/img/casestudy/pami-gente-casestudy.png', slug: 'pa-mi-gente' },
+        { subtitle: 'Financial Services', title: 'Stellar Credit', img: '/assets/img/casestudy/stellar-credit-casestudy.png', slug: 'stellar-credit' },
+        { subtitle: 'E-Commerce', title: 'Bergbat', img: '/assets/img/casestudy/bergbat-casestudy.png', slug: 'bergbat' },
     ];
 
     return (

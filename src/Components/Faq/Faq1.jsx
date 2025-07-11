@@ -42,7 +42,7 @@ const Faq1 = ({ addclass }) => {
       <div className="faq-shape">
         <img src="/assets/img/faq-shape.png" alt="img" />
       </div> */}
-      <div className="container">
+      <div className="container px-3">
         <div className="faq-wrapper">
           <div className="row g-4 justify-content-between">
             <div className="col-xl-5 col-lg-6">

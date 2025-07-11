@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from "react";
 const Faq2 = ({ addclass }) => {
 
   const faqContent = [
-    { title: 'Can I assign unlimited WordPress tasks?', content: 'Yes! You can assign unlimited WordPress tasks to our expert developers. We handle one task at a time to ensure quality work.' },
-    { title: 'How long does it take to complete different types of tasks?', content: 'Simple tasks take 24-48 hours, medium projects need 5-7 business days. Full website builds typically require 3-4 weeks, depending on complexity.' },
-    { title: 'What types of WordPress tasks can I assign to Codersh?', content: "Any WordPress-related work including development, customization, plugins, security, SEO, and maintenance. We don't restrict the type of development work you can assign." },
-    { title: 'How do I track my project progress?', content: 'You can track progress in real-time and receive regular updates from our dedicated project manager via emails' }
+    { title: 'Can you help increase my store’s conversion rate?', content: 'Yes! We enhance product pages, streamline checkout, and optimize calls-to-action to turn visitors into buyers.' },
+    { title: 'Will optimization affect my store’s design?', content: 'No, we refine performance without compromising your store’s design. If needed, we make subtle UI improvements for a better user experience.' },
+    { title: 'How long does Shopify Optimization take?', content: "Depending on the level of optimization needed, it usually takes between 5 to 10 days." },
+    { title: 'Do you provide ongoing support after optimization?', content: 'Yes! We offer continuous monitoring and updates to ensure long-term store performance.' }
   ];
 
   const accordionContentRef = useRef(null);
@@ -42,7 +42,7 @@ const Faq2 = ({ addclass }) => {
       <div className="faq-shape">
         <img src="/assets/img/faq-shape.png" alt="img" />
       </div> */}
-      <div className="container">
+      <div className="container px-3">
         <div className="faq-wrapper">
           <div className="row g-4 justify-content-between">
             <div className="col-xl-5 col-lg-6">

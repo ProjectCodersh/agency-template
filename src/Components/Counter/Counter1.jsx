@@ -19,7 +19,7 @@ const Counter1 = () => {
             <div className="bg-shape">
                 <img src="/assets/img/bg-shape.png" alt="img" />
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="cta-counter-wrapper bg-cover" data-background="/assets/img/counter-bg.jpg" >
                     <div className="shape-img">
                         {/* <img src="/assets/img/counter-shape.png" alt="img" /> */}

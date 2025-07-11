@@ -15,7 +15,7 @@ const BreadCumb = ({ Title, bgimg }) => {
       <div className="right-shape">
         {/* <img src="/assets/img/breadcrumb-shape-2.png" alt="img" /> */}
       </div>
-      <div className="container">
+      <div className="container px-3">
         <div className="page-heading">
           <div className="breadcrumb-sub-title">
             <h1 className="wow fadeInUp" data-wow-delay=".3s">

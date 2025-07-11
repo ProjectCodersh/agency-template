@@ -52,25 +52,25 @@ const VideoTestimonialSlick = () => {
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-1-compressed-D5ZEQNbv.mp4",
             name: "Esther Howard",
-            role: "Nursing Assistant",
+            role: "CEO",
             desc: "From the initial consultation to the final product...",
         },
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-2-compressed-CkzfM4nC.mp4",
-            name: "Arlene McCoy",
-            role: "UX Designer",
+            name: "Simon",
+            role: "CEO",
             desc: "He personalized my website to fit my needs...",
         },
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-3-compressed-CYU6nxZ0.mp4",
             name: "Cameron Williamson",
-            role: "Marketing Lead",
+            role: "CEO",
             desc: "Don't worry about the code. Don't worry about things not working...",
         },
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-4-compressed-BI7yZHtd.mp4",
             name: "Brooklyn Simmons",
-            role: "Startup Founder",
+            role: "CEO",
             desc: "We have been working together for over three years...",
         }
     ];
@@ -98,7 +98,7 @@ const VideoTestimonialSlick = () => {
 
     return (
         <section className="testimonial-section section-padding fix">
-            <div className="container">
+            <div className="container px-3">
                 <div className="testimonial-wrapper g-3">
                     <div className="section-title-area">
                         <div className="section-title">

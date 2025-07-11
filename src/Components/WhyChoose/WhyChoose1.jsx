@@ -17,7 +17,7 @@ const WhyChoose1 = () => {
 
     return (
         <section className="team-section fix section-padding">
-            <div className="container">
+            <div className="container px-3">
                 <div className="team-wrapper">
                     <div className="row g-4">
                         <div className="col-lg-6">

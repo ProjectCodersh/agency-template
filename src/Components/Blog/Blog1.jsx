@@ -15,7 +15,7 @@ const Blog1 = () => {
             <div className="left-shape">
                 {/* <img src="/assets/img/news/left-shape.png" alt="img" /> */}
             </div>
-            <div className="container">
+            <div className="container px-3">
                 <div className="section-title text-center">
                     <div className="sub-title bg-color-2 wow fadeInUp">
                         <span>BLOG & NEWS</span>

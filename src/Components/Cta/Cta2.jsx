@@ -10,7 +10,7 @@ const Cta2 = () => {
 
     return (
         <section className="cta-contact-section fix section-padding">
-            <div className="container">
+            <div className="container px-3">
                 <div className="cta-contact-wrapper bg-cover" data-background="/assets/img/cta-contact-bg.jpg">
                     <div className="cta-image wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
                         <img src="/assets/img/contact-img.png" alt="img" />

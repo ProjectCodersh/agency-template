@@ -13,7 +13,7 @@ const ServiceTechExcellence = ({ data }) => {
   return (
     <section className="fix section-padding">
       <div className="faq-shape"></div>
-      <div className="container">
+      <div className="container px-3">
         <div className="section-title-area text-center justify-content-center mb-4">
           <div className="section-title">
             <div className="sub-title wow fadeInUp">

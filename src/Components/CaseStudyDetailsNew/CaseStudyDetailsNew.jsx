@@ -18,7 +18,7 @@ function CaseStudyDetailsNew({ data }) {
 
   return (
     <section className="project-details-section fix section-padding">
-      <div className="container">
+      <div className="container px-3">
         <div className="project-details-wrapper">
           <div className="project-details-items">
             <div className="row g-4">

@@ -16,7 +16,7 @@ const Counter3 = () => {
             className="cta-counter-section-3 fix section-bg section-padding bg-cover"
             data-background="/assets/img/cta-counter-bg.jpg"
         >
-            <div className="container">
+            <div className="container px-3">
                 <div className="cta-counter-wrapper-2">
 
                     {/* Title Area */}
