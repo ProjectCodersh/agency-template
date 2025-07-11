@@ -47,7 +47,7 @@ const Nav = () => {
             Pricing
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="/contact-us"
             onClick={() => setMobileToggle(false)}
@@ -55,7 +55,10 @@ const Nav = () => {
           >
             Contact
           </Link>
-        </li>
+        </li> */}
+        <div className="main-button">
+          <Link to="/contact-us" className="px-2"> <span className="theme-btn-contact"> Contact Us </span></Link>
+        </div>
       </ul>
     </>
   );

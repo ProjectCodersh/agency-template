@@ -64,7 +64,6 @@ export default function Header1({ variant }) {
                   {/* <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a> */}
 
                   <div className="main-button">
-
                     <Link to="/contact-us"> <span className="theme-btn"> Contact Us </span></Link>
                   </div>
                 </div>

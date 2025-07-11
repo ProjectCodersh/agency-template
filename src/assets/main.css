@@ -9257,7 +9257,7 @@ input.main-search-input::placeholder {
   .cs_nav .cs_nav_list {
     position: absolute;
     width: 100vw;
-    left: -25px;
+    left: -26px;
     background-color: #181818;
     padding: 10px 0;
     display: none;
@@ -10035,4 +10035,37 @@ navbar active page effect
   /* text-decoration-thickness: 2px;
   text-underline-offset: 8px; */
   /* optional, if needed */
+}
+
+
+/* 
+mobile nav added contact button
+ */
+.main-button .theme-btn-contact {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--theme);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 19.5px 35px;
+  border-radius: 30px;
+}
+
+@media (max-width: 575px) {
+  .main-button .theme-btn-contact {
+    /* padding: 18px 30px; */
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+.main-button:hover .theme-btn-contact {
+  background-color: var(--bg);
+  color: var(--black);
 }
