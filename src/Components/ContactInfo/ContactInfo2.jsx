@@ -73,7 +73,7 @@ const ContactInfo2 = () => {
                                             href="https://maps.app.goo.gl/TJP3CFjW6jSKHwsA6"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            style={{ color: "white", textDecoration: "none" }}
+                                        // style={{ color: "white", textDecoration: "none" }}
                                         >
                                             Our Address
                                         </a></h3>
@@ -93,7 +93,7 @@ const ContactInfo2 = () => {
                                 </div>
                                 <div className="content">
                                     <h3 className="text-lowercase">
-                                        <a href="mailto:arvind@codersh.com">arvind@codersh.com</a>
+                                        <a href="mailto:arvind@codersh.com" target="_blank" rel="noopener noreferrer">arvind@codersh.com</a>
                                     </h3>
                                     <p>Email us anytime for any kind <br /> of query.</p>
                                 </div>
