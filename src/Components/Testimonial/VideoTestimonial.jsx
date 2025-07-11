@@ -45,8 +45,24 @@ const VideoTestimonialSlick = () => {
         });
     }, []);
 
-    const next = () => sliderRef.current.slickNext();
-    const previous = () => sliderRef.current.slickPrev();
+    // helper: pause all videos
+    const pauseAllVideos = () => {
+        const allVideos = document.querySelectorAll(".video-testimonial-slide video");
+        allVideos.forEach((v) => {
+            v.pause();
+            v.removeAttribute("controls");
+        });
+    };
+
+    const next = () => {
+        pauseAllVideos();
+        sliderRef.current.slickNext();
+    };
+
+    const previous = () => {
+        pauseAllVideos();
+        sliderRef.current.slickPrev();
+    };
 
     const videoSlides = [
         {
@@ -78,15 +94,12 @@ const VideoTestimonialSlick = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,           // from 2000 → 500
+        speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
-        autoplay: true,       // optional
-        autoplaySpeed: 3000,  // optional
-        pauseOnHover: true,   // optional
-        pauseOnFocus: true,   //
+        autoplay: false,          // removed auto-slide
         responsive: [
             { breakpoint: 1280, settings: { slidesToShow: 4 } },
             { breakpoint: 1024, settings: { slidesToShow: 3 } },
@@ -94,7 +107,6 @@ const VideoTestimonialSlick = () => {
             { breakpoint: 576, settings: { slidesToShow: 1 } },
         ],
     };
-
 
     return (
         <section className="testimonial-section section-padding fix">
@@ -124,9 +136,9 @@ const VideoTestimonialSlick = () => {
                                             <div className="video-testimonial-slide">
                                                 <video
                                                     src={slide.src}
-                                                    // muted
                                                     preload="metadata"
                                                     playsInline
+                                                    controlsList="nodownload"  // disable download button
                                                 ></video>
                                                 <div className="play-btn-vr">
                                                     <svg
@@ -156,7 +168,6 @@ const VideoTestimonialSlick = () => {
                         <button onClick={previous} className="array-prev"><i className="bi bi-arrow-left"></i></button>
                         <button onClick={next} className="array-next"><i className="bi bi-arrow-right"></i></button>
                     </div>
-
                 </div>
             </div>
         </section>

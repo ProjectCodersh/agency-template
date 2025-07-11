@@ -10017,3 +10017,13 @@ pricing page collaboration link
   margin-top: auto;
   /* pushes it to the bottom */
 }
+
+/***********************
+navbar active page effect
+************************/
+.cs_nav_list li a.active {
+  color: #C6F806;
+  text-decoration: underline;
+  font-weight: 600;
+  /* optional, if needed */
+}

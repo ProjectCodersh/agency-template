@@ -89,7 +89,7 @@ const Footer1 = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/contact">
+                                            <Link to="/contact-us">
                                                 <i className="bi bi-arrow-right"></i>
                                                 Contact
                                             </Link>

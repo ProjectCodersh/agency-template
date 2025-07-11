@@ -2,7 +2,7 @@ import PricingCard from "../Card/PricingCard";
 
 const Pricng2 = () => {
     return (
-        <section className="pricing-section fix section-padding">
+        <section className="pricing-section fix section-padding pb-0">
             <div className="container px-3">
                 <div className="section-title-area">
                     <div className="section-title">
