@@ -1701,7 +1701,7 @@ span {
 
 @media (max-width: 576px) {
   .cta-wrapper h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -2959,7 +2959,7 @@ span {
 @media (max-width: 1199px) {
   .footer-bottom .footer-wrapper p {
     /* color: rgba(255, 255, 255, 0.8); */
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
