@@ -1,4 +1,4 @@
-import DropDown from './DropDown';
+// import DropDown from './DropDown';
 import { Link } from 'react-router-dom';
 
 export default function Nav({ setMobileToggle }) {
@@ -143,24 +143,24 @@ export default function Nav({ setMobileToggle }) {
           Unlimited Shopify
         </Link>
       </li> */}
-      <li className="menu-item-has-children">
-        <Link to="/">Home</Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link to="/" onClick={() => setMobileToggle(false)}>
-                Unlimited Wordpress
-              </Link>
-            </li>
-            <li>
-              <Link to="/home2" onClick={() => setMobileToggle(false)}>
-                Unlimited Shopify
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
-      </li>
-      <li className="menu-item-has-children">
+      {/* <li className="menu-item-has-children">
+          <Link to="/">Home</Link>
+          <DropDown>
+            <ul>
+              <li>
+                <Link to="/" onClick={() => setMobileToggle(false)}>
+                  Unlimited Wordpress
+                </Link>
+              </li>
+              <li>
+                <Link to="/home2" onClick={() => setMobileToggle(false)}>
+                  Unlimited Shopify
+                </Link>
+              </li>
+            </ul>
+          </DropDown>
+        </li> */}
+      {/* <li className="menu-item-has-children">
         <Link to="/">Pages</Link>
         <DropDown>
           <ul>
@@ -176,8 +176,8 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li>
-      <li className="menu-item-has-children">
+      </li> */}
+      {/* <li className="menu-item-has-children">
         <Link >Services</Link>
         <DropDown>
           <ul>
@@ -233,8 +233,8 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li>
-      <li className="menu-item-has-children">
+      </li> */}
+      {/* <li className="menu-item-has-children">
         <Link to="/" >Solutions</Link>
         <DropDown>
           <ul>
@@ -260,6 +260,16 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
+      </li> */}
+      <li>
+        <Link to="/" onClick={() => setMobileToggle(false)}>
+          Unlimited Wordpress
+        </Link>
+      </li>
+      <li>
+        <Link to="/home2" onClick={() => setMobileToggle(false)}>
+          Unlimited Shopify
+        </Link>
       </li>
       <li>
         <Link to="/case-study" onClick={() => setMobileToggle(false)}>

@@ -28,14 +28,14 @@ const Brandsection1 = () => {
     const chooseHeading = {
         subtitle: "Our Services",
         title: "Project Management &  Communication  Tools",
-        content:
-            "A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.",
+        content: "",
+        // "A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.",
         plantitle1: "We recommend For you ",
         plantitle2: "We are Also compatible with",
     };
 
     return (
-        <section className="section-padding brand-section fix">
+        <section className="section-padding brand-section fix" style={{ backgroundColor: "#f6f3fe" }}>
             <div className="container ">
                 <div className="section-title-area">
                     <div className="section-title">
@@ -53,7 +53,7 @@ const Brandsection1 = () => {
 
                 <div className="mb-4">
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: "#384bff1a" }}>
                             <span>{chooseHeading.plantitle1}</span>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Brandsection1 = () => {
 
                 <div>
                     <div className="section-title mb-0">
-                        <div className="sub-title wow fadeInUp my-4">
+                        <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: "#384bff1a" }}>
                             <span>{chooseHeading.plantitle2}</span>
                         </div>
                     </div>

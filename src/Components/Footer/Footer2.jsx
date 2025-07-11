@@ -15,7 +15,7 @@ const Footer2 = () => {
                     {/* <img src="/assets/img/rokect.png" alt="img" /> */}
                 </div>
                 <div className="container">
-                    <div className="cta-wrapper bg-cover" data-background="/assets/img/cta-bg.jpg">
+                    <div className="cta-wrapper bg-cover mt-1 mt-xl-0" data-background="/assets/img/cta-bg.jpg">
                         <div className="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <img src="/assets/img/HarshShah.png" alt="img" />
                         </div>
@@ -23,7 +23,9 @@ const Footer2 = () => {
                             Stay Connected With <br /> Cutting Edge IT
                         </h2>
                         <div className="main-button wow fadeInUp" data-wow-delay=".5s">
-                            <Link to="/contact"> <span className="theme-btn"> talk TO  A SPECIALIST </span><span className="arrow-btn"> <i className="bi bi-arrow-right"></i></span></Link>
+                            <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
+                                <span className="theme-btn">Let&#39;s Collaborate</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -42,13 +44,13 @@ const Footer2 = () => {
                                     </div>
                                     <div className="footer-content">
                                         <p>
-                                            Codersh Web Service is a web design and development company aiming to provide high quality website development to its clients.
+                                            We are a web design and development company aiming to provide high quality website development to its clients.
                                         </p>
                                         <div className="social-icon d-flex align-items-center">
-                                            <a href="#"><i className="bi bi-facebook"></i></a>
-                                            <a href="#"><i className="bi bi-twitter"></i></a>
-                                            <a href="#"><i className="bi bi-youtube"></i></a>
-                                            <a href="#"><i className="bi bi-linkedin"></i></a>
+                                            <a href="https://www.facebook.com/Codershweb/"><i className="bi bi-facebook"></i></a>
+                                            <a href="https://x.com/CodershWeb/"><i className="bi bi-twitter"></i></a>
+                                            <a href="https://www.instagram.com/codersh.web/"><i className="bi bi-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F30213091%2Fadmin%2Fanalytics%2Ffollowers%2F"><i className="bi bi-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -186,12 +188,12 @@ const Footer2 = () => {
                                     <div className="footer-content">
                                         <ul className="contact-info">
                                             <li>
-                                                <i className="fa-regular fa-envelope"></i>
+                                                <i className="bi bi-envelope"></i>
                                                 <a href="mailto:arvind@codersh.com">arvind@codersh.com</a>
                                             </li>
                                             <li>
-                                                <i className="fa-solid fa-phone-volume"></i>
-                                                <a href="tel:9664617700">+966-461-7700</a>
+                                                <i className="bi bi-telephone"></i>
+                                                <a href="tel:+9998134094">+91 99981 34094</a>
                                             </li>
 
                                             {/* India Address */}
@@ -199,14 +201,20 @@ const Footer2 = () => {
                                                 <img
                                                     src="/assets/img/india.svg"
                                                     alt="India Flag"
-                                                    style={{ width: "20px", height: "14px", marginRight: "8px", marginTop: "4px" }}
+                                                    style={{ width: "20px", height: "14px", marginRight: "8px", marginTop: "8px" }}
                                                 />
                                                 <div>
-                                                    <strong >INDIA:</strong>
+                                                    <strong>INDIA:</strong>
                                                     <div style={{ color: "white" }}>
-
-                                                        A-307, Empire Business Hub,<br />
-                                                        Science City Rd, Sola, Ahmedabad
+                                                        <a
+                                                            href="https://www.google.com/maps?q=A-307,+Empire+Business+Hub,+Science+City+Rd,+Sola,+Ahmedabad"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            style={{ color: "white", textDecoration: "none" }}
+                                                        >
+                                                            A-307, Empire Business Hub,<br />
+                                                            Science City Rd, Sola, Ahmedabad
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -216,14 +224,20 @@ const Footer2 = () => {
                                                 <img
                                                     src="/assets/img/united-states.svg"
                                                     alt="USA Flag"
-                                                    style={{ width: "20px", height: "14px", marginRight: "8px", marginTop: "4px" }}
+                                                    style={{ width: "20px", height: "14px", marginRight: "8px", marginTop: "8px" }}
                                                 />
                                                 <div>
                                                     <strong>USA:</strong>
                                                     <div style={{ color: "white" }}>
-
-                                                        400 Boren Ave N, Apt 426,<br />
-                                                        Seattle WA – 98109 – USA
+                                                        <a
+                                                            href="https://www.google.com/maps?q=400+Boren+Ave+N,+Apt+426,+Seattle,+WA+98109"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            style={{ color: "white", textDecoration: "none" }}
+                                                        >
+                                                            400 Boren Ave N, Apt 426,<br />
+                                                            Seattle WA – 98109 – USA
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -252,20 +266,10 @@ const Footer2 = () => {
                     <div className="container">
                         <div className="footer-wrapper d-flex align-items-center justify-content-between">
                             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-                                © All Copyright 2025 by Codersh
+                                © 2014 – 2025. All Rights Reserved. <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>Codersh Web Services</Link>.
+
                             </p>
-                            <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                                <li>
-                                    <a href="#">
-                                        Terms & Condition
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                            </ul>
+
                         </div>
                     </div>
                     <a href="#" id="scrollUp" className="scroll-icon">

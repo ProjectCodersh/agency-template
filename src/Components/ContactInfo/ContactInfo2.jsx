@@ -68,7 +68,16 @@ const ContactInfo2 = () => {
                                     <i className="bi bi-geo-alt-fill"></i>
                                 </div>
                                 <div className="content">
-                                    <h3>Our Address</h3>
+                                    <h3>
+                                        <a
+                                            href="https://maps.app.goo.gl/TJP3CFjW6jSKHwsA6"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            style={{ color: "white", textDecoration: "none" }}
+                                        >
+                                            Our Address
+                                        </a></h3>
+
                                     <p>
                                         A-307, Empire Business Hub,
                                         <br /> Science City Rd, Sola,
@@ -97,7 +106,7 @@ const ContactInfo2 = () => {
                                 </div>
                                 <div className="content">
                                     <h3>
-                                        Call: <a href="tel:+9664617700">+91-966-461-7700</a>
+                                        Call: <a href="tel:+9998134094">+91 99981 34094</a>
                                     </h3>
                                     <p>Call us for any kind of support, <br />we will wait for it.</p>
                                 </div>
@@ -128,7 +137,7 @@ const ContactInfo2 = () => {
                                 <div className="contact-content">
                                     <h2>Let&#39;s Talk About Your Next Project</h2>
                                     <p>
-                                        Got an idea, a challenge, or a project you’re ready to launch? We’d love to hear about it. Whether it’s a website, mobile app, or full digital transformation - we’re here to help.
+                                        Got an idea, a challenge, or a project you’re ready to launch? We’d love to hear about it. Whether it’s a E-commerece Store or Business Directory - we’re here to help.
                                     </p>
                                     <form id="contact-form" className="contact-form-items" ref={formRef} onSubmit={handleSubmit}>
                                         <div className="row g-4">

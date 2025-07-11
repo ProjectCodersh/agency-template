@@ -53,37 +53,40 @@ const VideoTestimonialSlickSecond = () => {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-1-compressed-D5ZEQNbv.mp4",
             name: "Esther Howard",
             role: "Nursing Assistant",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Pellentesque sit amet sapien fringilla.",
+            desc: "From the initial consultation to the final product...",
         },
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-2-compressed-CkzfM4nC.mp4",
             name: "Arlene McCoy",
             role: "UX Designer",
-            desc: "An exceptional experience throughout. I’d definitely recommend!",
+            desc: "He personalized my website to fit my needs...",
         },
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-3-compressed-CYU6nxZ0.mp4",
             name: "Cameron Williamson",
             role: "Marketing Lead",
-            desc: "Loved working with the team. Professional and fast.",
+            desc: "Don't worry about the code. Don't worry about things not working...",
         },
         {
             src: "https://codersh.com/wp-content/uploads/2025/06/Video-4-compressed-BI7yZHtd.mp4",
             name: "Brooklyn Simmons",
             role: "Startup Founder",
-            desc: "Delivered exactly what we envisioned. Stellar work.",
-        },
+            desc: "We have been working together for over three years...",
+        }
     ];
 
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 500,           // from 2000 → 500
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
-        autoplay: false,
+        autoplay: true,       // optional
+        autoplaySpeed: 3000,  // optional
+        pauseOnHover: true,   // optional
+        pauseOnFocus: true,   //
         responsive: [
             { breakpoint: 1280, settings: { slidesToShow: 4 } },
             { breakpoint: 1024, settings: { slidesToShow: 3 } },
@@ -119,7 +122,12 @@ const VideoTestimonialSlickSecond = () => {
                                     {videoSlides.map((slide, index) => (
                                         <div key={index} className="swiper-slide">
                                             <div className="video-testimonial-slide">
-                                                <video src={slide.src} muted></video>
+                                                <video
+                                                    src={slide.src}
+                                                    // muted
+                                                    preload="metadata"
+                                                    playsInline
+                                                ></video>
                                                 <div className="play-btn-vr">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"

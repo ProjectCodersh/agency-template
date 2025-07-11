@@ -6,13 +6,14 @@ const Brand2 = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 5000,                // Very high speed // speed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 0,           // No delay between transitions  // autoplaySpeed: 4000,
+        cssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1399,

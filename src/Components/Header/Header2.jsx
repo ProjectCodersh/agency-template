@@ -63,9 +63,7 @@ export default function Header2({ variant }) {
                   {/* <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a> */}
 
                   <div className="main-button main-btn-area2">
-                    <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
-                      <span className="theme-btn">Continue</span><span className="arrow-btn"><i className="bi bi-arrow-right"></i></span>
-                    </a>
+                    <Link to="/contact-us"> <span className="theme-btn"> Contact Us </span></Link>
                   </div>
 
                 </div>

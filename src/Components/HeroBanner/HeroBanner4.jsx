@@ -12,13 +12,14 @@ const HeroBanner4 = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 5000,                // Very high speed // speed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 0,           // No delay between transitions  // autoplaySpeed: 4000,
+        cssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1399,
@@ -101,8 +102,14 @@ const HeroBanner4 = () => {
                                 className="img-fluid"
                             />
                         </div> */}
-                        <div className="clutchreview" >
-                            <img src="/assets/img/hero/clutchreview-2.png" alt="clutchreview-img" style={{ height: "42px" }} />
+                        <div className="clutchreview">
+                            <a href="https://clutch.co/profile/codersh-web-services" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="/assets/img/hero/clutchreview-2.png"
+                                    alt="clutchreview-img"
+                                    style={{ height: "42px" }}
+                                />
+                            </a>
                         </div>
 
                         <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-2">
@@ -124,12 +131,15 @@ const HeroBanner4 = () => {
                         </div>
 
                     </div>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-sm-1 gap-md-3 gap-lg-4">
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1 gap-md-3 gap-lg-4">
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/#"> <span className="hero-theme-btn-second"> EXPLORE MORE </span></Link>
+                            <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
+                                <span className="hero-theme-btn-second">Let&#39;s Collaborate</span>
+
+                            </a>
                         </div>
                     </div>
                 </div>

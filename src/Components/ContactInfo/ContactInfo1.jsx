@@ -80,7 +80,7 @@ const ContactInfo1 = () => {
                 {/* ...title and layout unchanged... */}
                 <div className="contact-wrapper">
                     <div className="row g-4">
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 order-2 order-xl-1">
                             <div className="contact-form-area">
                                 <h3>Get in Touch</h3>
                                 <form id="contact-form" onSubmit={handleSubmit} ref={formRef}>
@@ -188,9 +188,9 @@ const ContactInfo1 = () => {
                         </div>
 
                         {/* Map & contact info stays unchanged */}
-                        <div className="col-xl-6 d-flex align-items-center justify-content-center ">
+                        <div className="col-xl-6 d-flex align-items-center justify-content-center order-1 order-xl-2">
                             <div className="contact-map p-4" data-background="/assets/img/audience-bg.jpg">
-                                <div className="p-0 p-md-3" style={{ borderRadius: "20px", background: "#f6f3fe" }}>
+                                <div className="p-0 p-md-3" style={{}}>
                                     <img src="/assets/img/team/team.png" alt="Team Img"
                                         style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block', borderRadius: "20px", }} />
                                 </div>

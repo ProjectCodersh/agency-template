@@ -16,8 +16,9 @@ import Tools2 from "../Components/Extra/HomePage/Tools2";
 import Brandsection4 from "../Components/Extra/HomePage/Brandsection4";
 import Brandsection6 from "../Components/Extra/HomePage/BrandSection6";
 import Brand2 from "../Components/Brand/Brand2";
-import VideoTestimonialSlick from "../Components/Testimonial/VideoTestimonial";
-import About4 from "../Components/About/About4";
+// import VideoTestimonialSlicks from "../Components/Testimonial/VideoTestimonialTwo";
+import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimonialTwo";
+// import About4 from "../Components/About/About4";
 
 const Home4 = () => {
     return (
@@ -25,7 +26,7 @@ const Home4 = () => {
             <HeroBanner4></HeroBanner4>
             <Brand2></Brand2>
             <WhatWeDo4></WhatWeDo4>
-            <About4 addclass="about-section-2 fix section-padding"></About4>
+            {/* <About4 addclass="about-section-2 fix section-padding"></About4> */}
             {/* <About3></About3> */}
             <Counter6></Counter6>
             <Tools2></Tools2>
@@ -34,7 +35,7 @@ const Home4 = () => {
             <Brandsection6></Brandsection6>
             {/* <div className="section-padding3"></div> */}
             {/* <Testimonial4></Testimonial4> */}
-            <VideoTestimonialSlick></VideoTestimonialSlick>
+            <VideoTestimonialSlickSecond></VideoTestimonialSlickSecond>
             <Faq2 addclass="faq-section section-padding2 pb-0"></Faq2>
             <div className="section-padding3"></div>
             <ContactInfo1></ContactInfo1>

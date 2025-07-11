@@ -6,8 +6,8 @@ function Counter6() {
     const chooseHeading = {
         subtitle: "Page Builders",
         title: " Seamless integration <br/> with page builders",
-        content:
-            " We work with all major page builders,<br/> including Elementor. Whether you prefer to leverage <br/> existing page builder functionality or need custom .",
+        content: "",
+        // " We work with all major page builders,<br/> including Elementor. Whether you prefer to leverage <br/> existing page builder functionality or need custom .",
         img: "/assets/img/feature-img.png",
     };
 
@@ -79,14 +79,14 @@ function Counter6() {
     }, []);
 
     return (
-        <section className="feature-secton section-padding fix">
+        <section className="feature-secton section-padding fix" style={{ background: "#f6f3fe" }}>
             {/* <div className="bg-shape">
                 <img src="/assets/img/bg-shape-2.png" alt="img" />
             </div> */}
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <div className="sub-title wow fadeInUp">
+                        <div className="sub-title wow fadeInUp" style={{ backgroundColor: "#384bff1a" }}>
                             <span>{chooseHeading.subtitle}</span>
                         </div>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">

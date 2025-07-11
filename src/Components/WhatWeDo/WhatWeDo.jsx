@@ -4,9 +4,9 @@ import parse from 'html-react-parser';
 const WhatWeDo = () => {
 
     const heading = {
-        subtitle: "WHY services US",
+        subtitle: "WHY Choose US",
         title: 'What’s Included in <br> Our WordPress SEO Services',
-        content: 'Pellentesque ut vehicula sapien <br> dictumst. Maecenas ante.',
+        content: '',
     }
 
     const whyContent = [

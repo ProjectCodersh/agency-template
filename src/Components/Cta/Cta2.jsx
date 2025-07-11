@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Cta2 = () => {
 
-        useEffect(() => {
-            loadBackgroudImages();
-        }, []);
+    useEffect(() => {
+        loadBackgroudImages();
+    }, []);
 
     return (
         <section className="cta-contact-section fix section-padding">
@@ -20,7 +20,7 @@ const Cta2 = () => {
                             <span>Contact US</span>
                         </div>
                         <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-                            24/7 Expert Hosting Support <br/> Our Customers Love
+                            24/7 Expert Hosting Support <br /> Our Customers Love
                         </h2>
                     </div>
                     <div className="main-button wow fadeInUp" data-wow-delay=".5s">

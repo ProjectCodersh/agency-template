@@ -11,7 +11,7 @@ function Tools2() {
     const chooseHeading = {
         subtitle: "Our Services",
         title: ' What You Get <br/>With Every Plan',
-        content: 'A fully equipped Shopify development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.',
+        content: '',
         plantitle1: "Design & Devlopment",
         plantitle2: "Performance & optimization",
         plantitle3: "Integrations & Marketing",
@@ -93,11 +93,11 @@ function Tools2() {
     ];
 
     return (
-        <section className="feature-secton section-padding fix" style={{ backgroundColor: "#f6f3fe" }}>
+        <section className="feature-secton section-padding fix">
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <div className="sub-title wow fadeInUp" style={{ backgroundColor: "#384bff1a" }}>
+                        <div className="sub-title wow fadeInUp" style={{ backgroundColor: "#f6f3fe" }}>
                             <span>{chooseHeading.subtitle}</span>
                         </div>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -111,7 +111,7 @@ function Tools2() {
                 <div className="masonry-grid">
                     {serviceGroups.map((group, idx) => (
                         <div className="service-column" key={idx}>
-                            <div className="service-title" style={{ backgroundColor: '#384bff1a' }}>
+                            <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
                                 <span>{group.title}</span>
                             </div>
                             <ul className="service-list">

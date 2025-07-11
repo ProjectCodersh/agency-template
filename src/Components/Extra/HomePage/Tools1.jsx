@@ -11,7 +11,8 @@ function Tools1() {
     const chooseHeading = {
         subtitle: "Our Services",
         title: ' What You Get <br/>With Every Plan',
-        content: 'A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.',
+        // content: 'A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.',
+        content: '',
         plantitle1: "Design & Devlopment",
         plantitle2: "Performance & optimization",
         plantitle3: "Integrations & Marketing",
@@ -94,11 +95,11 @@ function Tools1() {
     ];
 
     return (
-        <section className="feature-secton fix section-padding" style={{ backgroundColor: '#f6f3fe' }}>
+        <section className="feature-secton fix section-padding" >
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <div className="sub-title wow fadeInUp" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="sub-title wow fadeInUp" >
                             <span>{chooseHeading.subtitle}</span>
                         </div>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -112,7 +113,7 @@ function Tools1() {
 
                 <div className="masonry-grid">
                     <div className="service-column">
-                        <div className="service-title" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="service-title" style={{ backgroundColor: "#f6f3fe" }}>
                             <span>{chooseHeading.plantitle1}</span>
                         </div>
                         <ul className="service-list">
@@ -125,7 +126,7 @@ function Tools1() {
                     </div>
 
                     <div className="service-column">
-                        <div className="service-title" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
                             <span>{chooseHeading.plantitle3}</span>
                         </div>
                         <ul className="service-list">
@@ -138,7 +139,7 @@ function Tools1() {
                     </div>
 
                     <div className="service-column">
-                        <div className="service-title" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
                             <span>{chooseHeading.plantitle2}</span>
                         </div>
                         <ul className="service-list">
@@ -151,7 +152,7 @@ function Tools1() {
                     </div>
 
                     <div className="service-column">
-                        <div className="service-title" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
                             <span>{chooseHeading.plantitle4}</span>
                         </div>
                         <ul className="service-list">
@@ -164,7 +165,7 @@ function Tools1() {
                     </div>
 
                     <div className="service-column">
-                        <div className="service-title" style={{ backgroundColor: '#384bff1a' }}>
+                        <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
                             <span>{chooseHeading.plantitle5}</span>
                         </div>
                         <ul className="service-list">

@@ -26,7 +26,7 @@ const Home = () => {
             <HeroBanner1></HeroBanner1>
             <Brand1></Brand1>
             <WhatWeDo></WhatWeDo>
-            <About4 addclass="about-section-2 fix section-padding"></About4>
+            {/* <About4 addclass="about-section-2 fix section-padding"></About4> */}
             {/* <About1></About1> */}
             <Counter4></Counter4>
             <Tools1></Tools1>

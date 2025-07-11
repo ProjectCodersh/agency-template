@@ -95,10 +95,15 @@ const HeroBanner1 = () => {
                         className="col-12 wow fadeInUp img-custom-anim-top client-items d-flex justify-content-center align-items-center flex-wrap"
                         data-wow-delay=".7s"
                     >
-                        <div className="clutchreview" >
-                            <img src="/assets/img/hero/clutchreview-2.png" alt="clutchreview-img" style={{ height: "42px" }} />
+                        <div className="clutchreview">
+                            <a href="https://clutch.co/profile/codersh-web-services" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="/assets/img/hero/clutchreview-2.png"
+                                    alt="clutchreview-img"
+                                    style={{ height: "42px" }}
+                                />
+                            </a>
                         </div>
-
                         <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-2">
                             <img
                                 src={heroContent.reviewimg}
@@ -117,13 +122,16 @@ const HeroBanner1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 gap-sm-1 gap-md-4 gap-lg-5 gap-xl-5
+                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1 gap-md-4 gap-lg-5 gap-xl-5
 4">
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
                             <Link to="/#"> <span className="hero-theme-btn"> GET A FREE QUOTE </span></Link>
                         </div>
                         <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/services/website-redesign"> <span className="hero-theme-btn-second"> EXPLORE MORE WR </span></Link>
+                            <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
+                                <span className="hero-theme-btn-second">Let&#39;s Collaborate</span>
+
+                            </a>
                         </div>
                     </div>
 

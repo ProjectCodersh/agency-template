@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from "react";
 const Faq2 = ({ addclass }) => {
 
   const faqContent = [
-    { title: 'How do I request work and get updates on work in progress?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
-    { title: 'Can I really have unlimited tasks?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
-    { title: 'How long dose it task to get one website done?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
-    { title: 'What type of tasks can I assign?', content: 'Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio.Mauris et mollis quam. Nullam fringilla erat id ante commodo maximus' },
+    { title: 'Can I assign unlimited WordPress tasks?', content: 'Yes! You can assign unlimited WordPress tasks to our expert developers. We handle one task at a time to ensure quality work.' },
+    { title: 'How long does it take to complete different types of tasks?', content: 'Simple tasks take 24-48 hours, medium projects need 5-7 business days. Full website builds typically require 3-4 weeks, depending on complexity.' },
+    { title: 'What types of WordPress tasks can I assign to Codersh?', content: "Any WordPress-related work including development, customization, plugins, security, SEO, and maintenance. We don't restrict the type of development work you can assign." },
+    { title: 'How do I track my project progress?', content: 'You can track progress in real-time and receive regular updates from our dedicated project manager via emails' }
   ];
 
   const accordionContentRef = useRef(null);
@@ -34,7 +34,7 @@ const Faq2 = ({ addclass }) => {
   }, [firstItemOpen]);
 
   return (
-    <section className={`${addclass} section-padding`} style={{ backgroundColor: '#f6f3fe' }}>
+    <section className={`${addclass} section-padding`}>
 
       {/* <div className="faq-overlay">
         <img src="/assets/img/faq-overlay.png" alt="img" />
@@ -48,7 +48,7 @@ const Faq2 = ({ addclass }) => {
             <div className="col-xl-5 col-lg-6">
               <div className="faq-content">
                 <div className="section-title">
-                  <div className="sub-title bg-color-2 wow fadeInUp">
+                  <div className="sub-title bg-color-2 wow fadeInUp" style={{ backgroundColor: "#f6f3fe" }}>
                     <span>FAQs</span>
                   </div>
                   <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -56,9 +56,7 @@ const Faq2 = ({ addclass }) => {
                   </h2>
                 </div>
                 <p className="wow fadeInUp" data-wow-delay=".5s">
-                  We are not just another agency - we are your digital growth partners. With
-                  years of industry experience and a passion for innovation, our team is
-                  dedicated to delivering measurable results propel your business forward.
+                  We are Codersh Web Services, your trusted digital solutions partner since 2014. Our team delivers measurable results that boost your business forward.
                 </p>
                 {/* <ul className="faq-list">
                   <li className="wow fadeInUp" data-wow-delay=".3s">
