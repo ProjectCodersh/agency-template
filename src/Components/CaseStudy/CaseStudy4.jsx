@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const CaseStudy4 = () => {
 
     const chooseContent = [
-        { subtitle: 'E-Commerce', title: 'ReinventU', img: '/assets/img/case-studies/02.jpg', slug: 'reinventu' },
-        { subtitle: 'wordpress E-Commerce', title: 'Chez Omar', img: '/assets/img/case-studies/03.jpg', slug: 'chez-omar' },
+        // { subtitle: 'E-Commerce', title: 'ReinventU', img: '/assets/img/case-studies/02.jpg', slug: 'reinventu' },
+        // { subtitle: 'wordpress E-Commerce', title: 'Chez Omar', img: '/assets/img/case-studies/03.jpg', slug: 'chez-omar' },
         { subtitle: 'Wine Brand (LGBTQ+ Focused)', title: 'Madame F', img: '/assets/img/casestudy/madame-f-casestudy.png', slug: 'madame-f' },
         { subtitle: 'E-Commerce (cocktail store)', title: 'Liberation Cocktails', img: '/assets/img/casestudy/liberation-casestudy.png', slug: 'liberation-cocktails' },
         { subtitle: ' E-Commerce (wine store) ', title: 'Van Hunks ', img: '/assets/img/casestudy/van-hunks-casestudy.png', slug: 'van-hunks' },

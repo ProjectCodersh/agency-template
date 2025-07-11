@@ -1701,7 +1701,7 @@ span {
 
 @media (max-width: 576px) {
   .cta-wrapper h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -2954,6 +2954,13 @@ span {
 
 .footer-bottom .footer-wrapper p {
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1199px) {
+  .footer-bottom .footer-wrapper p {
+    /* color: rgba(255, 255, 255, 0.8); */
+    font-size: 14px;
+  }
 }
 
 .footer-bottom .footer-wrapper .footer-menu {
@@ -10022,8 +10029,10 @@ pricing page collaboration link
 navbar active page effect
 ************************/
 .cs_nav_list li a.active {
-  color: #C6F806;
-  text-decoration: underline;
+  color: #C6F806 !important;
+  /* text-decoration: underline; */
   font-weight: 600;
+  /* text-decoration-thickness: 2px;
+  text-underline-offset: 8px; */
   /* optional, if needed */
 }

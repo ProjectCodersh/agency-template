@@ -1,61 +1,63 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+// import DropDown from "./DropDown";
 
 const Nav = () => {
   const [mobileToggle, setMobileToggle] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   return (
-    <nav className={`cs_nav ${mobileToggle ? "active" : ""}`}>
-      <ul className="cs_nav_list">
+    <>
+      <ul className={`cs_nav_list ${mobileToggle ? "active" : ""}`}>
         <li>
-          <NavLink
+          <Link
             to="/"
             onClick={() => setMobileToggle(false)}
-            className={({ isActive }) => isActive ? 'active' : ''}
+            className={currentPath === "/" ? "active" : ""}
           >
             Unlimited Wordpress
-
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/unlimited-shopify"
             onClick={() => setMobileToggle(false)}
-            className={({ isActive }) => isActive ? 'active' : ''}
+            className={currentPath === "/unlimited-shopify" ? "active" : ""}
           >
             Unlimited Shopify
-
-          </NavLink>
+          </Link>
         </li>
+
         <li>
-          <NavLink
+          <Link
             to="/case-study"
             onClick={() => setMobileToggle(false)}
-            className={({ isActive }) => isActive ? 'active' : ''}
+            className={currentPath === "/case-study" ? "active" : ""}
           >
-            Case Studies
-          </NavLink>
+            Case Study
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/pricing"
             onClick={() => setMobileToggle(false)}
-            className={({ isActive }) => isActive ? 'active' : ''}
+            className={currentPath === "/pricing" ? "active" : ""}
           >
             Pricing
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/contact-us"
             onClick={() => setMobileToggle(false)}
-            className={({ isActive }) => isActive ? 'active' : ''}
+            className={currentPath === "/contact-us" ? "active" : ""}
           >
             Contact
-          </NavLink>
+          </Link>
         </li>
       </ul>
-    </nav>
+    </>
   );
 };
 

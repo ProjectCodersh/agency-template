@@ -55,12 +55,10 @@ const VideoTestimonialSlickSecond = () => {
     };
 
     const next = () => {
-        pauseAllVideos();
         sliderRef.current.slickNext();
     };
 
     const previous = () => {
-        pauseAllVideos();
         sliderRef.current.slickPrev();
     };
 
@@ -100,6 +98,9 @@ const VideoTestimonialSlickSecond = () => {
         arrows: false,
         swipeToSlide: true,
         autoplay: false,          // removed autoplay
+        beforeChange: () => {
+            pauseAllVideos();    // pause on manual swipe too
+        },
         responsive: [
             { breakpoint: 1280, settings: { slidesToShow: 4 } },
             { breakpoint: 1024, settings: { slidesToShow: 3 } },
