@@ -43,7 +43,7 @@ const Brand1 = () => {
 
   return (
     <div className="brand-section-22">
-      <div className="container px-3">
+      <div className="container">
         <div className="brand-wrapper-2">
           <h4 className="brand-title">1k + Brands Trust Us</h4>
           <div className="swiper brand-slider">

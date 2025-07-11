@@ -14,7 +14,7 @@ const CaseStudy4 = () => {
     ];
 
     return (
-        <section className="case-studies-section-4 fix section-padding">
+        <section className="case-studies-section-4 fix section-padding pb-0">
             <div className="container">
                 <div className="row g-4">
                     {chooseContent.map((item, i) => (
