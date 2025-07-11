@@ -10057,6 +10057,14 @@ mobile nav added contact button
   border-radius: 30px;
 }
 
+@media (max-width: 991px) {
+  .main-button .theme-btn-contact {
+    /* padding: 18px 30px; */
+    padding: 13px 20px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 575px) {
   .main-button .theme-btn-contact {
     /* padding: 18px 30px; */
