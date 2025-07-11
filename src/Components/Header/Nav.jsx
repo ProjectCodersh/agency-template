@@ -56,7 +56,7 @@ const Nav = () => {
             Contact
           </Link>
         </li> */}
-        <div className="main-button">
+        <div className="main-button d-flex d-xl-none">
           <Link to="/contact-us" className="px-2"> <span className="theme-btn-contact"> Contact Us </span></Link>
         </div>
       </ul>

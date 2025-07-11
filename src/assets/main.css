@@ -10053,7 +10053,8 @@ mobile nav added contact button
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
-  padding: 19.5px 35px;
+  /* padding: 19.5px 35px; */
+  padding: 12px 18px;
   border-radius: 30px;
 }
 
