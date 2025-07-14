@@ -1,20 +1,18 @@
+// BreadCumb.jsx
 import { useEffect } from "react";
 import loadBackgroudImages from "./loadBackgroudImages";
 import { Link } from "react-router-dom";
+import React from "react";
 
-const BreadCumb = ({ Title, bgimg }) => {
+const BreadCumb = ({ Title, bgimg, customTrail = null }) => {
   useEffect(() => {
     loadBackgroudImages();
   }, []);
 
   return (
     <div className="breadcrumb-wrapper bg-cover" data-background={bgimg}>
-      <div className="left-shape">
-        {/* <img src="/assets/img/breadcrumb-shape.png" alt="img" /> */}
-      </div>
-      <div className="right-shape">
-        {/* <img src="/assets/img/breadcrumb-shape-2.png" alt="img" /> */}
-      </div>
+      <div className="left-shape"></div>
+      <div className="right-shape"></div>
       <div className="container px-3">
         <div className="page-heading">
           <div className="breadcrumb-sub-title">
@@ -23,14 +21,36 @@ const BreadCumb = ({ Title, bgimg }) => {
             </h1>
           </div>
           <ul className="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <i className="bi bi-chevron-right"></i>
-            </li>
-            <li>{Title}</li>
+            {customTrail ? (
+              customTrail.map((item, index) => (
+                <React.Fragment key={index}>
+                  <li>
+                    {item.link ? (
+                      <Link to={item.link}>{item.label}</Link>
+                    ) : (
+                      item.label
+                    )}
+                  </li>
+                  {index < customTrail.length - 1 && (
+                    <li>
+                      <i className="bi bi-chevron-right"></i>
+                    </li>
+                  )}
+                </React.Fragment>
+              ))
+            ) : (
+              <>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <i className="bi bi-chevron-right"></i>
+                </li>
+                <li>{Title}</li>
+              </>
+            )}
           </ul>
+
         </div>
       </div>
     </div>

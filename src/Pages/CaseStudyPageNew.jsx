@@ -2,8 +2,8 @@ import React, { Suspense, lazy, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BreadCumb from "../Components/Common/BreadCumb";
 import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimonialTwo";
+import { caseStudiesList } from "../Components/CaseStudyDetailsNew/CaseStudiesList"; // ✅ NEW IMPORT
 
-// Lazy load detail component
 const CaseStudyDetails = lazy(() =>
   import("../Components/CaseStudyDetailsNew/CaseStudyDetailsNew")
 );
@@ -18,7 +18,7 @@ function CaseStudyDetailsPage() {
 
     setLoading(true);
 
-    fetch(`/assets/data/${slug}.json`)
+    fetch(`/assets/data/casestudy/${slug}.json`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Not found");
@@ -26,7 +26,8 @@ function CaseStudyDetailsPage() {
         return res.json();
       })
       .then((json) => {
-        setCaseStudyData(json);
+        // ✅ Inject slug into data
+        setCaseStudyData({ ...json, slug });
       })
       .catch((err) => {
         console.error(err);
@@ -38,7 +39,6 @@ function CaseStudyDetailsPage() {
   }, [slug]);
 
   if (loading) return <div style={{ padding: "2rem" }}>Loading...</div>;
-
   if (!caseStudyData)
     return <div style={{ padding: "2rem" }}>Case study not found.</div>;
 
@@ -46,11 +46,14 @@ function CaseStudyDetailsPage() {
     <>
       <BreadCumb
         bgimg="/assets/img/breadcrumb.jpg"
-        // Title={caseStudyData.title}
-        Title='Case Study Details'
+        Title="Case Study Details"
+        customTrail={[
+          { label: "Case Study", link: "/case-study" },
+          { label: "Case Study Details" },
+        ]}
       />
       <Suspense fallback={<div>Loading details...</div>}>
-        <CaseStudyDetails data={caseStudyData} />
+        <CaseStudyDetails data={caseStudyData} list={caseStudiesList} />
       </Suspense>
       <VideoTestimonialSlickSecond />
     </>

@@ -38,7 +38,7 @@ const PricingCard = ({ addclass, title, price, month, FeatureList, btnurl, btnna
                 ))}
             </ul>
             <div className="price-button">
-                <Link to={btnurl} className="theme-btn">{btnname} <i className="bi bi-arrow-right"></i></Link>
+                <Link to={btnurl} className="theme-btn">{btnname} </Link>
             </div>
         </div>
     );

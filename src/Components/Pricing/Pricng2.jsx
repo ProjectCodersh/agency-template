@@ -3,13 +3,13 @@ import PricingCard from "../Card/PricingCard";
 const Pricng2 = () => {
     return (
         <section className="pricing-section fix section-padding pb-0">
-            <div className="container px-3">
+            <div className="container px-3 px-md-0">
                 <div className="section-title-area">
                     <div className="section-title">
                         <div className="sub-title bg-color-2 wow fadeInUp">
                             <span>Choose Your Plan</span>
                         </div>
-                        <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                        <h2 className="wow fadeInUp mb-3 mb-md-0" data-wow-delay=".3s">
                             Our awesome <br /> Pricing Plan
                         </h2>
                     </div>

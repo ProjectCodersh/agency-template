@@ -1,8 +1,9 @@
-// components/CaseStudyDetailsNew/CaseStudyDetailesNew.jsx
-
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function CaseStudyDetailsNew({ data }) {
+function CaseStudyDetailsNew({ data, list = [] }) {
+  const navigate = useNavigate();
+
   if (!data) return null;
 
   const {
@@ -14,7 +15,14 @@ function CaseStudyDetailsNew({ data }) {
     detailColumns = [],
     resultData = [],
     images = [],
+    slug, // ✅ used to find current index
   } = data;
+
+  const currentIndex = list.findIndex((item) => item.slug === slug);
+  const prevItem = list[currentIndex - 1];
+  const nextItem = list[currentIndex + 1];
+
+  const goTo = (slug) => navigate(`/case-studies/${slug}`);
 
   return (
     <section className="project-details-section fix section-padding">
@@ -79,7 +87,6 @@ function CaseStudyDetailsNew({ data }) {
               </>
             )}
 
-
             {resultData.length > 0 && (
               <>
                 <h3 className="mt-5">Project Outcomes</h3>
@@ -111,20 +118,29 @@ function CaseStudyDetailsNew({ data }) {
             )}
           </div>
 
-          <div className="slider-button d-flex align-items-center justify-content-between">
+          {/* ✅ Navigation Buttons */}
+          <div className="slider-button d-flex align-items-center justify-content-between mt-5">
             <div className="d-flex align-items-center gap-xxl-4 gap-3 gap-2">
-              <button className="cmn-prev cmn-border d-center">
+              <button
+                className="cmn-prev cmn-border d-center"
+                onClick={() => prevItem && goTo(prevItem.slug)}
+                disabled={!prevItem}
+              >
                 <i className="bi bi-chevron-left"></i>
               </button>
               <span className="fw-bold white-clr previus-text text-capitalize">
-                Previous
+                {prevItem ? "Previous" : ""}
               </span>
             </div>
             <div className="d-flex align-items-center gap-xxl-4 gap-3 gap-2">
               <span className="fw-bold white-clr previus-text text-capitalize">
-                Next
+                {nextItem ? "Next" : ""}
               </span>
-              <button className="cmn-next cmn-border d-center">
+              <button
+                className="cmn-next cmn-border d-center"
+                onClick={() => nextItem && goTo(nextItem.slug)}
+                disabled={!nextItem}
+              >
                 <i className="bi bi-chevron-right"></i>
               </button>
             </div>
