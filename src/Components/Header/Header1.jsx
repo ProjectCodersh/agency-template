@@ -1,31 +1,48 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Nav from './Nav';
+
 export default function Header1({ variant }) {
+
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [searchToggle, setSearchToggle] = useState(false);
 
+  const navRef = useRef();
+  const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       if (currentScrollPos > prevScrollPos) {
-        setIsSticky('cs-gescout_sticky'); // Scrolling down
+        setIsSticky('cs-gescout_sticky');
       } else if (currentScrollPos !== 0) {
-        setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
+        setIsSticky('cs-gescout_show cs-gescout_sticky');
       } else {
         setIsSticky();
       }
-      setPrevScrollPos(currentScrollPos); // Update previous scroll position
+      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup the event listener
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setMobileToggle(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    setMobileToggle(false); // Close menu on route change
+  }, [location.pathname]);
 
   return (
     <div>
@@ -44,7 +61,7 @@ export default function Header1({ variant }) {
                 </Link>
               </div>
               <div className="cs_main_header_center">
-                <div className="cs_nav cs_primary_font fw-medium">
+                <div className="cs_nav cs_primary_font fw-medium" ref={navRef}>
                   <span
                     className={
                       mobileToggle

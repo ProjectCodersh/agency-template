@@ -2,7 +2,7 @@ import React, { Suspense, lazy, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BreadCumb from "../Components/Common/BreadCumb";
 import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimonialTwo";
-import { caseStudiesList } from "../Components/CaseStudyDetailsNew/CaseStudiesList"; // ✅ NEW IMPORT
+import { caseStudiesList } from "../Components/CaseStudyDetailsNew/CaseStudiesList";
 
 const CaseStudyDetails = lazy(() =>
   import("../Components/CaseStudyDetailsNew/CaseStudyDetailsNew")
@@ -26,7 +26,6 @@ function CaseStudyDetailsPage() {
         return res.json();
       })
       .then((json) => {
-        // ✅ Inject slug into data
         setCaseStudyData({ ...json, slug });
       })
       .catch((err) => {
@@ -42,14 +41,16 @@ function CaseStudyDetailsPage() {
   if (!caseStudyData)
     return <div style={{ padding: "2rem" }}>Case study not found.</div>;
 
+  const dynamicTitle = caseStudyData.title || "Case Study Details";
+
   return (
     <>
       <BreadCumb
         bgimg="/assets/img/breadcrumb.jpg"
-        Title="Case Study Details"
+        Title={dynamicTitle}
         customTrail={[
           { label: "Case Study", link: "/case-study" },
-          { label: "Case Study Details" },
+          { label: dynamicTitle },
         ]}
       />
       <Suspense fallback={<div>Loading details...</div>}>
