@@ -8,13 +8,13 @@ import ServicesNewPage from "../Pages/ServicesNewPage";
 import ServicesNewCards from "../Pages/ServicesNewCardsPage";
 import SolutionsPage from "../Pages/SolutionsPage";
 import CaseStudyPageNew from "../Pages/CaseStudyPageNew";
-import AboutPage from "../Pages/AboutPage";
-import TeamPage from "../Pages/TeamPage";
 import CaseStudyPage from "../Pages/CaseStudyPage";
-import Testimonials from "../Pages/Testimonials";
 import PricingPage from "../Pages/PricingPage";
 import BrandDetailsPage from "../Pages/BrandDetailsPage";
 import BrandsCardpage from "../Pages/BrandsCardpage";
+// import TeamPage from "../Pages/TeamPage";
+// import Testimonials from "../Pages/Testimonials";
+// import AboutPage from "../Pages/AboutPage";
 // import Casestudies from "../Pages/CaseStudyPageNew";
 // import FaqPage from "../Pages/FaqPage";
 // import Solutions from "../Pages/Solutions";
@@ -68,25 +68,25 @@ export const router = createBrowserRouter([
       //   path: "/blog/blog-details",
       //   element: <BlogDetailsPage></BlogDetailsPage>,
       // },
-      {
-        path: "/pricing",
-        element: <PricingPage></PricingPage>,
-      },
-      {
-        path: "/about",
-        element: <AboutPage></AboutPage>,
-      },
-      {
-        path: "/our-team",
-        element: <TeamPage></TeamPage>,
-      },
+      // {
+      //   path: "/about",
+      //   element: <AboutPage></AboutPage>,
+      // },
+      // {
+      //   path: "/client-testimonial",
+      //   element: <Testimonials></Testimonials>,
+      // },
+      // {
+      //   path: "/our-team",
+      //   element: <TeamPage></TeamPage>,
+      // },
       {
         path: "/contact-us",
         element: <ContactPage></ContactPage>,
       },
       {
-        path: "/client-testimonial",
-        element: <Testimonials></Testimonials>,
+        path: "/pricing",
+        element: <PricingPage></PricingPage>,
       },
       {
         path: "/case-study",
