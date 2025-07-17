@@ -17,7 +17,7 @@ import BrandSection2 from "../Components/Extra/HomePage/BrandSection2";
 import Brandsection3 from "../Components/Extra/HomePage/BrandSection3";
 import Brand1 from "../Components/Brand/Brand1";
 import VideoTestimonialSlick from "../Components/Testimonial/VideoTestimonial";
-import About4 from "../Components/About/About4";
+// import About4 from "../Components/About/About4";
 
 
 const Home = () => {

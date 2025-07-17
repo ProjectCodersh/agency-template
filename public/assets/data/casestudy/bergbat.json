@@ -1,5 +1,5 @@
 {
-    "title": "Bergbat: Seamless WordPress to Shopify Migration for Custom Baseball Bat Company",
+    "title": "Bergbat: Seamless WordPress to Shopify Migration  <br/> for Custom Baseball Bat Company",
     "industry": "E-Commerce (Sporting Goods)",
     "technology": "Shopify Migration & Customization",
     "overview": "Bergbat is a premium baseball bat company renowned for its highly customizable products. To better support their complex product configurations and enhance the customer experience, they needed a migration from WordPress to Shopify. This project focused on preserving their advanced bat builder functionality while modernizing their online store.",
@@ -45,8 +45,8 @@
       }
     ],
     "images": [
-    "/assets/img/case-studies/details-1.jpg",
-    "/assets/img/case-studies/details-2.jpg"    
+    "/assets/img/casestudy/bergbat-casestudy-2.png",
+    "/assets/img/casestudy/bergbat-casestudy-3.png"    
     ]
   }
   

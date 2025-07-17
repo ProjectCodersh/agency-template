@@ -1,6 +1,4 @@
-/* ===============================
-   Video Testimonial Slide Styles
-================================= */
+/* ====== Video Testimonial CSS ======== */
 .video-testimonial-slide {
   position: relative;
   width: 100%;
@@ -17,9 +15,6 @@
   object-position: center;
 }
 
-/* ===============================
-   Play Button Styles
-================================= */
 .play-btn-vr {
   position: absolute;
   top: 50%;
@@ -50,9 +45,6 @@
   height: clamp(16px, 3vw, 18px);
 }
 
-/* ===============================
-   Testimonial Content
-================================= */
 .testimonial-content {
   position: absolute;
   bottom: 0;
@@ -103,9 +95,7 @@
   overflow: hidden;
 }
 
-/* ===============================
-   Utility and Container Classes
-================================= */
+/* Utility and Container Classes */
 .hidden {
   display: none !important;
 }
@@ -141,9 +131,7 @@
   }
 }
 
-/* ===============================
-   Slick Slider Spacing
-================================= */
+/* Slick Slider Spacing */
 .slick-slide {
   padding: 0 10px;
   box-sizing: border-box;
@@ -153,9 +141,7 @@
   margin: 0 -10px;
 }
 
-/* ===============================
-   Video Placeholder Loading
-================================= */
+/* Video Placeholder Loading */
 .video-testimonial-slide video:not([src]) {
   background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
     linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
@@ -176,50 +162,6 @@
   }
 }
 
-/* ===============================
-   Alternative Heights (Commented Out)
-================================= */
-/*
-@media (max-width: 574px) {
-    .video-testimonial-slide {
-        max-height: 500px;
-    }
-}
-
-.video-testimonial-slide-alternative {
-    position: relative;
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: transparent;
-    height: 300px;
-}
-
-@media (min-width: 480px) {
-    .video-testimonial-slide-alternative {
-        height: 350px;
-    }
-}
-
-@media (min-width: 768px) {
-    .video-testimonial-slide-alternative {
-        height: 400px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .video-testimonial-slide-alternative {
-        height: 450px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .video-testimonial-slide-alternative {
-        height: 500px;
-    }
-}
-*/
-
 .realworld-app-txt1 {
   font-size: 18px;
   line-height: 24px;
@@ -233,7 +175,6 @@
 
 .slide-item {
   height: 100%;
-  /* max-height: 550px; */
   position: relative;
   overflow: hidden;
   outline: none !important;
@@ -296,10 +237,7 @@
   border-radius: 20px !important;
 }
 
-/************************************
-css for about section numeric content
-************************************/
-
+/* css for about section numeric content */
 .about-content-h2 {
   color: #6a47ed !important;
 }

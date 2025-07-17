@@ -3,42 +3,49 @@ import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Slider from "react-slick";
 import parse from "html-react-parser";
 import { Link } from "react-router-dom";
+
 const HeroBanner4 = () => {
     useEffect(() => {
         loadBackgroudImages();
     }, []);
 
-
     const settings = {
         dots: false,
         infinite: true,
-        speed: 5000,                // Very high speed // speed: 2000,
+        speed: 5000,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 0,           // No delay between transitions  // autoplaySpeed: 4000,
-        cssEase: 'linear',
+        autoplaySpeed: 0,
+        cssEase: "linear",
         responsive: [
             {
                 breakpoint: 1399,
                 settings: {
                     slidesToShow: 4,
-                }
+                },
             },
             {
                 breakpoint: 1199,
                 settings: {
                     slidesToShow: 3,
-                }
-            }, {
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
                 breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
-                }
-            }
-        ]
+                },
+            },
+        ],
     };
 
     const brandContent = [
@@ -66,93 +73,104 @@ const HeroBanner4 = () => {
 
     return (
         <section className="hero-section hero-2" data-background={heroContent.bg}>
-            <div className="glowup-bg w-100 h-100" data-background={heroContent.bg2}
+            <div
+                className="glowup-bg w-100 h-100 position-absolute"
+                data-background={heroContent.bg2}
                 style={{
-                    position: "absolute",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "contain",
-                    backgroundPosition: "center"
-                }}></div>
-            <div className="container px-3" style={{ zIndex: "9" }}>
-                <div className="row g-4 align-items-center text-center hero-rows">
+                    backgroundPosition: "center",
+                }}
+            ></div>
+
+            <div className="container px-3 position-relative z-1">
+                <div className="row g-4 align-items-center text-center">
                     <div className="col-12">
-                        <h1
-                            className="wow img-custom-anim-left mb-3"
-                            data-wow-duration="1.5s"
-                            data-wow-delay="0.2s"
-                        >
+                        <h1 className="wow img-custom-anim-left mb-2" data-wow-delay="0.2s">
                             {parse(heroContent.title)}
                         </h1>
                         <p
-                            className="wow fadeInUp img-custom-anim-right hero-section-peragraph"
+                            className="wow fadeInUp img-custom-anim-right hero-section-peragraph mb-2 text-white"
                             data-wow-delay=".3s"
                         >
                             {heroContent.content}
                         </p>
                     </div>
 
-                    <div
-                        className="col-12 wow fadeInUp img-custom-anim-top client-items d-flex justify-content-center align-items-center flex-wrap"
-                        data-wow-delay=".7s"
-                    >
-                        {/* <div className="client-logo me-3">
-                            <img
-                                src={heroContent.reviewlogo}
-                                alt="Client review logo"
-                                className="img-fluid"
-                            />
-                        </div> */}
-                        <div className="clutchreview">
-                            <a href="https://clutch.co/profile/codersh-web-services" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src="/assets/img/hero/clutchreview-2.png"
-                                    alt="clutchreview-img"
-                                    style={{ height: "42px" }}
-                                />
-                            </a>
-                        </div>
+                    <div className="col-12">
+                        <div className="client-items d-flex justify-content-center align-items-center flex-wrap gap-3 ">
+                            <div className="clutchreview">
+                                <a
+                                    href="https://clutch.co/profile/codersh-web-services"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        src="/assets/img/hero/clutchreview-2.png"
+                                        alt="clutchreview"
+                                        style={{ height: "42px" }}
+                                    />
+                                </a>
+                            </div>
 
-                        <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-2">
-                            <img
-                                src={heroContent.reviewimg}
-                                alt="Happy client"
-                                className="img-fluid"
-                            />
-                            <div className="star-icon text-center text-sm-start">
-                                <div className="star text-warning">
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-regular fa-star"></i>
+                            <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-0 gap-md-2">
+                                <img
+                                    src={heroContent.reviewimg}
+                                    alt="Happy client"
+                                    className="img-fluid"
+                                />
+                                <div className="star-icon text-center text-sm-start">
+                                    <div className="star text-warning">
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-regular fa-star"></i>
+                                    </div>
+                                    <span className="d-block mt-0 mt-md-1 text-white">{heroContent.review}</span>
                                 </div>
-                                <span className="d-block mt-1">{heroContent.review}</span>
                             </div>
                         </div>
-
                     </div>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-sm-1 gap-md-3 gap-lg-4">
-                        <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <Link to="/#"> <span className="hero-theme-btn" style={{ minWidth: "209px" }}> GET A FREE QUOTE </span></Link>
-                        </div>
-                        <div className="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
-                                <span className="hero-theme-btn-second" style={{ minWidth: "209px" }}>Let&#39;s Collaborate</span>
 
+                    <div
+                        className="col-12 wow fadeInUp d-flex justify-content-center align-items-center flex-wrap gap-3 "
+                        data-wow-delay=".4s"
+                    >
+                        <div className="main-button">
+                            <Link to="/pricing">
+                                <span className="hero-theme-btn" style={{ minWidth: "209px" }}>
+                                    GET A FREE QUOTE
+                                </span>
+                            </Link>
+                        </div>
+                        <div className="main-button">
+                            <a
+                                href="https://calendly.com/codersh-web-services/15min"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span
+                                    className="hero-theme-btn-second"
+                                    style={{ minWidth: "209px" }}
+                                >
+                                    Let&#39;s Collaborate
+                                </span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="brand-wrapper-2">
                 <h4 className="brand-title">1k + Brands Trust Us</h4>
                 <div className="swiper brand-slider">
-                    <div className="swiper-wrapper cs_slider_gap_30 ">
+                    <div className="swiper-wrapper cs_slider_gap_30">
                         <Slider {...settings}>
                             {brandContent.map((item, i) => (
                                 <div key={i} className="swiper-slide">
                                     <div className="brand-img center d-flex justify-content-center">
-                                        <img src={item.img} alt="img" />
+                                        <img src={item.img} alt="img" className="brand-trust-img" />
                                     </div>
                                 </div>
                             ))}
@@ -165,4 +183,3 @@ const HeroBanner4 = () => {
 };
 
 export default HeroBanner4;
-

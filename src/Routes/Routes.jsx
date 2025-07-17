@@ -13,6 +13,8 @@ import TeamPage from "../Pages/TeamPage";
 import CaseStudyPage from "../Pages/CaseStudyPage";
 import Testimonials from "../Pages/Testimonials";
 import PricingPage from "../Pages/PricingPage";
+import BrandDetailsPage from "../Pages/BrandDetailsPage";
+import BrandsCardpage from "../Pages/BrandsCardpage";
 // import Casestudies from "../Pages/CaseStudyPageNew";
 // import FaqPage from "../Pages/FaqPage";
 // import Solutions from "../Pages/Solutions";
@@ -36,10 +38,7 @@ export const router = createBrowserRouter([
       //   path: "/team/team-details",
       //   element: <TeamDetailsPage></TeamDetailsPage>,
       // },
-      {
-        path: "/pricing",
-        element: <PricingPage></PricingPage>,
-      },
+
       // {
       //   path: "/faq",
       //   element: <FaqPage></FaqPage>,
@@ -69,6 +68,10 @@ export const router = createBrowserRouter([
       //   path: "/blog/blog-details",
       //   element: <BlogDetailsPage></BlogDetailsPage>,
       // },
+      {
+        path: "/pricing",
+        element: <PricingPage></PricingPage>,
+      },
       {
         path: "/about",
         element: <AboutPage></AboutPage>,
@@ -101,7 +104,14 @@ export const router = createBrowserRouter([
         path: "/solutions/:slug",
         element: <SolutionsPage></SolutionsPage>,
       },
-
+      {
+        path: "/brands",
+        element: <BrandsCardpage></BrandsCardpage>,
+      },
+      {
+        path: "/brands/:slug",
+        element: <BrandDetailsPage></BrandDetailsPage>,
+      },
     ],
   },
   {

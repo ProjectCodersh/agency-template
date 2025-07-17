@@ -4,13 +4,17 @@ import loadBackgroudImages from "./loadBackgroudImages";
 import { Link } from "react-router-dom";
 import React from "react";
 
-const BreadCumb = ({ Title, bgimg, customTrail = null }) => {
+const BreadCumb = ({ Title, bgimg, customTrail = null, hasOverlay = false }) => {
   useEffect(() => {
     loadBackgroudImages();
   }, []);
 
   return (
     <div className="breadcrumb-wrapper bg-cover" data-background={bgimg}>
+
+      {/* Add this overlay */}
+      {hasOverlay && <div className="breadcrumb-overlay" />}
+
       <div className="left-shape"></div>
       <div className="right-shape"></div>
       <div className="container px-3">

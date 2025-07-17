@@ -50,7 +50,7 @@ export default function Header1({ variant }) {
         className={`cs_site_header header_style_2 cs_style_1 header_sticky_style1 ${variant ? variant : ''
           } cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''
           } ${isSticky ? isSticky : ''}`}
-        style={{ backdropFilter: "blur(15px)" }}
+      // style={{ backdropFilter: "blur(15px)" }}
       >
         <div className="cs_main_header">
           <div className="container px-3">
@@ -72,7 +72,7 @@ export default function Header1({ variant }) {
                   >
                     <span></span>
                   </span>
-                  <Nav setMobileToggle={setMobileToggle} />
+                  <Nav setMobileToggle={setMobileToggle} headerType="header1" />
                 </div>
               </div>
               <div className="cs_main_header_right">

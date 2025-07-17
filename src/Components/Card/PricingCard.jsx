@@ -9,9 +9,9 @@ const PricingCard = ({ addclass, title, price, month, FeatureList, btnurl, btnna
                     <h6 className="text-white mt-2">{timing}</h6>
                     <h2>{price} <sub>/ {month}</sub></h2>
                 </div>
-                <div className="icon">
+                {/* <div className="icon">
                     <img src="/assets/img/cloud.png" alt="img" />
-                </div>
+                </div> */}
             </div>
             {/* <br /> */}
 

@@ -74,7 +74,7 @@ export default function Header2({ variant }) {
                   >
                     <span></span>
                   </span>
-                  <Nav setMobileToggle={setMobileToggle} />
+                  <Nav setMobileToggle={setMobileToggle} headerType="header2" />
                 </div>
               </div>
               <div className="cs_main_header_right">

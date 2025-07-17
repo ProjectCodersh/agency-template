@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 
 const WhatWeDo4 = () => {
@@ -57,7 +57,7 @@ const WhatWeDo4 = () => {
                                     <img src={item.img} alt="img" className="icon-img" />
                                 </div>
                                 <div className="content">
-                                    <h4><Link to="/service/service-details">{item.title}</Link></h4>
+                                    <h4>{item.title}</h4>
                                     {/* <p>{item.content}</p> */}
                                     {/* <Link to="/service/service-details" className="link-btn">Read More <i className="bi bi-arrow-right"></i></Link> */}
                                 </div>

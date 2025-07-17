@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import parse from 'html-react-parser';
+
 
 function CaseStudyDetailsNew({ data, list = [] }) {
   const navigate = useNavigate();
@@ -33,7 +35,7 @@ function CaseStudyDetailsNew({ data, list = [] }) {
               <div className="col-lg-12">
                 <div className="details-top-items">
                   <div className="details-left">
-                    <h2>{title}</h2>
+                    <h2>{parse(title)}</h2>
                   </div>
                   <div className="details-right">
                     <ul className="client-details">

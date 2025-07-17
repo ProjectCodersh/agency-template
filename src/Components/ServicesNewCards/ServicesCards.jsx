@@ -21,8 +21,8 @@ const ServicesCards = memo(function ServicesCards() {
     }, []);
 
     return (
-        <section className="container-fluid py-5 bg-light-services" aria-label="Services">
-            <div className="container px-3">
+        <section className="section-padding fix bg-light-services" aria-label="Services">
+            <div className="container">
                 <div className="row justify-content-center">
                     {services.map((service, index) => (
                         <div className="col-12 col-md-6 col-xl-4 my-5 d-flex" key={index}>

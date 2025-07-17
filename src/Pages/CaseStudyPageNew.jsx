@@ -41,13 +41,18 @@ function CaseStudyDetailsPage() {
   if (!caseStudyData)
     return <div style={{ padding: "2rem" }}>Case study not found.</div>;
 
-  const dynamicTitle = caseStudyData.title || "Case Study Details";
+  const caseStudyFromList = caseStudiesList.find(
+    (item) => item.slug === slug
+  );
+  const dynamicTitle =
+    caseStudyFromList?.title || caseStudyData?.title || "Case Study Details";
 
   return (
     <>
       <BreadCumb
-        bgimg="/assets/img/breadcrumb.jpg"
+        bgimg={caseStudyFromList?.BgImg || "/assets/img/breadcrumb.jpg"}
         Title={dynamicTitle}
+        hasOverlay={true}
         customTrail={[
           { label: "Case Study", link: "/case-study" },
           { label: dynamicTitle },
@@ -55,8 +60,8 @@ function CaseStudyDetailsPage() {
       />
       <Suspense fallback={<div>Loading details...</div>}>
         <CaseStudyDetails data={caseStudyData} list={caseStudiesList} />
+        <VideoTestimonialSlickSecond />
       </Suspense>
-      <VideoTestimonialSlickSecond />
     </>
   );
 }

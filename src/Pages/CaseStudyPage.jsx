@@ -1,16 +1,21 @@
-import CaseStudy4 from "../Components/CaseStudy/CaseStudy4";
-import BreadCumb from "../Components/Common/BreadCumb";
+import { lazy, Suspense, memo } from 'react';
+
+// Lazy load components for performance
+const BreadCumb = lazy(() => import('../Components/Common/BreadCumb'));
+const CaseStudy4 = lazy(() => import('../Components/CaseStudy/CaseStudy4'));
 
 const CaseStudyPage = () => {
     return (
-        <div>
-            <BreadCumb
-                bgimg="/assets/img/breadcrumb.jpg"
-                Title="Case studies"
-            ></BreadCumb>
-            <CaseStudy4></CaseStudy4>
-        </div>
+        <main role="main">
+            <Suspense fallback={<div className="loading-spinner">Loading...</div>}>
+                <BreadCumb
+                    bgimg="/assets/img/breadcrumb.jpg"
+                    Title="Case studies"
+                />
+                <CaseStudy4 />
+            </Suspense>
+        </main>
     );
 };
 
-export default CaseStudyPage;
+export default memo(CaseStudyPage);

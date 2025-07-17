@@ -1082,7 +1082,7 @@ span {
   }
 }
 
-/*img-animation**********************/
+/**************img-animation**********************/
 .img-custom-anim-left {
   animation: img-anim-left 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
@@ -4334,6 +4334,12 @@ span {
   }
 }
 
+@media (max-width: 576px) {
+  .hero-2 {
+    padding: 80px 0 0;
+  }
+}
+
 .hero-2 .trophy-shape {
   position: absolute;
   top: 10%;
@@ -6829,7 +6835,6 @@ input.main-search-input::placeholder {
 .case-studies-card-items .thumb img {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
 }
 
 .case-studies-card-items .content {
@@ -9059,6 +9064,17 @@ input.main-search-input::placeholder {
     color: #000;
   }
 
+
+  /* edited start */
+  /* .cs_style_2 .cs_nav .cs_nav_list>li>a:hover {
+    color: #6a47ed !important;
+  }
+  .cs_style_2 .cs_nav .cs_nav_list>li>a:active {
+    color: #6a47ed !important;
+  } */
+  /* edited end */
+
+
   .cs_nav .cs_nav_list>li>ul {
     left: 0;
     top: calc(100% + 15px);
@@ -9751,7 +9767,7 @@ input.main-search-input::placeholder {
 }
 
 /* =============================== */
-/* Custom Css added */
+/*  CUSTOM CSS - OUT OF THE THEME  */
 /* =============================== */
 
 .hero-rows {
@@ -9785,7 +9801,6 @@ input.main-search-input::placeholder {
 .client-items.wow.fadeInUp {
   display: flex;
   margin-top: 24px;
-  /* justify-content: center; */
   gap: 24px;
 }
 
@@ -9868,8 +9883,9 @@ input.main-search-input::placeholder {
   }
 }
 
-/* hero section two button css */
-
+/********************************************
+ hero section primary secondary button css 
+********************************************/
 .hero-theme-btn {
   position: relative;
   z-index: 2;
@@ -9931,7 +9947,6 @@ input.main-search-input::placeholder {
 }
 
 /* new hero section css */
-
 .hero-4 {
   padding: 150px 0 200px;
   padding: 0px;
@@ -9993,25 +10008,19 @@ input.main-search-input::placeholder {
 pricing page collaboration link
 ******************************/
 .collaborate-link {
+  color: var(--theme);
   display: inline-block;
-  margin-top: 20px;
-  /* spacing above */
-  margin-bottom: 20px;
-  /* spacing below */
   font-size: 16px;
   font-weight: 600;
-  color: var(--theme);
-  /* use your theme color or adjust */
-  text-decoration: underline;
-  /* classic underline */
-  text-underline-offset: 4px;
-  /* nicer spacing between text and underline */
+  margin-bottom: 20px;
+  margin-top: 20px;
   transition: color 0.3s ease;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .collaborate-link:hover {
   color: var(--header);
-  /* change color on hover */
   text-decoration-color: var(--header);
 }
 
@@ -10022,25 +10031,59 @@ pricing page collaboration link
 
 .third-card .price-button {
   margin-top: auto;
-  /* pushes it to the bottom */
-}
-
-/***********************
-navbar active page effect
-************************/
-.cs_nav_list li a.active {
-  color: #C6F806 !important;
-  /* text-decoration: underline; */
-  font-weight: 600;
-  /* text-decoration-thickness: 2px;
-  text-underline-offset: 8px; */
-  /* optional, if needed */
 }
 
 
-/* 
-mobile nav added contact button
- */
+/* ========== DESKTOP: Unique header nav styles (≥1200px) ========== */
+@media (min-width: 1200px) {
+
+  /* Header1 styles */
+  .header_style_2.cs_style_1.header_sticky_style1 .cs_nav_list li a.active,
+  .header_style_2.cs_style_1.header_sticky_style1 .cs_nav_list li a:hover {
+    color: var(--theme2);
+  }
+
+  /* Header2 styles */
+  .header_style_2.cs_style_1.cs_style_2.header_sticky_style2 .cs_nav_list li a.active,
+  .header_style_2.cs_style_1.cs_style_2.header_sticky_style2 .cs_nav_list li a:hover {
+    color: var(--theme);
+  }
+}
+
+/* ========== TABLET & MOBILE: Shared nav styles (≤1199px) ========== */
+@media (max-width: 1199px) {
+
+  .cs_nav_list li a.active,
+  .cs_nav_list li a:hover {
+    color: var(--theme2);
+  }
+}
+
+/* ========== DESKTOP ONLY BACKGROUNDS (≥1200px) ========== */
+@media (min-width: 1200px) {
+
+  /* Header1 background */
+  .header_style_2.cs_style_1.header_sticky_style1 {
+    background-color: var(--theme);
+  }
+
+  /* Header2 background */
+  .header_style_2.cs_style_1.cs_style_2.header_sticky_style2 {
+    background-color: var(--white);
+  }
+}
+
+/* ========== MOBILE & TABLET (≤1024px) ========== */
+@media (max-width: 1024px) {
+  .cs_site_header {
+    /* background-color: var(--white); */
+    /* or var(--header) or a shared value */
+  }
+}
+
+/*****************************
+mobile n tablet contact button
+*****************************/
 .main-button .theme-btn-contact {
   position: relative;
   z-index: 2;
@@ -10053,14 +10096,12 @@ mobile nav added contact button
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
-  /* padding: 19.5px 35px; */
   padding: 12px 18px;
   border-radius: 30px;
 }
 
 @media (max-width: 991px) {
   .main-button .theme-btn-contact {
-    /* padding: 18px 30px; */
     padding: 13px 20px;
     font-size: 14px;
   }
@@ -10068,7 +10109,6 @@ mobile nav added contact button
 
 @media (max-width: 575px) {
   .main-button .theme-btn-contact {
-    /* padding: 18px 30px; */
     padding: 10px 15px;
     font-size: 14px;
   }
@@ -10079,7 +10119,9 @@ mobile nav added contact button
   color: var(--black);
 }
 
-/* case study cover hover image */
+/********************************
+case study card img hover effect
+*******************************/
 .case-studies-card-items-imgbox {
   overflow: hidden;
   border-radius: 20px;
@@ -10096,4 +10138,31 @@ mobile nav added contact button
   transform: scale(1.05);
 }
 
-/* header navigation animation */
+/************************************************
+casestudy details breadcrumb dynamic image n text
+*************************************************/
+.breadcrumb-wrapper .breadcrumb-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(225, 225, 225, 0.75);
+}
+
+.breadcrumb-wrapper .page-heading {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+/* ====== casestudy card description clamp 2 lines ====== */
+.clamp-2-lines {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
