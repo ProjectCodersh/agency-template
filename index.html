@@ -32,5 +32,61 @@
       async
     ></script>
     <!-- chatbot -->
+    <!-- whatsapp integration -->
+    <script>
+      (function (w, d, s, u) {
+        // Responsive margin logic
+        function getResponsiveMargins() {
+          const width = window.innerWidth;
+          let marginX = 24;
+          let marginY = 52;
+
+          if (width < 576) {
+            // For mobile devices
+            marginX = 10;
+            marginY = 10;
+          } else if (width < 911) {
+            // For tablets
+            marginX = 20;
+            marginY = 45;
+          }
+          // You can customize more breakpoints as needed
+
+          return { marginX, marginY };
+        }
+
+        const { marginX, marginY } = getResponsiveMargins();
+
+        w.gbwawc = {
+          url: u,
+          options: {
+            waId: "+91 999134094",
+            siteName: "Codersh Web Service",
+            siteTag: "Usually replies in a day",
+            siteLogo:
+              "https://tidio-files-prod.s3.eu-west-1.amazonaws.com/mpxlsrg2omewugysddisypecjcrwulou/images/d8f139f3-5203-4bf3-abf6-45719a2ed34e.png",
+            widgetPosition: "LEFT",
+            welcomeMessage:
+              "Hey! Codersh Web Services here.\nHow can we help you build or grow your digital presence?\n\n",
+            triggerMessage: "",
+            brandColor: "#25D366",
+            customQuestion:
+              "Just visited your website ! Would like to know more about it !",
+            startChatBtnTxt: "Chat with Us",
+            version: "v2",
+            widgetPositionMarginX: marginX.toString(),
+            widgetPositionMarginY: marginY.toString(),
+          },
+        };
+
+        var h = d.getElementsByTagName(s)[0],
+          j = d.createElement(s);
+        j.async = true;
+        j.src = u + "/whatsapp-widget.min.js?_=" + new Date().getTime();
+        h.parentNode.insertBefore(j, h);
+      })(window, document, "script", "https://waw.gallabox.com");
+    </script>
+
+    <!-- whatsapp integration -->
   </body>
 </html>

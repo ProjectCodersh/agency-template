@@ -97,7 +97,7 @@ export const router = createBrowserRouter([
         element: <CaseStudyPageNew></CaseStudyPageNew>,
       },
       {
-        path: "/services-cards",
+        path: "/services/",
         element: <ServicesNewCards></ServicesNewCards>,
       },
       {

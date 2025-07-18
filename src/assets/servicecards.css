@@ -1,14 +1,13 @@
+/* === Updated CSS === */
 :root {
     --theme: #6a47ed;
     --white: #fff;
 }
 
-/* Section Background */
 .bg-light-services {
     background-color: #f8f9ff;
 }
 
-/* Card Container */
 .svc-card {
     max-width: 430px;
     width: 100%;
@@ -17,34 +16,39 @@
     border: 1px solid #daceff;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
     overflow: visible;
+    /* ✅ changed from hidden */
     padding: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header Tag */
 .svc-header-tag {
     position: absolute;
-    top: -16px;
+    top: -4%;
     left: 50%;
     transform: translateX(-50%);
     background: var(--theme);
     color: var(--white);
     font-weight: 600;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: 16px;
     padding: 4px 12px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     z-index: 10;
-    white-space: nowrap;
+    max-width: 90%;
+    width: max-content;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
 }
 
-/* PageSpeed Badge */
 .page-speed-badge {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40px;
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
@@ -72,22 +76,21 @@
     font-weight: 700;
 }
 
-/* Image Section */
 .svc-img {
     padding: 100px 40px 0;
-    /* Adjusted to make room for absolute badge */
     background-color: #f1ecff;
     border-radius: 20px 20px 0px 0px;
 }
-
 
 .svc-img img {
     width: 100%;
 }
 
-/* Content Section */
 .svc-content {
-    padding: 23px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .svc-title {
@@ -104,9 +107,15 @@
     line-height: 1.6;
     margin-bottom: 25px;
     text-align: start;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    /* ✅ clamp to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Button */
 .svc-btn {
     display: inline-block;
     border: none;
@@ -117,7 +126,7 @@
     font-size: 16px;
     font-weight: 700;
     padding: 10px 25px;
-
+    margin-top: auto;
     border-radius: 10px;
     width: 100%;
     cursor: pointer;
@@ -128,13 +137,24 @@
     background: #17012c;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
+
+    .svc-header-tag {
+        font-size: 13px;
+    }
+
     .svc-img {
         padding: 100px 20px 0;
     }
 
     .svc-title {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .svc-header-tag {
+        font-size: 12px;
     }
 }

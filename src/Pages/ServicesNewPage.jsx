@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState, Suspense } from "react";
 import { serviceSlugMap } from "../Components/ServicesNew/ServicesIndex";
 import React from "react";
+import Brand1 from "../Components/Brand/Brand1";
 
 const ServiceHero = React.lazy(() => import("../Components/ServicesNew/ServiceHero"));
 const ServiceProcess = React.lazy(() => import("../Components/ServicesNew/ServiceProcess"));
@@ -32,6 +33,7 @@ export default function ServicePage() {
     return (
         <Suspense fallback={<div>Loading sections...</div>}>
             <ServiceHero data={data[0]?.heroSection} />
+            <Brand1></Brand1>
             <ServiceProcess data={data[1]?.processSection} />
             <ServiceWhyChoose data={data[2]?.whyChoose} />
             <ServiceKeyFeatures data={data.find((d) => d.KeyFeatures)?.KeyFeatures} />

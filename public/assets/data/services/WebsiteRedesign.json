@@ -4,7 +4,7 @@
         "heroSection": {
           "bgImage": "/assets/img/hero/hero-bg-2.png",
           "overlayImage": "/assets/img/hero/bg-shape.png",
-          "title": "Give Your Website a Fresh, Conversion-Driven Makeover",
+          "title": "Give Your Website a Fresh, <br/> Conversion-Driven Makeover",
           "content": "Is your current website outdated or failing to convert visitors? Our redesign services blend modern aesthetics with high-performance functionality to elevate user experience and drive more sales.",
           "review": {
             "image": "/assets/img/hero/client-demo.png",
