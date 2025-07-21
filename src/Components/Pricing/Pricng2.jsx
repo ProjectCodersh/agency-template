@@ -25,8 +25,8 @@ const Pricng2 = () => {
                             month="Month"
                             description="Not decided yet?"
                             FeatureList={[" ", " ", " "]}
-                            btnurl="/pricing"
-                            btnname="Get Started Now"
+                            btnurl="https://calendly.com/codersh-web-services/15min"
+                            btnname="Schedule Your Consultation"
                             showCollabLink={true}
                             hideIcons={true}
                         />
@@ -47,8 +47,8 @@ const Pricng2 = () => {
                                 "14-Day Money Back Guarantee",
 
                             ]}
-                            btnurl="/pricing"
-                            btnname="Get Started Now"
+                            btnurl="https://calendly.com/codersh-web-services/15min"
+                            btnname="Schedule Your Consultation"
                         />
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
@@ -67,8 +67,8 @@ const Pricng2 = () => {
                                 "SEO",
 
                             ]}
-                            btnurl="/pricing"
-                            btnname="Get Started Now"
+                            btnurl="https://calendly.com/codersh-web-services/15min"
+                            btnname="Schedule Your Consultation"
                         />
                     </div>
 

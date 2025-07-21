@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header2 from '../Components/Header/Header2';
 import Footer2 from '../Components/Footer/Footer2';
 import ScrollToTop from '../Components/Common/ScrollToTop';
+import WhatsAppButton from '../Components/Common/WhatsappButton';
 
 const Layout2 = () => {
     return (
@@ -10,6 +11,7 @@ const Layout2 = () => {
             <Header2></Header2>
             <Outlet></Outlet>
             <Footer2></Footer2>
+            <WhatsAppButton />
         </div>
     );
 };

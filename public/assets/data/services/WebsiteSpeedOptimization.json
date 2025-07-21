@@ -4,13 +4,13 @@
         "heroSection": {
           "bgImage": "/assets/img/hero/hero-bg-2.png",
           "overlayImage": "/assets/img/hero/bg-shape.png",
-          "title": "Boost Your Website Speed & Skyrocket Conversions",
-          "content": "Slow websites lose sales. We optimize your site’s performance from the inside out — compressing code, cleaning clutter, and improving loading times without compromising design or functionality.",
+          "title": "Boost Your Website Speed <br/> And Skyrocket Conversions",
+          "content": "Slow websites lose sales. We optimize your site’s performance from the inside out-compressing code, <br/> cleaning clutter and improving loading times without compromising design or functionality.",
           "review": {
             "image": "/assets/img/hero/client-demo.png",
             "ratingStars": 5,
             "totalStars": 5,
-            "text": "100+ websites optimized"
+            "text": "100+ sites optimized"
           },
           "badge": {
             "image": "/assets/img/hero/clutchreview-2.png",

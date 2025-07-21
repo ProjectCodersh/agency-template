@@ -41,7 +41,7 @@ const ServiceHero = ({ data }) => {
     };
 
     return (
-        <section className="hero-section hero-2" data-background={bgImage}>
+        <section className="hero-section hero-2 services-hero-section" data-background={bgImage}>
             <div
                 className="glowup-bg w-100 h-100 position-absolute"
                 data-background={overlayImage}
@@ -52,23 +52,25 @@ const ServiceHero = ({ data }) => {
                 }}
             ></div>
 
-            <div className="container px-3 position-relative z-1">
+            <div className="container position-relative z-1">
                 <div className="row g-4 align-items-center text-center">
                     <div className="col-12">
-                        <h1 className="wow img-custom-anim-left mb-2" data-wow-delay="0.2s">
+                        <h1 className="wow img-custom-anim-left mb-2 services-hero-h1" data-wow-delay="0.2s">
                             {parse(data.title)}
                         </h1>
                         <p
-                            className="wow fadeInUp img-custom-anim-right hero-section-peragraph mb-2 text-white"
+                            className="wow fadeInUp img-custom-anim-right hero-section-peragraph mb-2 text-white services-hero-p"
                             data-wow-delay=".3s"
                         >
-                            {data.content}
+                            {/* {data.content} */}
+                            {parse(data.content)}
 
                         </p>
                     </div>
 
-                    <div className="col-12">
-                        <div className="client-items d-flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div className="d-flex flex-wrap justify-content-center gap-4">
+                        {/* Clutch Review Badge */}
+                        <div className="d-flex justify-content-center align-items-center">
                             <div className="clutchreview">
                                 {data.badge?.link ? (
                                     <a
@@ -90,8 +92,11 @@ const ServiceHero = ({ data }) => {
                                     />
                                 )}
                             </div>
+                        </div>
 
-                            <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-0 gap-md-2">
+                        {/* Client Review */}
+                        <div className="d-flex justify-content-center align-items-center">
+                            <div className="client-img d-flex flex-column align-items-center">
                                 <img
                                     src={data.review?.image}
                                     alt="Happy client"
@@ -106,11 +111,15 @@ const ServiceHero = ({ data }) => {
                                             <i key={`empty-${i}`} className="fa-regular fa-star"></i>
                                         ))}
                                     </div>
-                                    <span className="d-block mt-0 mt-md-1 text-white">{data.review?.text}</span>
+                                    <span className="d-block mt-0 mt-md-1 text-white">
+                                        {parse(data.review?.text)}
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
 
                     <div
                         className="col-12 wow fadeInUp d-flex justify-content-center align-items-center flex-wrap gap-3"

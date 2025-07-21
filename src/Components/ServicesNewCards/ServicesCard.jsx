@@ -27,7 +27,8 @@ const ServiceCard = ({ service, index }) => {
                 <p className="svc-description">{service.servicedescription}</p>
                 <Link
                     className="svc-btn"
-                    to={`/services/${service.slug}`}
+                    to='/services' // Adjust this path as needed
+                    // to={`/services/${service.slug}`}
                     aria-label={service.servicebtn}
                 >
                     {service.servicebtn}

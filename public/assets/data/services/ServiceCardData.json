@@ -5,7 +5,6 @@
         "OurServicesCard": [
           {
             "id": "1",
-            "slug": "hire-shopify-dev",
             "headertag": "For Your Shopify & Shopify Plus Secure Store",
             "img": "/assets/img/servicescards/hire-shopify-dev.webp",
             "servicetitle": "Hire Shopify Dev Team",
@@ -24,7 +23,6 @@
           },
           {
             "id": "3",
-            "slug": "onebuilder-site-stabilization",
             "headertag": "For Your Shopify & Shopify Plus Secure Store",
             "img": "/assets/img/servicescards/stabilize-site-with-elementor.webp",
             "servicetitle": "stabilize site With elementor",

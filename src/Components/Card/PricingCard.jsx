@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const PricingCard = ({ addclass, title, price, month, FeatureList, btnurl, btnname, description, showCollabLink, hideIcons, timing }) => {
     return (
@@ -38,7 +38,15 @@ const PricingCard = ({ addclass, title, price, month, FeatureList, btnurl, btnna
                 ))}
             </ul>
             <div className="price-button">
-                <Link to={btnurl} className="theme-btn">{btnname} </Link>
+                {/* <Link to={btnurl} className="theme-btn">{btnname} </Link> */}
+                <a
+                    href={btnurl}
+                    className="theme-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {btnname}
+                </a>
             </div>
         </div>
     );

@@ -10166,3 +10166,27 @@ casestudy details breadcrumb dynamic image n text
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* ====== services page hero section ====== */
+
+@media (max-width: 991px) {
+  .services-hero-h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 575px) {
+  .services-hero-h1 {
+    font-size: 30px;
+  }
+
+  .services-hero-p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .services-hero-section {
+    padding: 100px 0 80px;
+  }
+}

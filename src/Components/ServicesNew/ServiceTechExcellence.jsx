@@ -1,14 +1,26 @@
-// ServiceTechExcellence.jsx
 import { useEffect, useRef, useState } from "react";
 import parser from "html-react-parser";
 
 const ServiceTechExcellence = ({ data }) => {
   const [openItemIndex, setOpenItemIndex] = useState(0);
-  const accordionContentRef = useRef(null);
+  const accordionContentRefs = useRef([]);
+  const [contentHeights, setContentHeights] = useState([]);
 
-  if (!data || !data.faq || !data.faqlist?.length) return null;
+  const faqlist = data?.faqlist || [];
+  const faq = data?.faq || {};
 
-  const { faq, faqlist } = data;
+  useEffect(() => {
+    // Update scrollHeight for each accordion panel
+    const newHeights = faqlist.map((_, i) => {
+      const el = accordionContentRefs.current[i];
+      return el ? `${el.scrollHeight}px` : "0px";
+    });
+    setContentHeights(newHeights);
+  }, [faqlist, openItemIndex]);
+
+  if (!data || !data.faq || !faqlist.length) {
+    return <></>; // or null
+  }
 
   return (
     <section className="fix section-padding">
@@ -50,23 +62,21 @@ const ServiceTechExcellence = ({ data }) => {
                             className="accordion-header"
                           >
                             <button
-                              className={`accordion-button ${isOpen ? "" : "collapsed"
-                                }`}
+                              className={`accordion-button ${isOpen ? "" : "collapsed"}`}
                               type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#${collapseId}`}
-                              aria-expanded={isOpen}
-                              aria-controls={collapseId}
                             >
                               {item.title}
                             </button>
                           </h5>
                           <div
-                            ref={accordionContentRef}
+                            ref={(el) => (accordionContentRefs.current[index] = el)}
                             id={collapseId}
-                            className={`accordion-collapse collapse ${isOpen ? "show" : ""
-                              }`}
-                            data-bs-parent="#accordion"
+                            className="accordion-collapse"
+                            style={{
+                              maxHeight: isOpen ? contentHeights[index] : "0px",
+                              overflow: "hidden",
+                              transition: "max-height 0.4s ease",
+                            }}
                           >
                             <div className="accordion-body">
                               {parser(item.content)}

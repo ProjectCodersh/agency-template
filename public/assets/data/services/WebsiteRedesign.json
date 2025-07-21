@@ -5,12 +5,12 @@
           "bgImage": "/assets/img/hero/hero-bg-2.png",
           "overlayImage": "/assets/img/hero/bg-shape.png",
           "title": "Give Your Website a Fresh, <br/> Conversion-Driven Makeover",
-          "content": "Is your current website outdated or failing to convert visitors? Our redesign services blend modern aesthetics with high-performance functionality to elevate user experience and drive more sales.",
+          "content": "Is your current website outdated or failing to convert visitors? Our redesign services blend modern aesthetics <br/> with high-performance functionality to elevate user experience and drive more sales.",
           "review": {
             "image": "/assets/img/hero/client-demo.png",
             "ratingStars": 5,
             "totalStars": 5,
-            "text": "200+ successful redesigns completed"
+            "text": "200+ sites redesigned"
           },
           "badge": {
             "image": "/assets/img/hero/clutchreview-2.png",

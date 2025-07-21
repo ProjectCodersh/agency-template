@@ -4,13 +4,13 @@
         "heroSection": {
           "bgImage": "/assets/img/hero/hero-bg-2.png",
           "overlayImage": "/assets/img/hero/bg-shape.png",
-          "title": "Stabilize Your OneBuilder Site and Eliminate Costly Glitches",
-          "content": "Is your OneBuilder site crashing, misaligned, or riddled with errors? We specialize in stabilizing and fixing broken sites, ensuring your design, structure, and speed perform flawlessly — on every device.",
+          "title": "Stabilize Your OneBuilder Site <br/> and Eliminate Costly Glitches",
+          "content": "Is your OneBuilder site crashing, misaligned, or riddled with errors? We specialize in stabilizing <br/> And fixing broken sites, ensuring your design, structure, and speed perform flawlessly — on every device.",
           "review": {
             "image": "/assets/img/hero/client-demo.png",
             "ratingStars": 5,
             "totalStars": 5,
-            "text": "200+ successful site fixes"
+            "text": "200+ site fixes"
           },
           "badge": {
             "image": "/assets/img/hero/clutchreview-2.png",

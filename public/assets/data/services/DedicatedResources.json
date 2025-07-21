@@ -4,13 +4,13 @@
         "heroSection": {
           "bgImage": "/assets/img/hero/hero-bg-2.png",
           "overlayImage": "/assets/img/hero/bg-shape.png",
-          "title": "Extend Your Team with Reliable, White-Label Resources",
-          "content": "Need expert developers, designers, or marketers without the hiring hassle? Our white-label talent plugs seamlessly into your agency workflows - no training, no drama. Focus on scaling your agency while we handle the execution.",
+          "title": "Extend Your Team with Reliable, <br/> White-Label Resources",
+          "content": "Need expert developers, designers, or marketers without the hiring hassle? Our white-label talent plugs seamlessly <br/> into your agency workflows - no training, no drama. Focus on scaling your agency while we handle the execution.",
           "review": {
             "image": "/assets/img/hero/client-demo.png",
             "ratingStars": 5,
             "totalStars": 5,
-            "text": "20+ agencies trust our dedicated teams"
+            "text": "20+ agencies trust us"
           },
           "badge": {
             "image": "/assets/img/hero/clutchreview-2.png",

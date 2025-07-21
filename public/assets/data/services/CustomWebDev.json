@@ -4,13 +4,13 @@
         "heroSection": {
           "bgImage": "/assets/img/hero/hero-bg-2.png",
           "overlayImage": "/assets/img/hero/bg-shape.png",
-          "title": "Build Tailor-Made Websites That Power Your Business",
-          "content": "Off-the-shelf just won’t cut it? We deliver custom web solutions crafted to fit your unique goals, whether it’s complex functionality, integrations, or advanced eCommerce features.",
+          "title": "Build Tailor-Made Websites <br/> That Power Your Business",
+          "content": "Off-the-shelf just won’t cut it? We deliver custom web solutions crafted to fit your unique goals, <br/> whether it’s complex functionality, integrations, or advanced eCommerce features.",
           "review": {
             "image": "/assets/img/hero/client-demo.png",
             "ratingStars": 5,
             "totalStars": 5,
-            "text": "150+ custom projects delivered"
+            "text": "150+ projects delivered"
           },
           "badge": {
             "image": "/assets/img/hero/clutchreview-2.png",
