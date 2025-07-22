@@ -10,7 +10,7 @@ const BreadCumb = ({ Title, bgimg, customTrail = null, hasOverlay = false }) => 
   }, []);
 
   return (
-    <div className="breadcrumb-wrapper bg-cover" data-background={bgimg}>
+    <div className="breadcrumb-wrapper bg-cover breadcrumb-wrapper-margin-top" data-background={bgimg}>
       {/* Add this overlay */}
       {hasOverlay && <div className="breadcrumb-overlay" />}
 

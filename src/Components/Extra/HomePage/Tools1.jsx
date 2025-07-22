@@ -7,10 +7,9 @@ function Tools1() {
     loadBackgroudImages();
   }, []);
 
-  const chooseHeading = {
+  const sectionHead = {
     subtitle: 'Our Services',
     title: ' What You Get <br/>With Every Plan',
-    // content: 'A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.',
     content: '',
     plantitle1: 'Design & Devlopment',
     plantitle2: 'Performance & optimization',
@@ -19,7 +18,7 @@ function Tools1() {
     plantitle5: 'Maintenance & Server Tasks',
   };
 
-  const aboutContent = {
+  const services = {
     list1: 'New Site Development',
     list2: 'Website Redesign',
     list3: 'Landing Page Creation',
@@ -56,68 +55,68 @@ function Tools1() {
     list34: 'Site Migration from Another Platform',
     list35: 'Domain Mapping with DNS Records',
     list36: 'Email MX Records Setup',
-    list37: 'amWebmail / Outlook Setupd',
+    list37: 'Webmail / Outlook Setup',
   };
 
   // Grouped service data for each column
   const serviceGroups = [
     {
-      title: chooseHeading.plantitle1,
+      title: sectionHead.plantitle1,
       items: [
-        aboutContent.list1,
-        aboutContent.list2,
-        aboutContent.list3,
-        aboutContent.list4,
-        aboutContent.list6,
-        aboutContent.list7,
-        aboutContent.list8,
-        aboutContent.list9,
-        aboutContent.list10,
-        aboutContent.list11,
-        aboutContent.list12,
-        aboutContent.list13,
-        aboutContent.list14,
-        aboutContent.list15,
+        services.list1,
+        services.list2,
+        services.list3,
+        services.list4,
+        services.list6,
+        services.list7,
+        services.list8,
+        services.list9,
+        services.list10,
+        services.list11,
+        services.list12,
+        services.list13,
+        services.list14,
+        services.list15,
       ],
     },
     {
-      title: chooseHeading.plantitle3,
+      title: sectionHead.plantitle3,
       items: [
-        aboutContent.list21,
-        aboutContent.list22,
-        aboutContent.list23,
-        aboutContent.list24,
-        aboutContent.list25,
-        aboutContent.list26,
-        aboutContent.list12,
-        aboutContent.list13,
-        aboutContent.list14,
-        aboutContent.list15,
+        services.list21,
+        services.list22,
+        services.list23,
+        services.list24,
+        services.list25,
+        services.list26,
+        services.list12,
+        services.list13,
+        services.list14,
+        services.list15,
       ],
     },
     {
-      title: chooseHeading.plantitle2,
+      title: sectionHead.plantitle2,
       items: [
-        aboutContent.list16,
-        aboutContent.list17,
-        aboutContent.list18,
-        aboutContent.list19,
-        aboutContent.list20,
+        services.list16,
+        services.list17,
+        services.list18,
+        services.list19,
+        services.list20,
       ],
     },
     {
-      title: chooseHeading.plantitle4,
+      title: sectionHead.plantitle4,
       items: [
-        aboutContent.list29,
-        aboutContent.list30,
-        aboutContent.list31,
-        aboutContent.list32,
-        aboutContent.list33,
+        services.list29,
+        services.list30,
+        services.list31,
+        services.list32,
+        services.list33,
       ],
     },
     {
-      title: chooseHeading.plantitle5,
-      items: [aboutContent.list34, aboutContent.list35, aboutContent.list36, aboutContent.list37],
+      title: sectionHead.plantitle5,
+      items: [services.list34, services.list35, services.list36, services.list37],
     },
   ];
 
@@ -127,82 +126,32 @@ function Tools1() {
         <div className="section-title-area">
           <div className="section-title">
             <div className="sub-title wow fadeInUp">
-              <span>{chooseHeading.subtitle}</span>
+              <span>{sectionHead.subtitle}</span>
             </div>
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              {parse(chooseHeading.title)}
+              {parse(sectionHead.title)}
             </h2>
           </div>
           <p className="wow fadeInUp" data-wow-delay=".5s">
-            {parse(chooseHeading.content)}
+            {parse(sectionHead.content)}
           </p>
         </div>
 
         <div className="masonry-grid">
-          <div className="service-column">
-            <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
-              <span>{chooseHeading.plantitle1}</span>
+          {serviceGroups.map((group, index) => (
+            <div className="service-column" key={index}>
+              <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
+                <span>{group.title}</span>
+              </div>
+              <ul className="service-list">
+                {group.items.filter(Boolean).map((item, i) => (
+                  <li key={i}>
+                    <span className="check-icon" aria-label="Included service">✓</span> {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="service-list">
-              {serviceGroups[0].items.filter(Boolean).map((item, i) => (
-                <li key={i}>
-                  <span className="check-icon">✓</span> {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="service-column">
-            <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
-              <span>{chooseHeading.plantitle3}</span>
-            </div>
-            <ul className="service-list">
-              {serviceGroups[1].items.filter(Boolean).map((item, i) => (
-                <li key={i}>
-                  <span className="check-icon">✓</span> {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="service-column">
-            <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
-              <span>{chooseHeading.plantitle2}</span>
-            </div>
-            <ul className="service-list">
-              {serviceGroups[2].items.filter(Boolean).map((item, i) => (
-                <li key={i}>
-                  <span className="check-icon">✓</span> {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="service-column">
-            <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
-              <span>{chooseHeading.plantitle4}</span>
-            </div>
-            <ul className="service-list">
-              {serviceGroups[3].items.filter(Boolean).map((item, i) => (
-                <li key={i}>
-                  <span className="check-icon">✓</span> {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="service-column">
-            <div className="service-title" style={{ backgroundColor: '#f6f3fe' }}>
-              <span>{chooseHeading.plantitle5}</span>
-            </div>
-            <ul className="service-list">
-              {serviceGroups[4].items.filter(Boolean).map((item, i) => (
-                <li key={i}>
-                  <span className="check-icon">✓</span> {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          ))}
         </div>
       </div>
 

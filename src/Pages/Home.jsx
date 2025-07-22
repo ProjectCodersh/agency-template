@@ -29,15 +29,10 @@ const Home = () => {
 
             <Suspense fallback={<div className="loading">Loading FAQ...</div>}>
                 <Faq1 addclass="faq-section section-padding2 pb-0" />
-            </Suspense>
-
-            <Suspense fallback={<div className="loading">Loading Testimonials...</div>}>
                 <VideoTestimonialSlick />
-            </Suspense>
-
-            <Suspense fallback={<div className="loading">Loading Contact Info...</div>}>
                 <ContactInfo1 />
             </Suspense>
+
         </div>
     );
 };

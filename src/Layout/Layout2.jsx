@@ -9,7 +9,7 @@ const Layout2 = () => {
     <div className="main-page-area2">
       <ScrollToTop />
       <Header2></Header2>
-      <Outlet></Outlet>
+      <Outlet ></Outlet>
       <Footer2></Footer2>
       <WhatsAppButton />
     </div>

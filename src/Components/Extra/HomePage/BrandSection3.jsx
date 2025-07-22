@@ -1,25 +1,41 @@
-import parse from 'html-react-parser';
+import React from 'react';
 import figmaLogo from '/assets/img/tools/figma-icon.png';
 import canvaLogo from '/assets/img/tools/canva-icon.png';
 import photoshopLogo from '/assets/img/tools/photoshop-icon.png';
 import adobeLogo from '/assets/img/tools/adobecloud-icon.png';
 
-const BrandSection3 = () => {
-  const recommended = [{ name: 'figma-icon', logo: figmaLogo }];
+// ✅ Reusable Grid Component
+const ToolGrid = ({ tools, cols }) => (
+  <div className="row gy-4">
+    {tools.map((tool) => (
+      <div
+        key={tool.name}
+        className={`${cols} text-center d-flex align-items-center justify-content-center flex-column`}
+      >
+        <img
+          src={tool.logo}
+          alt={tool.name}
+          loading="lazy"
+          className="img-fluid mb-2 px-2 px-md-0 brandsection-brands-three"
+        />
+      </div>
+    ))}
+  </div>
+);
 
+const BrandSection3 = () => {
+  const recommended = [{ name: 'Figma', logo: figmaLogo }];
   const compatible = [
-    { name: 'canva-icon', logo: canvaLogo },
-    { name: 'photoshop-icon', logo: photoshopLogo },
-    { name: 'adobecloud-icon', logo: adobeLogo },
+    { name: 'Canva', logo: canvaLogo },
+    { name: 'Photoshop', logo: photoshopLogo },
+    { name: 'Adobe Cloud', logo: adobeLogo },
   ];
 
-  const chooseHeading = {
-    subtitle: 'Our Services',
+  const heading = {
     title: 'Design & Prototype Tools',
-    content:
-      'A fully equipped WordPress development <br/> team ready to handle all your technical needs— <br/>fast, flexible, and reliable.',
-    plantitle1: 'We recommend For you ',
-    plantitle2: 'We are Also compatible with',
+    content: ``,
+    planTitle1: 'We recommend for you',
+    planTitle2: 'We are also compatible with',
   };
 
   return (
@@ -27,48 +43,34 @@ const BrandSection3 = () => {
       <div className="container px-3">
         <div className="section-title-area">
           <div className="section-title">
-            <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              {parse(chooseHeading.title)}
-            </h2>
+            <h2 className="wow fadeInUp" data-wow-delay=".3s">{heading.title}</h2>
+            <p
+              className="wow fadeInUp mt-3 text-muted"
+              data-wow-delay=".5s"
+              style={{ whiteSpace: 'pre-line' }}
+            >
+              {heading.content}
+            </p>
           </div>
         </div>
+
         <div className="row gy-4">
           <div className="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12">
             <div className="section-title mb-0">
               <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
-                <span>{chooseHeading.plantitle1}</span>
+                <span>{heading.planTitle1}</span>
               </div>
             </div>
-            <div className="row gy-4">
-              {recommended.map((tool, index) => (
-                <div className="col-6 col-sm-4 col-md-4 col-lg-3" key={index}>
-                  <img
-                    src={tool.logo}
-                    alt={tool.name}
-                    className="img-fluid mb-2 px-2 px-md-0 brandsection-brands-three"
-                  />
-                </div>
-              ))}
-            </div>
+            <ToolGrid tools={recommended} cols="col-6 col-sm-4 col-md-4 col-lg-3" />
           </div>
-          <div className="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 ">
+
+          <div className="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12">
             <div className="section-title mb-0">
               <div className="sub-title wow fadeInUp my-4" style={{ backgroundColor: '#384bff1a' }}>
-                <span>{chooseHeading.plantitle2}</span>
+                <span>{heading.planTitle2}</span>
               </div>
             </div>
-
-            <div className="row p-md-0">
-              {compatible.map((tool, index) => (
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 " key={index}>
-                  <img
-                    src={tool.logo}
-                    alt={tool.name}
-                    className="img-fluid mb-2 px-2 px-md-0 brandsection-brands-three"
-                  />
-                </div>
-              ))}
-            </div>
+            <ToolGrid tools={compatible} cols="col-4 col-sm-4 col-md-4 col-lg-4" />
           </div>
         </div>
       </div>
@@ -76,4 +78,4 @@ const BrandSection3 = () => {
   );
 };
 
-export default BrandSection3;
+export default React.memo(BrandSection3);

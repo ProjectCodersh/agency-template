@@ -113,7 +113,7 @@ const Faq1 = ({ addclass }) => {
                             className="accordion-collapse"
                             style={{
                               overflow: 'hidden',
-                              transition: 'max-height 0.3s ease',
+                              transition: 'max-height 0.4s ease',
                               maxHeight: isOpen
                                 ? `${contentRefs.current[index]?.scrollHeight}px`
                                 : '0px',

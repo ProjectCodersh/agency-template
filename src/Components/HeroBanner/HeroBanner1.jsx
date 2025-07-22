@@ -1,73 +1,49 @@
-import { useEffect } from 'react';
-import loadBackgroudImages from '../Common/loadBackgroudImages';
+import { useEffect, memo } from 'react';
 import Slider from 'react-slick';
-import parse from 'html-react-parser';
 import { Link } from 'react-router-dom';
+import parse from 'html-react-parser';
+import loadBackgroudImages from '../Common/loadBackgroudImages';
+
+const brandLogos = [
+  '/assets/img/brand/kucrimson-brand.png',
+  '/assets/img/brand/datadepot-brand.png',
+  '/assets/img/brand/informadist-brand.png',
+  '/assets/img/brand/squreit-brand.png',
+];
+
+const heroContent = {
+  bg: '/assets/img/hero/hero-bg-2.png',
+  bg2: '/assets/img/hero/bg-shape.png',
+  subtitle: 'go for advertising',
+  title: 'Grow profits, save time, <br/> and scale your agency',
+  content: 'White Label WordPress Development Partner for Digital Agencies at Fixed Cost.',
+  review: '450+ reviews',
+  reviewImg: '/assets/img/hero/client-demo.png',
+};
+
+const sliderSettings = {
+  dots: false,
+  infinite: true,
+  speed: 5000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: false,
+  swipeToSlide: true,
+  autoplay: true,
+  autoplaySpeed: 0,
+  cssEase: 'linear',
+  responsive: [
+    { breakpoint: 1399, settings: { slidesToShow: 4 } },
+    { breakpoint: 1199, settings: { slidesToShow: 3 } },
+    { breakpoint: 767, settings: { slidesToShow: 2 } },
+    { breakpoint: 575, settings: { slidesToShow: 1 } },
+  ],
+};
+
 const HeroBanner1 = () => {
   useEffect(() => {
     loadBackgroudImages();
   }, []);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 5000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    swipeToSlide: true,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    responsive: [
-      {
-        breakpoint: 1399,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  const brandContent = [
-    { img: '/assets/img/brand/kucrimson-brand.png' },
-    { img: '/assets/img/brand/datadepot-brand.png' },
-    { img: '/assets/img/brand/informadist-brand.png' },
-    { img: '/assets/img/brand/squreit-brand.png' },
-  ];
-
-  const heroContent = {
-    bg: '/assets/img/hero/hero-bg-2.png',
-    bg2: '/assets/img/hero/bg-shape.png',
-    subtitle: 'go for advertising',
-    // title: "Grow profits, save time, and scale your\u00A0agency",
-    title: 'Grow profits, save time, <br/> and scale your agency',
-    content: 'White Label WordPress Development Partner for Digital Agencies at Fixed Cost.',
-    content2:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.',
-    img: '/assets/img/hero/hero-text.png',
-    reviewlogo: '/assets/img/hero/logo.png',
-    reviewimg: '/assets/img/hero/client-demo.png',
-    review: '450+ reviews',
-  };
 
   return (
     <section className="hero-section hero-2" data-background={heroContent.bg}>
@@ -96,7 +72,7 @@ const HeroBanner1 = () => {
           </div>
 
           <div className="col-12">
-            <div className="client-items d-flex justify-content-center align-items-center flex-wrap gap-3 ">
+            <div className="client-items d-flex justify-content-center align-items-center flex-wrap gap-3">
               <div className="clutchreview">
                 <a
                   href="https://clutch.co/profile/codersh-web-services"
@@ -105,20 +81,19 @@ const HeroBanner1 = () => {
                 >
                   <img
                     src="/assets/img/hero/clutchreview-2.png"
-                    alt="clutchreview"
+                    alt="Clutch Reviews"
                     style={{ height: '42px' }}
                   />
                 </a>
               </div>
 
               <div className="client-img d-flex flex-column flex-sm-row align-items-center gap-0 gap-md-2">
-                <img src={heroContent.reviewimg} alt="Happy client" className="img-fluid" />
+                <img src={heroContent.reviewImg} alt="Happy client" className="img-fluid" />
                 <div className="star-icon text-center text-sm-start">
                   <div className="star text-warning">
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
+                    {[...Array(4)].map((_, i) => (
+                      <i key={i} className="fa-solid fa-star"></i>
+                    ))}
                     <i className="fa-regular fa-star"></i>
                   </div>
                   <span className="d-block mt-0 mt-md-1 text-white">{heroContent.review}</span>
@@ -128,7 +103,7 @@ const HeroBanner1 = () => {
           </div>
 
           <div
-            className="col-12 wow fadeInUp d-flex justify-content-center align-items-center flex-wrap gap-3 "
+            className="col-12 wow fadeInUp d-flex justify-content-center align-items-center flex-wrap gap-3"
             data-wow-delay=".4s"
           >
             <div className="main-button">
@@ -152,15 +127,16 @@ const HeroBanner1 = () => {
           </div>
         </div>
       </div>
+
       <div className="brand-wrapper-2">
         <h4 className="brand-title">1k + Brands Trust Us</h4>
         <div className="swiper brand-slider">
           <div className="swiper-wrapper cs_slider_gap_30">
-            <Slider {...settings}>
-              {brandContent.map((item, i) => (
-                <div key={i} className="swiper-slide">
-                  <div className="brand-img center ">
-                    <img src={item.img} alt="img" className="brand-trust-img" />
+            <Slider {...sliderSettings}>
+              {brandLogos.map((imgSrc, index) => (
+                <div key={index} className="swiper-slide">
+                  <div className="brand-img center">
+                    <img src={imgSrc} alt={`brand-${index}`} className="brand-trust-img" />
                   </div>
                 </div>
               ))}
@@ -172,4 +148,4 @@ const HeroBanner1 = () => {
   );
 };
 
-export default HeroBanner1;
+export default memo(HeroBanner1);
