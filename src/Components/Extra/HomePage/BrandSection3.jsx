@@ -4,7 +4,7 @@ import canvaLogo from '/assets/img/tools/canva-icon.png';
 import photoshopLogo from '/assets/img/tools/photoshop-icon.png';
 import adobeLogo from '/assets/img/tools/adobecloud-icon.png';
 
-const Brandsection3 = () => {
+const BrandSection3 = () => {
   const recommended = [{ name: 'figma-icon', logo: figmaLogo }];
 
   const compatible = [
@@ -76,4 +76,4 @@ const Brandsection3 = () => {
   );
 };
 
-export default Brandsection3;
+export default BrandSection3;
