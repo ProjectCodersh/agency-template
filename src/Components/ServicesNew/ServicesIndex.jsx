@@ -21,6 +21,7 @@ export const serviceSlugMap = {
   'shift4shop-to-shopify-migration': 'S4sToShopify.json',
   'go-highlevel-development': 'GoHighlevelDev.json',
   'dedicated-resources-for-agencies': 'DedicatedResources.json',
+  'ai-chatbot-service': 'AiChatBot.json',
   // Add more...
 };
 

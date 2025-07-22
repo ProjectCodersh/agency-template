@@ -19,12 +19,12 @@
           },
           "buttons": [
             {
-              "label": "GET MIGRATION QUOTE",
-              "link": "/#"
+              "label": "GET A QUOTE",
+              "link": "/pricing"
             },
             {
-              "label": "VIEW SUCCESS STORIES",
-              "link": "/#"
+              "label": "LET'S COLLABORATE",
+              "link": "https://calendly.com/codersh-web-services/15min"
             }
           ]
         }
