@@ -1,7 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import parse from 'html-react-parser';
-
 
 function CaseStudyDetailsNew({ data, list = [] }) {
   const navigate = useNavigate();
@@ -111,7 +110,7 @@ function CaseStudyDetailsNew({ data, list = [] }) {
                         src={imgSrc}
                         alt={`case-study-img-${index}`}
                         loading="lazy"
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ width: '100%', height: 'auto' }}
                       />
                     </div>
                   </div>
@@ -131,12 +130,12 @@ function CaseStudyDetailsNew({ data, list = [] }) {
                 <i className="bi bi-chevron-left"></i>
               </button>
               <span className="fw-bold white-clr previus-text text-capitalize">
-                {prevItem ? "Previous" : ""}
+                {prevItem ? 'Previous' : ''}
               </span>
             </div>
             <div className="d-flex align-items-center gap-xxl-4 gap-3 gap-2">
               <span className="fw-bold white-clr previus-text text-capitalize">
-                {nextItem ? "Next" : ""}
+                {nextItem ? 'Next' : ''}
               </span>
               <button
                 className="cmn-next cmn-border d-center"

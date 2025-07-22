@@ -5,15 +5,15 @@ import ScrollToTop from '../Components/Common/ScrollToTop';
 import WhatsAppButton from '../Components/Common/WhatsAppButton';
 
 const Layout2 = () => {
-    return (
-        <div className='main-page-area2'>
-            <ScrollToTop />
-            <Header2></Header2>
-            <Outlet></Outlet>
-            <Footer2></Footer2>
-            <WhatsAppButton />
-        </div>
-    );
+  return (
+    <div className="main-page-area2">
+      <ScrollToTop />
+      <Header2></Header2>
+      <Outlet></Outlet>
+      <Footer2></Footer2>
+      <WhatsAppButton />
+    </div>
+  );
 };
 
 export default Layout2;

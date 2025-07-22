@@ -1,11 +1,11 @@
-import React, { Suspense, lazy, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import BreadCumb from "../Components/Common/BreadCumb";
-import VideoTestimonialSlickSecond from "../Components/Testimonial/VideoTestimonialTwo";
-import { caseStudiesList } from "../Components/CaseStudyDetailsNew/CaseStudiesList";
+import React, { Suspense, lazy, useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import BreadCumb from '../Components/Common/BreadCumb';
+import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimonialTwo';
+import { caseStudiesList } from '../Components/CaseStudyDetailsNew/CaseStudiesList';
 
-const CaseStudyDetails = lazy(() =>
-  import("../Components/CaseStudyDetailsNew/CaseStudyDetailsNew")
+const CaseStudyDetails = lazy(
+  () => import('../Components/CaseStudyDetailsNew/CaseStudyDetailsNew')
 );
 
 function CaseStudyDetailsPage() {
@@ -21,7 +21,7 @@ function CaseStudyDetailsPage() {
     fetch(`/assets/data/casestudy/${slug}.json`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Not found");
+          throw new Error('Not found');
         }
         return res.json();
       })
@@ -37,26 +37,19 @@ function CaseStudyDetailsPage() {
       });
   }, [slug]);
 
-  if (loading) return <div style={{ padding: "2rem" }}>Loading...</div>;
-  if (!caseStudyData)
-    return <div style={{ padding: "2rem" }}>Case study not found.</div>;
+  if (loading) return <div style={{ padding: '2rem' }}>Loading...</div>;
+  if (!caseStudyData) return <div style={{ padding: '2rem' }}>Case study not found.</div>;
 
-  const caseStudyFromList = caseStudiesList.find(
-    (item) => item.slug === slug
-  );
-  const dynamicTitle =
-    caseStudyFromList?.title || caseStudyData?.title || "Case Study Details";
+  const caseStudyFromList = caseStudiesList.find((item) => item.slug === slug);
+  const dynamicTitle = caseStudyFromList?.title || caseStudyData?.title || 'Case Study Details';
 
   return (
     <>
       <BreadCumb
-        bgimg={caseStudyFromList?.BgImg || "/assets/img/breadcrumb.jpg"}
+        bgimg={caseStudyFromList?.BgImg || '/assets/img/breadcrumb.jpg'}
         Title={dynamicTitle}
         hasOverlay={true}
-        customTrail={[
-          { label: "Case Study", link: "/case-study" },
-          { label: dynamicTitle },
-        ]}
+        customTrail={[{ label: 'Case Study', link: '/case-study' }, { label: dynamicTitle }]}
       />
       <Suspense fallback={<div>Loading details...</div>}>
         <CaseStudyDetails data={caseStudyData} list={caseStudiesList} />

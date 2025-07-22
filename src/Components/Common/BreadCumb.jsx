@@ -1,8 +1,8 @@
 // BreadCumb.jsx
-import { useEffect } from "react";
-import loadBackgroudImages from "./loadBackgroudImages";
-import { Link } from "react-router-dom";
-import React from "react";
+import { useEffect } from 'react';
+import loadBackgroudImages from './loadBackgroudImages';
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 const BreadCumb = ({ Title, bgimg, customTrail = null, hasOverlay = false }) => {
   useEffect(() => {
@@ -11,7 +11,6 @@ const BreadCumb = ({ Title, bgimg, customTrail = null, hasOverlay = false }) => 
 
   return (
     <div className="breadcrumb-wrapper bg-cover" data-background={bgimg}>
-
       {/* Add this overlay */}
       {hasOverlay && <div className="breadcrumb-overlay" />}
 
@@ -28,13 +27,7 @@ const BreadCumb = ({ Title, bgimg, customTrail = null, hasOverlay = false }) => 
             {customTrail ? (
               customTrail.map((item, index) => (
                 <React.Fragment key={index}>
-                  <li>
-                    {item.link ? (
-                      <Link to={item.link}>{item.label}</Link>
-                    ) : (
-                      item.label
-                    )}
-                  </li>
+                  <li>{item.link ? <Link to={item.link}>{item.label}</Link> : item.label}</li>
                   {index < customTrail.length - 1 && (
                     <li>
                       <i className="bi bi-chevron-right"></i>
@@ -54,7 +47,6 @@ const BreadCumb = ({ Title, bgimg, customTrail = null, hasOverlay = false }) => 
               </>
             )}
           </ul>
-
         </div>
       </div>
     </div>

@@ -11,17 +11,17 @@
 // import other services...
 
 export const serviceSlugMap = {
-    "figma-to-shopify-migration": "FigmaToShopify.json",
-    "wordpress-to-shopify-migration": "WpToShopify.json",
-    "onebuilder-site-stabilization": "OneBuilderStabilization.json",
-    "website-speed-optimization": "WebsiteSpeedOptimization.json",
-    "malware-&-virus-removal": "MalwareRemoval.json",
-    "custom-web-development": "CustomWebDev.json",
-    "website-redesign": "WebsiteRedesign.json",
-    "shift4shop-to-shopify-migration": "S4sToShopify.json",
-    "go-highlevel-development": "GoHighlevelDev.json",
-    "dedicated-resources-for-agencies": "DedicatedResources.json",
-    // Add more...
+  'figma-to-shopify-migration': 'FigmaToShopify.json',
+  'wordpress-to-shopify-migration': 'WpToShopify.json',
+  'onebuilder-site-stabilization': 'OneBuilderStabilization.json',
+  'website-speed-optimization': 'WebsiteSpeedOptimization.json',
+  'malware-&-virus-removal': 'MalwareRemoval.json',
+  'custom-web-development': 'CustomWebDev.json',
+  'website-redesign': 'WebsiteRedesign.json',
+  'shift4shop-to-shopify-migration': 'S4sToShopify.json',
+  'go-highlevel-development': 'GoHighlevelDev.json',
+  'dedicated-resources-for-agencies': 'DedicatedResources.json',
+  // Add more...
 };
 
 // export default serviceDataMap;

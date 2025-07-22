@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import parser from "html-react-parser";
+import { useEffect, useRef, useState } from 'react';
+import parser from 'html-react-parser';
 
 const ServiceTechExcellence = ({ data }) => {
   const [openItemIndex, setOpenItemIndex] = useState(0);
@@ -13,7 +13,7 @@ const ServiceTechExcellence = ({ data }) => {
     // Update scrollHeight for each accordion panel
     const newHeights = faqlist.map((_, i) => {
       const el = accordionContentRefs.current[i];
-      return el ? `${el.scrollHeight}px` : "0px";
+      return el ? `${el.scrollHeight}px` : '0px';
     });
     setContentHeights(newHeights);
   }, [faqlist, openItemIndex]);
@@ -52,17 +52,15 @@ const ServiceTechExcellence = ({ data }) => {
                       return (
                         <div
                           key={index}
-                          className={`accordion-item mb-3 ${isOpen ? "active" : ""}`}
+                          className={`accordion-item mb-3 ${isOpen ? 'active' : ''}`}
                           data-wow-delay=".3s"
                         >
                           <h5
-                            onClick={() =>
-                              setOpenItemIndex(isOpen ? -1 : index)
-                            }
+                            onClick={() => setOpenItemIndex(isOpen ? -1 : index)}
                             className="accordion-header"
                           >
                             <button
-                              className={`accordion-button ${isOpen ? "" : "collapsed"}`}
+                              className={`accordion-button ${isOpen ? '' : 'collapsed'}`}
                               type="button"
                             >
                               {item.title}
@@ -73,14 +71,12 @@ const ServiceTechExcellence = ({ data }) => {
                             id={collapseId}
                             className="accordion-collapse"
                             style={{
-                              maxHeight: isOpen ? contentHeights[index] : "0px",
-                              overflow: "hidden",
-                              transition: "max-height 0.4s ease",
+                              maxHeight: isOpen ? contentHeights[index] : '0px',
+                              overflow: 'hidden',
+                              transition: 'max-height 0.4s ease',
                             }}
                           >
-                            <div className="accordion-body">
-                              {parser(item.content)}
-                            </div>
+                            <div className="accordion-body">{parser(item.content)}</div>
                           </div>
                         </div>
                       );

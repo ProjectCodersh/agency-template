@@ -1,7 +1,7 @@
 // ServiceKeyFetures.jsx
-import { useEffect } from "react";
-import loadBackgroudImages from "../Common/loadBackgroudImages";
-import parse from "html-react-parser";
+import { useEffect } from 'react';
+import loadBackgroudImages from '../Common/loadBackgroudImages';
+import parse from 'html-react-parser';
 
 const ServiceKeyFeatures = ({ data }) => {
   useEffect(() => {
@@ -14,9 +14,7 @@ const ServiceKeyFeatures = ({ data }) => {
 
   return (
     <section className="feature-secton section-padding fix">
-      <div className="bg-shape">
-        {/* <img src="/assets/img/bg-shape-2.png" alt="img" /> */}
-      </div>
+      <div className="bg-shape">{/* <img src="/assets/img/bg-shape-2.png" alt="img" /> */}</div>
       <div className="container px-3">
         <div className="section-title-area">
           <div className="section-title">
@@ -40,11 +38,7 @@ const ServiceKeyFeatures = ({ data }) => {
 
         <div className="row justify-content-center">
           {chooseContent?.map((item, i) => (
-            <div
-              key={i}
-              className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay=".2s"
-            >
+            <div key={i} className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
               <div className="feature-box-items card-hover-effect">
                 <div className="icon">
                   <i className={item.iconclass}></i>

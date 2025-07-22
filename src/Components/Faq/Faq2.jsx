@@ -1,12 +1,27 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 const Faq2 = ({ addclass }) => {
-
   const faqContent = [
-    { title: 'Can you help increase my store’s conversion rate?', content: 'Yes! We enhance product pages, streamline checkout, and optimize calls-to-action to turn visitors into buyers.' },
-    { title: 'Will optimization affect my store’s design?', content: 'No, we refine performance without compromising your store’s design. If needed, we make subtle UI improvements for a better user experience.' },
-    { title: 'How long does Shopify Optimization take?', content: "Depending on the level of optimization needed, it usually takes between 5 to 10 days." },
-    { title: 'Do you provide ongoing support after optimization?', content: 'Yes! We offer continuous monitoring and updates to ensure long-term store performance.' }
+    {
+      title: 'Can you help increase my store’s conversion rate?',
+      content:
+        'Yes! We enhance product pages, streamline checkout, and optimize calls-to-action to turn visitors into buyers.',
+    },
+    {
+      title: 'Will optimization affect my store’s design?',
+      content:
+        'No, we refine performance without compromising your store’s design. If needed, we make subtle UI improvements for a better user experience.',
+    },
+    {
+      title: 'How long does Shopify Optimization take?',
+      content:
+        'Depending on the level of optimization needed, it usually takes between 5 to 10 days.',
+    },
+    {
+      title: 'Do you provide ongoing support after optimization?',
+      content:
+        'Yes! We offer continuous monitoring and updates to ensure long-term store performance.',
+    },
   ];
 
   const accordionContentRef = useRef(null);
@@ -18,8 +33,7 @@ const Faq2 = ({ addclass }) => {
     contentRefs.current[index] = el;
   };
 
-
-  const handleItemClick = index => {
+  const handleItemClick = (index) => {
     if (index === openItemIndex) {
       setOpenItemIndex(-1);
     } else {
@@ -35,7 +49,6 @@ const Faq2 = ({ addclass }) => {
 
   return (
     <section className={`${addclass} section-padding`}>
-
       {/* <div className="faq-overlay">
         <img src="/assets/img/faq-overlay.png" alt="img" />
       </div>
@@ -48,7 +61,10 @@ const Faq2 = ({ addclass }) => {
             <div className="col-xl-5 col-lg-6">
               <div className="faq-content">
                 <div className="section-title">
-                  <div className="sub-title bg-color-2 wow fadeInUp" style={{ backgroundColor: "#f6f3fe" }}>
+                  <div
+                    className="sub-title bg-color-2 wow fadeInUp"
+                    style={{ backgroundColor: '#f6f3fe' }}
+                  >
                     <span>FAQs</span>
                   </div>
                   <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -56,7 +72,8 @@ const Faq2 = ({ addclass }) => {
                   </h2>
                 </div>
                 <p className="wow fadeInUp" data-wow-delay=".5s">
-                  We are Codersh Web Services, your trusted digital solutions partner since 2014. Our team delivers measurable results that boost your business forward.
+                  We are Codersh Web Services, your trusted digital solutions partner since 2014.
+                  Our team delivers measurable results that boost your business forward.
                 </p>
                 {/* <ul className="faq-list">
                   <li className="wow fadeInUp" data-wow-delay=".3s">
@@ -80,18 +97,11 @@ const Faq2 = ({ addclass }) => {
                       return (
                         <div
                           key={index}
-                          className={`accordion-item mb-3 ${isOpen ? "active" : ""
-                            }`}
+                          className={`accordion-item mb-3 ${isOpen ? 'active' : ''}`}
                           data-wow-delay=".3s"
                         >
-                          <h5
-                            onClick={() => handleItemClick(index)}
-                            className="accordion-header"
-                          >
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
+                          <h5 onClick={() => handleItemClick(index)} className="accordion-header">
+                            <button className="accordion-button collapsed" type="button">
                               {item.title}
                             </button>
                           </h5>
@@ -99,11 +109,11 @@ const Faq2 = ({ addclass }) => {
                             ref={(el) => setContentRef(el, index)}
                             className="accordion-collapse"
                             style={{
-                              overflow: "hidden",
-                              transition: "max-height 0.3s ease",
+                              overflow: 'hidden',
+                              transition: 'max-height 0.3s ease',
                               maxHeight: isOpen
                                 ? `${contentRefs.current[index]?.scrollHeight}px`
-                                : "0px",
+                                : '0px',
                             }}
                           >
                             <div className="accordion-body">{item.content}</div>

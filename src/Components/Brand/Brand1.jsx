@@ -1,37 +1,37 @@
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
 const Brand1 = () => {
-
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000,                // Very high speed
+    speed: 5000, // Very high speed
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 0,           // No delay between transitions
+    autoplaySpeed: 0, // No delay between transitions
     cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1399,
         settings: {
           slidesToShow: 4,
-        }
+        },
       },
       {
         breakpoint: 1199,
         settings: {
           slidesToShow: 3,
-        }
-      }, {
+        },
+      },
+      {
         breakpoint: 575,
         settings: {
           slidesToShow: 2,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const brandContent = [
