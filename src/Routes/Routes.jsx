@@ -92,7 +92,7 @@ export const router = createBrowserRouter([
         element: <CaseStudyPage></CaseStudyPage>,
       },
       {
-        path: '/case-studies/:slug',
+        path: '/case-study/:slug',
         element: <CaseStudyPageNew></CaseStudyPageNew>,
       },
       {

@@ -8,7 +8,7 @@ const CaseStudy4 = () => {
       slug: 'madame-f',
       title: 'Madame F',
       subtitle: 'Wine Brand (LGBTQ+ Focused)',
-      img: '/assets/img/casestudy/madamef-casestudy.png',
+      img: '/assets/img/casestudy/madamef-casestudy.webp',
       description:
         'MADAME F is a bold, innovative wine brand celebrating individuality and the LGBTQ+ community. More than just a beverage, it represents a movement toward authenticity and inclusivity',
     },
@@ -16,7 +16,7 @@ const CaseStudy4 = () => {
       slug: 'liberation-cocktails',
       title: 'Liberation Cocktails',
       subtitle: 'E-Commerce (cocktail store)',
-      img: '/assets/img/casestudy/liberation-casestudy.png',
+      img: '/assets/img/casestudy/liberation-casestudy.webp',
       description:
         'Liberation Cocktails is a premium pre-mixed cocktail brand known for delivering exceptional taste and convenience. To elevate their online presence, Liberation Cocktails partnered',
     },
@@ -24,7 +24,7 @@ const CaseStudy4 = () => {
       slug: 'van-hunks',
       title: 'Van Hunks',
       subtitle: 'E-Commerce (wine store)',
-      img: '/assets/img/casestudy/van-hunks-casestudy.png',
+      img: '/assets/img/casestudy/van-hunks-casestudy.webp',
       description:
         'Van Hunks is a vibrant South African brand crafting sparkling wines that bring a sense of fun to everyday moments. Their existing Shopify store wasn’t capturing the energy or quality of',
     },
@@ -32,7 +32,7 @@ const CaseStudy4 = () => {
       slug: 'pa-mi-gente',
       title: 'Pa Mi Gente',
       subtitle: 'Wordpress',
-      img: '/assets/img/casestudy/pami-gente-casestudy.png',
+      img: '/assets/img/casestudy/pami-gente-casestudy.webp',
       description:
         'Pa Mi Gente is an innovative platform bridging families across borders by enabling US-based customers to send groceries and money to loved ones in Cuba. Evolving from a simple',
     },
@@ -40,7 +40,7 @@ const CaseStudy4 = () => {
       slug: 'stellar-credit',
       title: 'Stellar Credit',
       subtitle: 'Financial Services',
-      img: '/assets/img/casestudy/stellar-credit-casestudy.png',
+      img: '/assets/img/casestudy/stellar-credit-casestudy.webp',
       description:
         'Stellar Credit serves as a beacon of hope for individuals striving to improve their credit scores and achieve financial security. The project focused on building a digital platform that',
     },
@@ -48,7 +48,7 @@ const CaseStudy4 = () => {
       slug: 'bergbat',
       title: 'Bergbat',
       subtitle: 'E-Commerce',
-      img: '/assets/img/casestudy/bergbat-casestudy.png',
+      img: '/assets/img/casestudy/bergbat-casestudy.webp',
       description:
         'Bergbat is a premium baseball bat company renowned for its highly customizable products. To better support their complex product configurations and enhance the customer',
     },
@@ -67,13 +67,13 @@ const CaseStudy4 = () => {
                 <div className="content">
                   <div className="title">
                     <h3>
-                      <Link to={`/case-studies/${item.slug}`}> {item.title}</Link>
+                      <Link to={`/case-study/${item.slug}`}> {item.title}</Link>
                     </h3>
                     <p>{item.subtitle}</p>
                     <p className="clamp-2-lines">{item.description}</p>
                   </div>
                   <Link
-                    to={`/case-studies/${item.slug}`}
+                    to={`/case-study/${item.slug}`}
                     className="icon"
                     style={{ minWidth: '52px', height: '52px' }}
                   >

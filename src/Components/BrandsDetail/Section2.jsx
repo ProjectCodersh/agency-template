@@ -10,10 +10,10 @@ const Section2 = ({ data }) => {
     loadBackgroudImages();
   }, []);
 
-  const handleClick = () => {
-    setIframeSrc(data.videoUrl);
-    setToggle(true);
-  };
+  // const handleClick = () => {
+  //   setIframeSrc(data.videoUrl);
+  //   setToggle(true);
+  // };
 
   const handleClose = () => {
     setIframeSrc('about:blank');
@@ -28,7 +28,7 @@ const Section2 = ({ data }) => {
       <div className="container">
         <div className="cta-counter-wrapper-2">
           <div className="cta-video-image wow img-custom-anim-left" data-wow-delay=".3s">
-            <img src={data.image} alt="Video" onClick={handleClick} style={{ cursor: 'pointer' }} />
+            <img src={data.image} alt="Video" />
           </div>
         </div>
       </div>

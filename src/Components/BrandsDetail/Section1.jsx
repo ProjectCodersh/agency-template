@@ -9,16 +9,16 @@ const Section1 = ({ data }) => {
   return (
     <section className="fix section-padding">
       <div className="container">
-        <div className="row gy-5 align-items-center">
+        <div className="row gy-5">
           <div className="col-lg-6">
-            <div className="about-image d-flex justify-content-center align-items-center">
+            <div className="about-image d-flex justify-content-center align-items-center mt-0 mt-lg-5">
               <picture>
                 <source srcSet={data.img} type="image/webp" />
                 <img
                   src={data.img}
                   alt={data.title}
                   className="img-fluid rounded-4"
-                  style={{ maxWidth: '100%', height: 'auto' }}
+                  style={{ width: 'auto', height: '100%', maxHeight: '608px' }}
                   loading="lazy"
                 />
               </picture>

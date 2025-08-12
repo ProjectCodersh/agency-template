@@ -23,7 +23,7 @@ function CaseStudyDetailsNew({ data, list = [] }) {
   const prevItem = list[currentIndex - 1];
   const nextItem = list[currentIndex + 1];
 
-  const goTo = (slug) => navigate(`/case-studies/${slug}`);
+  const goTo = (slug) => navigate(`/case-study/${slug}`);
 
   return (
     <section className="project-details-section fix section-padding">

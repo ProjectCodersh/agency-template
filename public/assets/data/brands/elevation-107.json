@@ -11,11 +11,20 @@
       },
       {
         "title": "Project",
-        "content": ["Brand Design / Development", "Web Design & Development", "E-commerce Platform Development"]
+        "content": [
+          "Brand Design / Development",
+          "Web Design & Development",
+          "E-commerce Platform Development"
+        ]
       },
       {
         "title": "Technology",
-        "content": ["Shopify Development", "E-Commerce & Payments Intigration", "React Framework Based", "Cloudflare CDN Technology"]
+        "content": [
+          "Shopify Development",
+          "E-Commerce & Payments Intigration",
+          "React Framework Based",
+          "Cloudflare CDN Technology"
+        ]
       },
       {
         "title": "Visit",

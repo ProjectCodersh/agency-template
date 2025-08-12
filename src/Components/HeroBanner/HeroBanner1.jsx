@@ -24,14 +24,14 @@ const heroContent = {
 const sliderSettings = {
   dots: false,
   infinite: true,
-  speed: 5000,
+  speed: 3000,
+  autoplay: true,
+  autoplaySpeed: 100,
+  cssEase: 'linear',
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
   swipeToSlide: true,
-  autoplay: true,
-  autoplaySpeed: 0,
-  cssEase: 'linear',
   responsive: [
     { breakpoint: 1399, settings: { slidesToShow: 4 } },
     { breakpoint: 1199, settings: { slidesToShow: 3 } },
