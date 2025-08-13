@@ -18,11 +18,18 @@ import Brandsection6 from '../Components/Extra/HomePage/BrandSection6';
 import Brand2 from '../Components/Brand/Brand2';
 // import VideoTestimonialSlicks from "../Components/Testimonial/VideoTestimonialTwo";
 import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimonialTwo';
+import SEO from '../Components/DynamicSEO/SEO';
 // import About4 from "../Components/About/About4";
 
 const Home4 = () => {
   return (
     <div>
+      <SEO
+        title="Unlimited Shopify Services | Scale Your E-Commerce Business with Codersh"
+        description="Get unlimited Shopify design, development, and SEO services with CODERSH. Save time, boost sales, and grow your e-commerce store."
+        keywords="unlimited Shopify services, Shopify design, Shopify development, Shopify SEO, Shopify agency, Shopify store optimization,"
+        url="https://agency-template-five.vercel.app/unlimited-shopify"
+      />
       <HeroBanner4></HeroBanner4>
       <Brand2></Brand2>
       <WhatWeDo4></WhatWeDo4>

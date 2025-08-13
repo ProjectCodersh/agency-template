@@ -10,6 +10,7 @@ const VideoTestimonialSlickSecond = lazy(
   () => import('../Components/Testimonial/VideoTestimonialTwo')
 );
 import { brandList } from '../Components/BrandsDetail/BrandList';
+import SEO from '../Components/DynamicSEO/SEO';
 
 const BrandDetailsPage = () => {
   const { slug } = useParams();
@@ -35,6 +36,12 @@ const BrandDetailsPage = () => {
 
   return (
     <>
+      <SEO
+        title={data.seoTitle}
+        description={data.seoDescription}
+        keywords={data.seoKeywords}
+        url={data.seoUrl}
+      />
       <BreadCumb
         bgimg={brandFromList?.BgImg || '/assets/img/breadcrumb.jpg'}
         Title={dynamicTitle}

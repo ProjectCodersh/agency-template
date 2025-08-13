@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import BreadCumb from '../Components/Common/BreadCumb';
 import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimonialTwo';
 import { caseStudiesList } from '../Components/CaseStudyDetailsNew/CaseStudiesList';
+import SEO from '../Components/DynamicSEO/SEO';
 
 const CaseStudyDetails = lazy(
   () => import('../Components/CaseStudyDetailsNew/CaseStudyDetailsNew')
@@ -45,6 +46,12 @@ function CaseStudyDetailsPage() {
 
   return (
     <>
+      <SEO
+        title={caseStudyData.seo?.title}
+        description={caseStudyData.seo?.description}
+        keywords={caseStudyData.seo?.keywords}
+        url={caseStudyData.seo?.url}
+      />
       <BreadCumb
         bgimg={caseStudyFromList?.BgImg || '/assets/img/breadcrumb.jpg'}
         Title={dynamicTitle}

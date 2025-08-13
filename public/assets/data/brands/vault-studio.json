@@ -1,5 +1,9 @@
 [
   {
+    "seoTitle": "Vault Studio | Premium Interior & Renovation Web Design by Codersh",
+    "seoDescription": "See how Codersh developed a stylish, user-friendly website for Vault Studio, showcasing premium interior design and home renovation services.",
+    "seoKeywords": "Vault Studio, interior design website, home renovation services, Shopify development, eCommerce design",
+    "seoUrl": "https://agency-template-five.vercel.app/brands/vault-studio",
     "img": "https://placehold.co/537x608.webp",
     "subtitle": "About Brand",
     "title": "The Brief",
@@ -11,11 +15,22 @@
       },
       {
         "title": "Project",
-        "content": ["Web Design & Development", "E-commerce Platform Development", "Branding & Digital Marketing", "Portfolio Showcase"]
+        "content": [
+          "Web Design & Development",
+          "E-commerce Platform Development",
+          "Branding & Digital Marketing",
+          "Portfolio Showcase"
+        ]
       },
       {
         "title": "Technology",
-        "content": ["Shopify Development", "E-Commerce & Payments Intigration", "Cloudflare CDN & Security", "HubSpot Marketing Automation &CRM", "Google Analytics & GA4"]
+        "content": [
+          "Shopify Development",
+          "E-Commerce & Payments Intigration",
+          "Cloudflare CDN & Security",
+          "HubSpot Marketing Automation &CRM",
+          "Google Analytics & GA4"
+        ]
       },
       {
         "title": "Visit",
