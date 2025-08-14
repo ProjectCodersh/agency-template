@@ -12,6 +12,7 @@ import CaseStudyPage from '../Pages/CaseStudyPage';
 import PricingPage from '../Pages/PricingPage';
 import BrandDetailsPage from '../Pages/BrandDetailsPage';
 import BrandsCardpage from '../Pages/BrandsCardpage';
+import Error404Page from '../Pages/Error404Page';
 // import TeamPage from "../Pages/TeamPage";
 // import Testimonials from "../Pages/Testimonials";
 // import AboutPage from "../Pages/AboutPage";
@@ -110,6 +111,10 @@ export const router = createBrowserRouter([
       {
         path: '/brands/:slug',
         element: <BrandDetailsPage></BrandDetailsPage>,
+      },
+      {
+        path: '*',
+        element: <Error404Page></Error404Page>,
       },
     ],
   },
