@@ -42,8 +42,5 @@
       "text": "The launch of ReinventU’s e-commerce website was a great success, receiving positive feedback from customers and industry experts. The website was user-friendly, visually appealing, and aligned with ReinventU’s brand identity and mission. It helped the company increase its online presence and offer customers an accessible platform to support their health and wellness journey."
     }
   ],
-  "images": [
-    "/assets/img/case-studies/details-1.jpg",
-    "/assets/img/case-studies/details-2.jpg"
-  ]
+  "images": ["/assets/img/case-studies/details-1.webp", "/assets/img/case-studies/details-2.webp"]
 }

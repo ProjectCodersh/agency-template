@@ -1,8 +1,8 @@
 import React from 'react';
-import figmaLogo from '/assets/img/tools/figma-icon.png';
-import canvaLogo from '/assets/img/tools/canva-icon.png';
-import photoshopLogo from '/assets/img/tools/photoshop-icon.png';
-import adobeLogo from '/assets/img/tools/adobecloud-icon.png';
+import figmaLogo from '/assets/img/tools/figma-icon.webp';
+import canvaLogo from '/assets/img/tools/canva-icon.webp';
+import photoshopLogo from '/assets/img/tools/photoshop-icon.webp';
+import adobeLogo from '/assets/img/tools/adobecloud-icon.webp';
 
 // ✅ Reusable Grid Component
 const ToolGrid = ({ tools, cols }) => (
@@ -43,7 +43,9 @@ const BrandSection3 = () => {
       <div className="container px-3">
         <div className="section-title-area">
           <div className="section-title">
-            <h2 className="wow fadeInUp" data-wow-delay=".3s">{heading.title}</h2>
+            <h2 className="wow fadeInUp" data-wow-delay=".3s">
+              {heading.title}
+            </h2>
             <p
               className="wow fadeInUp mt-3 text-muted"
               data-wow-delay=".5s"

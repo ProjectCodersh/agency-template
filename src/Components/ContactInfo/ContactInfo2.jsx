@@ -138,7 +138,7 @@ const ContactInfo2 = () => {
                     style={{ borderRadius: '20px', background: '#f6f3fe' }}
                   >
                     <img
-                      src="/assets/img/team/team.png"
+                      src="/assets/img/team/team.webp"
                       alt="Team Img"
                       style={{
                         width: '100%',

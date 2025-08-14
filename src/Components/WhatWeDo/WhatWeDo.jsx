@@ -10,36 +10,36 @@ const WhatWeDo = () => {
 
   const whyContent = [
     {
-      img: '/assets/img/serviceIcon/psd.png',
-      title: 'Pixel perfect PSD to wordpress conversion'
+      img: '/assets/img/serviceIcon/psd.webp',
+      title: 'Pixel perfect PSD to wordpress conversion',
     },
     {
-      img: '/assets/img/serviceIcon/cms.png',
-      title: 'Wordpress CMS Setup and Configuration'
+      img: '/assets/img/serviceIcon/cms.webp',
+      title: 'Wordpress CMS Setup and Configuration',
     },
     {
-      img: '/assets/img/serviceIcon/maintenance.png',
-      title: 'Wordpress plugin development Service'
+      img: '/assets/img/serviceIcon/maintenance.webp',
+      title: 'Wordpress plugin development Service',
     },
     {
-      img: '/assets/img/serviceIcon/layout.png',
-      title: 'Wordpress theme development & customization'
+      img: '/assets/img/serviceIcon/layout.webp',
+      title: 'Wordpress theme development & customization',
     },
     {
-      img: '/assets/img/serviceIcon/migration.png',
-      title: 'Wordpress migration and maintenance services'
+      img: '/assets/img/serviceIcon/migration.webp',
+      title: 'Wordpress migration and maintenance services',
     },
     {
-      img: '/assets/img/serviceIcon/service.png',
-      title: 'Woocommerce Development Service'
+      img: '/assets/img/serviceIcon/service.webp',
+      title: 'Woocommerce Development Service',
     },
     {
-      img: '/assets/img/serviceIcon/blogging.png',
-      title: 'Wordpress Blog Development Service'
+      img: '/assets/img/serviceIcon/blogging.webp',
+      title: 'Wordpress Blog Development Service',
     },
     {
-      img: '/assets/img/serviceIcon/integration.png',
-      title: 'Wordpress API Integration Service'
+      img: '/assets/img/serviceIcon/integration.webp',
+      title: 'Wordpress API Integration Service',
     },
   ];
 
@@ -56,7 +56,6 @@ const WhatWeDo = () => {
       <div className="container px-3">
         <div className="section-title-area">
           <div className="section-title">
-
             <div className="sub-title wow fadeInUp">
               <span>{heading.subtitle}</span>
             </div>
@@ -64,7 +63,6 @@ const WhatWeDo = () => {
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
               {parse(heading.title)}
             </h2>
-
           </div>
 
           {heading.content && (
@@ -83,14 +81,7 @@ const WhatWeDo = () => {
             >
               <div className="service-box-items text-center flex-column">
                 <div className="icon">
-
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="icon-img"
-                    loading="lazy"
-                  />
-
+                  <img src={item.img} alt={item.title} className="icon-img" loading="lazy" />
                 </div>
 
                 <div className="content">

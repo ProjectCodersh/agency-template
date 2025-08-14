@@ -1,12 +1,12 @@
 import React from 'react';
-import goDaddyLogo from '/assets/img/tools/godaddy-logo.png';
-import flyWheelLogo from '/assets/img/tools/flywheel-logo.png';
-import HighLevelLogo from '/assets/img/tools/highlevel-logo.png';
-import HostingerLogo from '/assets/img/tools/hostinger-logo.png';
-import blueHostLogo from '/assets/img/tools/bluehost-logo.png';
-import kinstaLogo from '/assets/img/tools/kinsta-logo.png';
-import namecheapLogo from '/assets/img/tools/namecheap-logo.png';
-import onetwothreeRegLogo from '/assets/img/tools/123reg-logo.png';
+import goDaddyLogo from '/assets/img/tools/godaddy-logo.webp';
+import flyWheelLogo from '/assets/img/tools/flywheel-logo.webp';
+import HighLevelLogo from '/assets/img/tools/highlevel-logo.webp';
+import HostingerLogo from '/assets/img/tools/hostinger-logo.webp';
+import blueHostLogo from '/assets/img/tools/bluehost-logo.webp';
+import kinstaLogo from '/assets/img/tools/kinsta-logo.webp';
+import namecheapLogo from '/assets/img/tools/namecheap-logo.webp';
+import onetwothreeRegLogo from '/assets/img/tools/123reg-logo.webp';
 
 const recommended = [
   { name: 'GoDaddy', logo: goDaddyLogo },
@@ -57,7 +57,11 @@ const BrandSection2 = () => {
             <h2 className="wow fadeInUp text-break" data-wow-delay=".3s">
               {chooseHeading.title}
             </h2>
-            <p className="wow fadeInUp mt-3 text-muted" data-wow-delay=".5s" style={{ whiteSpace: 'pre-line' }}>
+            <p
+              className="wow fadeInUp mt-3 text-muted"
+              data-wow-delay=".5s"
+              style={{ whiteSpace: 'pre-line' }}
+            >
               {chooseHeading.content}
             </p>
           </div>

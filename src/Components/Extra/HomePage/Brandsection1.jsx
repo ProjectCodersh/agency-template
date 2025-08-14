@@ -1,12 +1,12 @@
 import React from 'react';
-import gmailLogo from '/assets/img/tools/gmail-logo.png';
-import asanaLogo from '/assets/img/tools/asana-logo.png';
-import loomLogo from '/assets/img/tools/loom-logo.png';
-import zoomLogo from '/assets/img/tools/zoom-logo.png';
-import clickupLogo from '/assets/img/tools/clickup-logo.png';
-import trelloLogo from '/assets/img/tools/trello-logo.png';
-import jiraLogo from '/assets/img/tools/jira-logo.png';
-import githubLogo from '/assets/img/tools/github-logo.png';
+import gmailLogo from '/assets/img/tools/gmail-logo.webp';
+import asanaLogo from '/assets/img/tools/asana-logo.webp';
+import loomLogo from '/assets/img/tools/loom-logo.webp';
+import zoomLogo from '/assets/img/tools/zoom-logo.webp';
+import clickupLogo from '/assets/img/tools/clickup-logo.webp';
+import trelloLogo from '/assets/img/tools/trello-logo.webp';
+import jiraLogo from '/assets/img/tools/jira-logo.webp';
+import githubLogo from '/assets/img/tools/github-logo.webp';
 
 const chooseHeading = {
   subtitle: 'Our Services',

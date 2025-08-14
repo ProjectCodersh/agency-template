@@ -15,10 +15,10 @@ const ServiceHero = ({ data }) => {
   if (!data) return null;
 
   const brandContent = [
-    { img: '/assets/img/brand/kucrimson-brand.png' },
-    { img: '/assets/img/brand/datadepot-brand.png' },
-    { img: '/assets/img/brand/informadist-brand.png' },
-    { img: '/assets/img/brand/squreit-brand.png' },
+    { img: '/assets/img/brand/kucrimson-brand.webp' },
+    { img: '/assets/img/brand/datadepot-brand.webp' },
+    { img: '/assets/img/brand/informadist-brand.webp' },
+    { img: '/assets/img/brand/squreit-brand.webp' },
   ];
 
   const sliderSettings = {

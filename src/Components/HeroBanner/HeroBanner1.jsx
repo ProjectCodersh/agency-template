@@ -5,10 +5,10 @@ import parse from 'html-react-parser';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
 
 const brandLogos = [
-  '/assets/img/brand/kucrimson-brand.png',
-  '/assets/img/brand/datadepot-brand.png',
-  '/assets/img/brand/informadist-brand.png',
-  '/assets/img/brand/squreit-brand.png',
+  '/assets/img/brand/kucrimson-brand.webp',
+  '/assets/img/brand/datadepot-brand.webp',
+  '/assets/img/brand/informadist-brand.webp',
+  '/assets/img/brand/squreit-brand.webp',
 ];
 
 const heroContent = {

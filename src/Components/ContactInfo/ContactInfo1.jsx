@@ -181,7 +181,7 @@ const ContactInfo1 = () => {
               <div className="contact-map p-4" data-background="/assets/img/audience-bg.jpg">
                 <div className="p-0 p-md-3" style={{}}>
                   <img
-                    src="/assets/img/team/team.png"
+                    src="/assets/img/team/team.webp"
                     alt="Team Img"
                     style={{
                       width: '100%',

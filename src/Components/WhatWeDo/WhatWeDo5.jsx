@@ -13,61 +13,61 @@ function Counter6() {
 
   const chooseContent = [
     {
-      img: '/assets/img/pagebuilder/builder13.png',
+      img: '/assets/img/pagebuilder/builder13.webp',
       title: 'Better audiences',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder14.png',
+      img: '/assets/img/pagebuilder/builder14.webp',
       title: 'Better Analytics',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder16.png',
+      img: '/assets/img/pagebuilder/builder16.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder17.png',
+      img: '/assets/img/pagebuilder/builder17.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder18.png',
+      img: '/assets/img/pagebuilder/builder18.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder19.png',
+      img: '/assets/img/pagebuilder/builder19.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder20.png',
+      img: '/assets/img/pagebuilder/builder20.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder21.png',
+      img: '/assets/img/pagebuilder/builder21.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder23.png',
+      img: '/assets/img/pagebuilder/builder23.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',
     },
     {
-      img: '/assets/img/pagebuilder/builder24.png',
+      img: '/assets/img/pagebuilder/builder24.webp',
       title: 'Better Output',
       content:
         'Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.',

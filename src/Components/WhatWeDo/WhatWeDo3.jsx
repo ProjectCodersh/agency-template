@@ -12,36 +12,36 @@ const Counter4 = () => {
 
   const builders = [
     {
-      img: '/assets/img/pagebuilder/builder1.png',
-      title: 'builder-one'
+      img: '/assets/img/pagebuilder/builder1.webp',
+      title: 'builder-one',
     },
     {
-      img: '/assets/img/pagebuilder/builder2.png',
-      title: 'builder-two'
+      img: '/assets/img/pagebuilder/builder2.webp',
+      title: 'builder-two',
     },
     {
-      img: '/assets/img/pagebuilder/builder3.png',
-      title: 'builder-three'
+      img: '/assets/img/pagebuilder/builder3.webp',
+      title: 'builder-three',
     },
     {
-      img: '/assets/img/pagebuilder/builder4.png',
-      title: 'builder-four'
+      img: '/assets/img/pagebuilder/builder4.webp',
+      title: 'builder-four',
     },
     {
-      img: '/assets/img/pagebuilder/builder5.png',
-      title: 'builder-five'
+      img: '/assets/img/pagebuilder/builder5.webp',
+      title: 'builder-five',
     },
     {
-      img: '/assets/img/pagebuilder/builder6.png',
-      title: 'builder-six'
+      img: '/assets/img/pagebuilder/builder6.webp',
+      title: 'builder-six',
     },
     {
-      img: '/assets/img/pagebuilder/builder7.png',
-      title: 'builder-seven'
+      img: '/assets/img/pagebuilder/builder7.webp',
+      title: 'builder-seven',
     },
     {
-      img: '/assets/img/pagebuilder/builder8.png',
-      title: 'builder-eight'
+      img: '/assets/img/pagebuilder/builder8.webp',
+      title: 'builder-eight',
     },
   ];
 
@@ -54,7 +54,6 @@ const Counter4 = () => {
       <div className="container px-3">
         <div className="section-title-area">
           <div className="section-title">
-
             <div className="sub-title wow fadeInUp" style={{ backgroundColor: '#384bff1a' }}>
               <span>{heading.subtitle}</span>
             </div>
@@ -89,6 +88,6 @@ const Counter4 = () => {
       </div>
     </section>
   );
-}
+};
 
 export default memo(Counter4);
