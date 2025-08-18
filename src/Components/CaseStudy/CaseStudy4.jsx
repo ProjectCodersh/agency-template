@@ -62,7 +62,15 @@ const CaseStudy4 = () => {
             <div key={i} className="col-xl-6 col-lg-6 col-md-6 mb-5">
               <div className="case-studies-card-items mt-0">
                 <div className="thumb case-studies-card-items-imgbox">
-                  <img src={item.img} alt="img" className="case-studies-card-items-coverimg" />
+                  <img
+                    src={item.img}
+                    alt={
+                      item.img
+                        ? item.img.split('/').pop().split('.')[0].replace(/[-_]/g, ' ')
+                        : 'case study image'
+                    }
+                    className="case-studies-card-items-coverimg"
+                  />
                 </div>
                 <div className="content">
                   <div className="title">

@@ -16,7 +16,8 @@ const Section1 = ({ data }) => {
                 <source srcSet={data.img} type="image/webp" />
                 <img
                   src={data.img}
-                  alt={data.title}
+                  // alt={data.title}
+                  alt={data.img ? data.img.split('/').pop().split('.')[0] : ''}
                   className="img-fluid rounded-4"
                   style={{ width: 'auto', height: '100%', maxHeight: '608px' }}
                   loading="lazy"

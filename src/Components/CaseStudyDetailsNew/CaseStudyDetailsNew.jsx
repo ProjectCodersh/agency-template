@@ -108,7 +108,12 @@ function CaseStudyDetailsNew({ data, list = [] }) {
                     <div className="details-image">
                       <img
                         src={imgSrc}
-                        alt={`case-study-img-${index}`}
+                        // alt={`case-study-img-${index}`}
+                        alt={
+                          imgSrc
+                            ? imgSrc.split('/').pop().split('.')[0].replace(/[-_]/g, ' ')
+                            : `case-study-img-${index}`
+                        }
                         loading="lazy"
                         style={{ width: '100%', height: 'auto' }}
                       />

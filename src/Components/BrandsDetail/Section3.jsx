@@ -10,7 +10,10 @@ const Section3 = ({ images }) => (
             <div className="w-100 h-100">
               <img
                 src={src}
-                alt={`brand-${idx}`}
+                // alt={`brand-${idx}`}
+                alt={
+                  src ? src.split('/').pop().split('.')[0].replace(/[-_]/g, ' ') : `brand-${idx}`
+                }
                 className="img-fluid w-100 h-100 rounded-4"
                 style={{
                   objectFit: idx === 2 ? 'contain' : 'cover',

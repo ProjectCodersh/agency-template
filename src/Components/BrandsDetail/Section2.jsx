@@ -28,7 +28,10 @@ const Section2 = ({ data }) => {
       <div className="container">
         <div className="cta-counter-wrapper-2">
           <div className="cta-video-image wow img-custom-anim-left" data-wow-delay=".3s">
-            <img src={data.image} alt="Video" />
+            <img
+              src={data.image}
+              alt={data.image ? data.image.split('/').pop().split('.')[0] : ''}
+            />
           </div>
         </div>
       </div>
