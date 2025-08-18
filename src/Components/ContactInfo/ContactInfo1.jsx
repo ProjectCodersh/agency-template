@@ -73,7 +73,7 @@ const ContactInfo1 = () => {
 
   return (
     <section className="contact-section fix section-padding section-margin">
-      <div className="container px-3">
+      <div className="container px-md-3">
         {/* ...title and layout unchanged... */}
         <div className="contact-wrapper">
           <div className="row g-4">

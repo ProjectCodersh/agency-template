@@ -14,7 +14,12 @@ const ServiceCard = ({ service, index }) => {
         {/* <span className="icon">⚡</span>
                 PageSpeed <span className="score">99</span> */}
         <span className="icon">
-          <img src="/assets/img/check-mark.png" alt="" height="20" className="me-1 mb-1" />
+          <img
+            src="/assets/img/check-mark.png"
+            alt="check-mark-icon"
+            height="20"
+            className="me-1 mb-1"
+          />
         </span>
         mail@domain.com
       </div>

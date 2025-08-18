@@ -49,11 +49,11 @@ const HeroBanner4 = () => {
   };
 
   const brandContent = [
-    { img: '/assets/img/brand/reinventu-logo2.webp' },
-    { img: '/assets/img/brand/500-logo.webp' },
-    { img: '/assets/img/brand/chenchef-logo.webp' },
-    { img: '/assets/img/brand/christianbookbag-logo.webp' },
-    { img: '/assets/img/brand/anadian-logo.webp' },
+    { img: '/assets/img/brand/reinventu-logo2-test.webp' },
+    { img: '/assets/img/brand/500-logo-test.webp' },
+    { img: '/assets/img/brand/chenchef-logo-test.webp' },
+    { img: '/assets/img/brand/christianbookbag-logo-test.webp' },
+    { img: '/assets/img/brand/anadian-logo-test.webp' },
   ];
 
   const heroContent = {
@@ -162,7 +162,12 @@ const HeroBanner4 = () => {
               {brandContent.map((item, i) => (
                 <div key={i} className="swiper-slide">
                   <div className="brand-img center d-flex justify-content-center">
-                    <img src={item.img} alt="img" className="brand-trust-img" />
+                    <img
+                      src={item.img}
+                      alt="img"
+                      className="brand-trust-img"
+                      style={{ maxHeight: '70px' }}
+                    />
                   </div>
                 </div>
               ))}

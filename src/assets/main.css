@@ -1356,6 +1356,11 @@ span {
     padding: 30px;
   }
 }
+@media (max-width: 390px) {
+  .contact-wrapper {
+    padding: 20px;
+  }
+}
 
 .contact-wrapper .contact-form-area {
   border-radius: 16px;
@@ -1366,6 +1371,11 @@ span {
 @media (max-width: 575px) {
   .contact-wrapper .contact-form-area {
     padding: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .contact-wrapper .contact-form-area {
+    padding: 20px;
   }
 }
 
@@ -10043,7 +10053,7 @@ input.main-search-input::placeholder {
 }
 
 .brandsection-brands {
-  width: 150px;
+  width: 175px;
   height: auto;
 }
 
@@ -10194,6 +10204,12 @@ input.main-search-input::placeholder {
   width: 100%;
   object-fit: contain;
   height: 100%;
+}
+
+@media (max-width: 576px) {
+  .brand-trust-img {
+    max-height: 60px !important;
+  }
 }
 
 /* card hover effect class */
@@ -10386,7 +10402,8 @@ casestudy details breadcrumb dynamic image n text
 
 @media (max-width: 390px) {
   .services-hero-section {
-    padding: 80px 0 0px;
+    padding: 160px 0 80px;
+    height: 100% !important;
   }
 }
 
