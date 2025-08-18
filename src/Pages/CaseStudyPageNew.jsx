@@ -4,6 +4,7 @@ import BreadCumb from '../Components/Common/BreadCumb';
 import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimonialTwo';
 import { caseStudiesList } from '../Components/CaseStudyDetailsNew/CaseStudiesList';
 import SEO from '../Components/DynamicSEO/SEO';
+import Error404Page from './Error404Page';
 
 const CaseStudyDetails = lazy(
   () => import('../Components/CaseStudyDetailsNew/CaseStudyDetailsNew')
@@ -39,7 +40,8 @@ function CaseStudyDetailsPage() {
   }, [slug]);
 
   if (loading) return <div style={{ padding: '2rem' }}>Loading...</div>;
-  if (!caseStudyData) return <div style={{ padding: '2rem' }}>Case study not found.</div>;
+  // if (!caseStudyData) return <div style={{ padding: '2rem' }}>Case study not found.</div>;
+  if (!caseStudyData) return <Error404Page />;
 
   const caseStudyFromList = caseStudiesList.find((item) => item.slug === slug);
   const dynamicTitle = caseStudyFromList?.title || caseStudyData?.title || 'Case Study Details';

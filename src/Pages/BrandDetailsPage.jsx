@@ -11,6 +11,7 @@ const VideoTestimonialSlickSecond = lazy(
 );
 import { brandList } from '../Components/BrandsDetail/BrandList';
 import SEO from '../Components/DynamicSEO/SEO';
+import Error404Page from './Error404Page';
 
 const BrandDetailsPage = () => {
   const { slug } = useParams();
@@ -18,18 +19,35 @@ const BrandDetailsPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get(`/assets/data/brands/${slug}.json`)
-      .then((res) => setData(res.data[0]))
-      .catch((err) => {
+    const fetchBrandData = async () => {
+      setLoading(true);
+      try {
+        const response = await axios.get(`/assets/data/brands/${slug}.json`, {
+          responseType: 'json',
+          validateStatus: (status) => status === 200, // only accept 200 OK
+        });
+
+        // if the response isn't a proper object, treat as invalid
+        if (!response.data || typeof response.data !== 'object') {
+          throw new Error('Invalid brand data');
+        }
+
+        // if you expect array (like in your code: res.data[0]), handle it
+        setData(Array.isArray(response.data) ? response.data[0] : response.data);
+      } catch (err) {
         console.error('Failed to load brand data', err);
-        setData(null);
-      })
-      .finally(() => setLoading(false));
+        setData(null); // force 404
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBrandData();
   }, [slug]);
 
   if (loading) return <div className="p-4">Loading...</div>;
-  if (!data) return <div className="p-4">No data available for `{slug}`.</div>;
+  // if (!data) return <div className="p-4">No data available for `{slug}`.</div>;
+  if (!data) return <Error404Page />;
 
   const brandFromList = brandList.find((item) => item.slug === slug);
   const dynamicTitle = brandFromList?.title || 'Brand Details';
