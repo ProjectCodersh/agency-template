@@ -5,7 +5,7 @@ import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimon
 import { caseStudiesList } from '../Components/CaseStudyDetailsNew/CaseStudiesList';
 import SEO from '../Components/DynamicSEO/SEO';
 import Error404Page from './Error404Page';
-import SimpleLoader from '../Components/Loader/simpleLoader';
+import SimpleLoader from '../Components/Loader/NormalLoader';
 
 const CaseStudyDetails = lazy(
   () => import('../Components/CaseStudyDetailsNew/CaseStudyDetailsNew')

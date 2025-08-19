@@ -1,8 +1,8 @@
-// import React from 'react';
+// import React from 'react'
 import { LoaderCircleIcon } from 'lucide-react';
 import '../../assets/loader.css';
 
-const simpleLoader = () => {
+function NormalLoader() {
   return (
     <>
       <div className="loader-container">
@@ -10,6 +10,6 @@ const simpleLoader = () => {
       </div>
     </>
   );
-};
+}
 
-export default simpleLoader;
+export default NormalLoader;

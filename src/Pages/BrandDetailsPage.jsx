@@ -1,7 +1,7 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 import { brandList } from '../Components/BrandsDetail/BrandList';
-import SimpleLoader from '../Components/Loader/simpleLoader';
+import SimpleLoader from '../Components/Loader/NormalLoader';
 import BreadCumb from '../Components/Common/BreadCumb';
 import SEO from '../Components/DynamicSEO/SEO';
 import Error404Page from './Error404Page';

@@ -4,7 +4,7 @@ import { useEffect, useState, Suspense } from 'react';
 import { serviceSlugMap } from '../Components/ServicesNew/ServicesIndex';
 import React from 'react';
 import Brand1 from '../Components/Brand/Brand1';
-import SimpleLoader from '../Components/Loader/simpleLoader';
+import SimpleLoader from '../Components/Loader/NormalLoader';
 
 const ServiceHero = React.lazy(() => import('../Components/ServicesNew/ServiceHero'));
 const ServiceProcess = React.lazy(() => import('../Components/ServicesNew/ServiceProcess'));
