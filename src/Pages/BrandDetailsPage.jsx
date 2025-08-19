@@ -1,17 +1,20 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import { brandList } from '../Components/BrandsDetail/BrandList';
+import SimpleLoader from '../Components/Loader/simpleLoader';
 import BreadCumb from '../Components/Common/BreadCumb';
+import SEO from '../Components/DynamicSEO/SEO';
+import Error404Page from './Error404Page';
+import axios from 'axios';
+
 const Section1 = lazy(() => import('../Components/BrandsDetail/Section1'));
 const Section2 = lazy(() => import('../Components/BrandsDetail/Section2'));
 const Content = lazy(() => import('../Components/BrandsDetail/Content'));
 const Section3 = lazy(() => import('../Components/BrandsDetail/Section3'));
+
 const VideoTestimonialSlickSecond = lazy(
   () => import('../Components/Testimonial/VideoTestimonialTwo')
 );
-import { brandList } from '../Components/BrandsDetail/BrandList';
-import SEO from '../Components/DynamicSEO/SEO';
-import Error404Page from './Error404Page';
 
 const BrandDetailsPage = () => {
   const { slug } = useParams();
@@ -45,7 +48,7 @@ const BrandDetailsPage = () => {
     fetchBrandData();
   }, [slug]);
 
-  if (loading) return <div className="p-4">Loading...</div>;
+  if (loading) return <SimpleLoader />;
   // if (!data) return <div className="p-4">No data available for `{slug}`.</div>;
   if (!data) return <Error404Page />;
 
@@ -66,7 +69,7 @@ const BrandDetailsPage = () => {
         hasOverlay={true}
         customTrail={[{ label: 'Brands', link: '/brands' }, { label: dynamicTitle }]}
       />
-      <Suspense fallback={<div>Loading Content...</div>}>
+      <Suspense fallback={<SimpleLoader />}>
         <Section1 data={data} />
         <Section2 data={data.video} />
         <Content challenge={data.challenge} solution={data.solution} />

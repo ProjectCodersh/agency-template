@@ -5,6 +5,7 @@ import VideoTestimonialSlickSecond from '../Components/Testimonial/VideoTestimon
 import { caseStudiesList } from '../Components/CaseStudyDetailsNew/CaseStudiesList';
 import SEO from '../Components/DynamicSEO/SEO';
 import Error404Page from './Error404Page';
+import SimpleLoader from '../Components/Loader/simpleLoader';
 
 const CaseStudyDetails = lazy(
   () => import('../Components/CaseStudyDetailsNew/CaseStudyDetailsNew')
@@ -39,7 +40,7 @@ function CaseStudyDetailsPage() {
       });
   }, [slug]);
 
-  if (loading) return <div style={{ padding: '2rem' }}>Loading...</div>;
+  if (loading) return <SimpleLoader />;
   // if (!caseStudyData) return <div style={{ padding: '2rem' }}>Case study not found.</div>;
   if (!caseStudyData) return <Error404Page />;
 
@@ -60,7 +61,7 @@ function CaseStudyDetailsPage() {
         hasOverlay={true}
         customTrail={[{ label: 'Case Study', link: '/case-study' }, { label: dynamicTitle }]}
       />
-      <Suspense fallback={<div>Loading details...</div>}>
+      <Suspense fallback={<SimpleLoader />}>
         <CaseStudyDetails data={caseStudyData} list={caseStudiesList} />
         <VideoTestimonialSlickSecond />
       </Suspense>
