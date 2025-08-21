@@ -36,7 +36,7 @@ const ContactInfo1 = () => {
     try {
       // Send message to company
       await emailjs.sendForm(
-        'service_gqkh37e', // your service ID
+        'service_yajqym9', // your service ID
         'template_h4wpbbi', // first template (to company)
         formRef.current,
         'K_wd5BSwBzwzzQXjf' // public key
@@ -44,7 +44,7 @@ const ContactInfo1 = () => {
 
       // Send thank-you email to user
       await emailjs.sendForm(
-        'service_gqkh37e', // same service ID is fine
+        'service_yajqym9', // same service ID is fine
         'template_pwefvuc', // second template (to user)
         formRef.current,
         'K_wd5BSwBzwzzQXjf'

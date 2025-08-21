@@ -28,7 +28,7 @@ const ContactInfo2 = () => {
     try {
       // Send inquiry to company
       await emailjs.sendForm(
-        'service_gqkh37e',
+        'service_yajqym9',
         'template_h4wpbbi', // company template ID
         formRef.current,
         'K_wd5BSwBzwzzQXjf'
@@ -36,7 +36,7 @@ const ContactInfo2 = () => {
 
       // Send thank-you email to user
       await emailjs.sendForm(
-        'service_gqkh37e',
+        'service_yajqym9',
         'template_pwefvuc', // user thank-you template ID
         formRef.current,
         'K_wd5BSwBzwzzQXjf'
