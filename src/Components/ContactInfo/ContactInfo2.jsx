@@ -10,6 +10,8 @@ const ContactInfo2 = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    number: '',
+    subject: '',
     message: '',
   });
 
@@ -47,6 +49,8 @@ const ContactInfo2 = () => {
       setFormData({
         name: '',
         email: '',
+        number: '',
+        subject: '',
         message: '',
       });
     } catch (error) {
@@ -127,7 +131,7 @@ const ContactInfo2 = () => {
         <div className="container px-3">
           <div className="contact-wrapper-2">
             <div className="row g-4 align-items-center">
-              <div className="col-lg-6 d-flex align-items-center justify-content-center ">
+              <div className="col-xl-6 offset-xl-0 col-lg-10 offset-lg-1 d-flex align-items-center justify-content-center ">
                 <div
                   className="contact-map p-4"
                   data-background="/assets/img/audience-bg.jpg"
@@ -156,7 +160,7 @@ const ContactInfo2 = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6">
+              <div className="col-xl-6 mt-xl-4 mt-lg-5">
                 <div className="contact-content">
                   <h2>Let&#39;s Talk About Your Next Project</h2>
                   <p>
@@ -171,14 +175,14 @@ const ContactInfo2 = () => {
                     onSubmit={handleSubmit}
                   >
                     <div className="row g-4">
-                      <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                      <div className="col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div className="form-clt">
                           <span>Your name*</span>
                           <input
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="Your Name"
+                            placeholder="Name"
                             required
                             value={formData.name}
                             onChange={handleChange}
@@ -186,16 +190,47 @@ const ContactInfo2 = () => {
                         </div>
                       </div>
 
-                      <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                      <div className="col-md-6 wow fadeInUp" data-wow-delay=".5s">
                         <div className="form-clt">
                           <span>Your Email*</span>
                           <input
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="Your Email"
+                            placeholder="Email"
                             required
                             value={formData.email}
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div className="form-clt">
+                          <span>Your Number*</span>
+                          <input
+                            type="tel"
+                            name="number"
+                            id="number"
+                            placeholder="Number"
+                            required
+                            pattern="^\+?[0-9\-]{10,15}$"
+                            value={formData.number}
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div className="form-clt">
+                          <span>Subject*</span>
+                          <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject"
+                            required
+                            value={formData.subject}
                             onChange={handleChange}
                           />
                         </div>
@@ -210,7 +245,7 @@ const ContactInfo2 = () => {
                           <textarea
                             name="message"
                             id="message"
-                            placeholder="Write Message"
+                            placeholder="Message"
                             required
                             value={formData.message}
                             onChange={handleChange}
