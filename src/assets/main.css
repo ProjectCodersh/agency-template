@@ -10436,3 +10436,11 @@ casestudy details breadcrumb dynamic image n text
     border-radius: 0px;
   }
 }
+
+/* simple loader css */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
