@@ -78,7 +78,7 @@ const Counter4 = () => {
               data-wow-delay={`${0.2 + (index % 4) * 0.1}s`}
             >
               <div className="feature-box-items2 text-center p-3 bg-white rounded-3 shadow-sm ">
-                <div className="icon">
+                <div className="icon w-100 h-100 pagebuilder-hover-effect">
                   <img src={item.img} alt={item.title} loading="lazy" />
                 </div>
               </div>
