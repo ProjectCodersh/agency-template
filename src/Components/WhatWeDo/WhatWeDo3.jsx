@@ -77,8 +77,8 @@ const Counter4 = () => {
               className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 wow fadeInUp"
               data-wow-delay={`${0.2 + (index % 4) * 0.1}s`}
             >
-              <div className="feature-box-items2 text-center p-3 bg-white rounded-3 shadow-sm ">
-                <div className="icon w-100 h-100 pagebuilder-hover-effect">
+              <div className="feature-box-items2 text-center p-3 bg-white rounded-3 shadow-sm  pagebuilder-hover-effect">
+                <div className="icon w-100 h-100">
                   <img src={item.img} alt={item.title} loading="lazy" />
                 </div>
               </div>
