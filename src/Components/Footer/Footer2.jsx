@@ -170,7 +170,7 @@ const Footer2 = () => {
                     <ul className="contact-info">
                       <li>
                         <i className="bi bi-envelope"></i>
-                        <a href="mailto:arvind@codersh.com">arvind@codersh.com</a>
+                        <a href="mailto:bdm.codersh@gmail.com">bdm.codersh@gmail.com</a>
                       </li>
                       <li>
                         <i className="bi bi-telephone"></i>

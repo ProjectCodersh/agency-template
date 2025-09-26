@@ -97,8 +97,12 @@ const ContactInfo2 = () => {
                 </div>
                 <div className="content">
                   <h3 className="text-lowercase">
-                    <a href="mailto:arvind@codersh.com" target="_blank" rel="noopener noreferrer">
-                      arvind@codersh.com
+                    <a
+                      href="mailto:bdm.codersh@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      bdm.codersh@gmail.com
                     </a>
                   </h3>
                   <p>
