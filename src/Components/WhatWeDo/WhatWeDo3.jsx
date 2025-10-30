@@ -39,10 +39,10 @@ const Counter4 = () => {
       img: '/assets/img/pagebuilder/builder7.webp',
       title: 'builder-seven',
     },
-    {
-      img: '/assets/img/pagebuilder/builder8.webp',
-      title: 'builder-eight',
-    },
+    // {
+    //   img: '/assets/img/pagebuilder/builder8.webp',
+    //   title: 'builder-eight',
+    // },
   ];
 
   useEffect(() => {
